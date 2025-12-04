@@ -7,6 +7,7 @@ export default function PlayerPage() {
   const number = params.get("number") || "00";
   const positions = params.get("positions") || "Position(s)";
   const playerImg = params.get("playerImg") || "https://via.placeholder.com/400x500";
+  const headerImg = params.get("headerImg") || "";
   const logoImg = params.get("logoImg") || "";
   const schoolName = params.get("school") || "";
   const playerClass = params.get("class") || "";
@@ -19,7 +20,14 @@ export default function PlayerPage() {
 
   return (
     <div className="bg-white rounded-xl shadow-sm overflow-hidden mb-8">
-      <div className="relative h-64 bg-gradient-to-r from-blue-900 to-blue-700">
+      <div 
+        className="relative h-64 bg-gradient-to-r from-blue-900 to-blue-700"
+        style={headerImg ? {
+          backgroundImage: `linear-gradient(to right, rgba(30, 58, 138, 0.8), rgba(29, 78, 216, 0.8)), url(${headerImg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        } : {}}
+      >
         <div className="absolute inset-0 bg-black/20"></div>
       </div>
 
