@@ -3,6 +3,13 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+import PlayerPage from './Player/PlayerPage'
+
+function App() {
+  return <PlayerPage />
+}
+
+export default App
 function App() {
   const [count, setCount] = useState(0)
 
