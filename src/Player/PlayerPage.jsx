@@ -63,38 +63,36 @@ export default function PlayerPage() {
 
             {/* Info Grid */}
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-6">
-              {playerClass && <Info label="Class" value={playerClass} />}
-              {heightWeight && <Info label="Height/Weight" value={heightWeight} />}
-              {batThrow && <Info label="Bat/Throw" value={batThrow} />}
-              {favoriteTeam && <Info label="Favorite Team" value={favoriteTeam} />}
-              {postGameMeal && <Info label="Post-Game Meal" value={postGameMeal} />}
-              {(twitter || instagram) && (
-                <div>
-                  <div className="text-sm text-gray-500 mb-1">Social Media</div>
-                  <div className="flex gap-2">
-                    {twitter && (
-                      <a 
-                        href={`https://twitter.com/${twitter}`} 
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="p-2 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
-                      >
-                        <Twitter size={18} className="text-blue-600" />
-                      </a>
-                    )}
-                    {instagram && (
-                      <a 
-                        href={`https://instagram.com/${instagram}`} 
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="p-2 bg-pink-50 rounded-lg hover:bg-pink-100 transition-colors"
-                      >
-                        <Instagram size={18} className="text-pink-600" />
-                      </a>
-                    )}
-                  </div>
+              <Info label="Class" value={playerClass || ""} />
+              <Info label="Height/Weight" value={heightWeight || ""} />
+              <Info label="Bat/Throw" value={batThrow || ""} />
+              <Info label="Favorite Team" value={favoriteTeam || ""} />
+              <Info label="Post-Game Meal" value={postGameMeal || ""} />
+              <div>
+                <div className="text-sm text-gray-500 mb-1">Social Media</div>
+                <div className="flex gap-2">
+                  {twitter ? (
+                    <a 
+                      href={`https://twitter.com/${twitter}`} 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
+                    >
+                      <Twitter size={18} className="text-blue-600" />
+                    </a>
+                  ) : null}
+                  {instagram ? (
+                    <a 
+                      href={`https://instagram.com/${instagram}`} 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 bg-pink-50 rounded-lg hover:bg-pink-100 transition-colors"
+                    >
+                      <Instagram size={18} className="text-pink-600" />
+                    </a>
+                  ) : null}
                 </div>
-              )}
+              </div>
             </div>
           </div>
         </div>
