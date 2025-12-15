@@ -1,16 +1,86 @@
-# React + Vite
+# Player Widget
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A reusable player profile header component for baseball team websites, built with React and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Clean, modern design matching Figma specifications
+- Scalable player data management via JSON
+- Customizable images (player photos, header backgrounds, logos)
+- Responsive design
+- Easy integration with SquareSpace via Netlify
 
-## React Compiler
+## Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Install dependencies:
+```bash
+npm install
+```
 
-## Expanding the ESLint configuration
+2. Add player data to `src/data/players.json`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Add images to:
+   - `public/players/` - Player photos
+   - `public/headers/` - Header background images
+   - `public/logos/` - Team/school logos
+
+4. Build for production:
+```bash
+npm run build
+```
+
+## Deployment
+
+This project is configured for:
+- **GitHub** - Source code repository
+- **Netlify** - Hosting and deployment
+- **SquareSpace** - Integration via code block
+
+## Usage
+
+### Adding Players
+
+See `src/data/README.md` for detailed instructions on adding and managing players.
+
+### URL Structure
+
+Access a player's page using:
+```
+?player=player-id
+```
+
+Example:
+```
+?player=sean-evans
+```
+
+## Development
+
+```bash
+npm run dev    # Start development server
+npm run build  # Build for production
+npm run preview # Preview production build
+```
+
+## Project Structure
+
+```
+├── src/
+│   ├── data/
+│   │   ├── players.json    # Player data
+│   │   └── README.md       # Data management guide
+│   ├── Player/
+│   │   └── PlayerPage.jsx  # Main component
+│   └── index.css           # Styles and design system
+├── public/
+│   ├── players/            # Player photos
+│   ├── headers/            # Header backgrounds
+│   └── logos/              # Team logos
+└── dist/                   # Build output
+```
+
+## Customization
+
+All player information is managed through `src/data/players.json`. The component automatically reads from this file based on the `player` URL parameter.
+
+For styling changes, see `src/index.css` which contains the Figma design system.
