@@ -43,9 +43,9 @@ export default function PlayerPage() {
   } = player;
 
   return (
-    <div className="bg-white rounded-xl shadow-sm overflow-hidden mb-8">
+    <div className="bg-white rounded-xl shadow-sm overflow-hidden mb-8 w-full max-w-6xl mx-auto">
       <div 
-        className="relative h-80 bg-gradient-to-r from-blue-900 to-blue-700"
+        className="relative h-72 sm:h-80 bg-gradient-to-r from-blue-900 to-blue-700"
         style={headerImg ? {
           backgroundImage: `linear-gradient(to right, rgba(30, 58, 138, 0.8), rgba(29, 78, 216, 0.8)), url(${headerImg})`,
           backgroundSize: 'cover',
@@ -55,38 +55,38 @@ export default function PlayerPage() {
         <div className="absolute inset-0 bg-black/20"></div>
       </div>
 
-      <div className="relative px-8 pb-8">
-        <div className="flex flex-col md:flex-row gap-8 -mt-32">
+      <div className="relative px-4 sm:px-8 pb-6 sm:pb-8">
+        <div className="flex flex-col md:flex-row gap-6 sm:gap-8 -mt-32">
           {/* Player Image */}
           <div className="relative z-10">
-            <div className="w-64 h-80 rounded-lg overflow-hidden shadow-2xl border-4 border-white bg-white">
+            <div className="w-44 h-60 sm:w-56 sm:h-72 md:w-64 md:h-80 rounded-lg overflow-hidden shadow-2xl border-4 border-white bg-white mx-auto md:mx-0">
               <img src={playerImg} alt={name} className="w-full h-full object-cover" />
             </div>
           </div>
 
           {/* Player Info */}
-          <div className="flex-1 pt-8">
+          <div className="flex-1 pt-6 sm:pt-8">
             <div className="flex items-start justify-between mb-6">
-              <div className="-mt-[10px]">
-                <div className="flex items-center gap-3 mb-2">
-                  <span className="text-white font-bold text-6xl">{number}</span>
-                  <h1 className="text-5xl text-white font-bold">{name}</h1>
+              <div className="-mt-[6px] sm:-mt-[10px]">
+                <div className="flex items-center gap-3 mb-2 flex-wrap">
+                  <span className="text-white font-bold text-4xl sm:text-5xl md:text-6xl leading-none">{number}</span>
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl text-white font-bold leading-tight">{name}</h1>
                 </div>
-                <p className="text-2xl text-white">{positions}</p>
-                {schoolName && <p className="text-lg text-gray-500 mt-1">{schoolName}</p>}
+                <p className="text-xl sm:text-2xl text-white">{positions}</p>
+                {schoolName && <p className="text-base sm:text-lg text-white/80 mt-1">{schoolName}</p>}
               </div>
               
               {logoImg && (
                 <img 
                   src={logoImg} 
                   alt="Team Logo"
-                  className="w-24 h-24 object-contain"
+                  className="w-20 h-20 sm:w-24 sm:h-24 object-contain"
                 />
               )}
             </div>
 
             {/* Info Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-6">
               <Info label="Graduating Class" value={playerClass || ""} />
               <Info label="Height/Weight" value={heightWeight || ""} />
               <Info label="Bat/Throw" value={batThrow || ""} />
@@ -128,8 +128,8 @@ export default function PlayerPage() {
 function Info({ label, value }) {
   return (
     <div>
-      <div className="text-lg text-gray-500 mb-1">{label}</div>
-      <div className="text-xl">{value}</div>
+      <div className="text-base sm:text-lg text-gray-500 mb-1">{label}</div>
+      <div className="text-lg sm:text-xl">{value}</div>
     </div>
   );
 }
