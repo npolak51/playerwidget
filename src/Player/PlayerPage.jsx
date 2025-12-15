@@ -117,11 +117,11 @@ export default function PlayerPage() {
             <div className="flex items-start justify-between mb-6">
               <div className="-mt-[6px] sm:-mt-[10px]">
                 <div className="flex items-center gap-3 mb-2 flex-wrap">
-                  <span className="text-white font-bold text-4xl sm:text-5xl md:text-6xl leading-none">{number}</span>
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl text-white font-bold leading-tight">{name}</h1>
+                  <span className="text-gray-900 sm:text-white font-bold text-4xl sm:text-5xl md:text-6xl leading-none">{number}</span>
+                  <h1 className="text-gray-900 sm:text-white text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">{name}</h1>
                 </div>
-                <p className="text-xl sm:text-2xl text-white">{positions}</p>
-                {schoolName && <p className="text-base sm:text-lg text-white/80 mt-1">{schoolName}</p>}
+                <p className="text-gray-700 sm:text-white text-xl sm:text-2xl">{positions}</p>
+                {schoolName && <p className="text-gray-600 sm:text-white/80 text-base sm:text-lg mt-1">{schoolName}</p>}
               </div>
               
               {logoImg && (
