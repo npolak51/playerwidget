@@ -46,6 +46,11 @@ export default function PlayerPage() {
   // If embedded in an iframe (e.g. Squarespace), auto-resize the parent iframe
   // by posting our current document height to the parent page.
   useEffect(() => {
+    // When embedded, make the page background transparent (so the parent page shows through).
+    if (window.parent && window.parent !== window) {
+      document.documentElement.classList.add("embed");
+    }
+
     const postHeight = () => {
       // Prefer the largest of these to avoid edge cases with absolutely positioned content.
       const body = document.body;
@@ -91,7 +96,7 @@ export default function PlayerPage() {
   }, [playerId]);
 
   return (
-    <div className="bg-white rounded-xl shadow-sm overflow-hidden mb-8 w-full max-w-6xl mx-auto">
+    <div className="bg-white rounded-xl shadow-sm overflow-hidden mb-0 w-full max-w-6xl mx-auto">
       <div 
         className="relative h-72 sm:h-80 bg-gradient-to-r from-blue-900 to-blue-700"
         style={headerImg ? {

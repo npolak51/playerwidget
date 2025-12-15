@@ -230,3 +230,9 @@
 html {
   font-size: var(--font-size);
 }
+
+/* When embedded (e.g. in a Squarespace iframe), let the parent background show through */
+html.embed,
+html.embed body {
+  background: transparent !important;
+}
