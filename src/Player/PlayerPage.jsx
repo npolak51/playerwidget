@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Twitter, Instagram } from "lucide-react";
 import playersData from "../data/players.json";
 
@@ -41,6 +42,53 @@ export default function PlayerPage() {
     twitter,
     instagram,
   } = player;
+
+  // If embedded in an iframe (e.g. Squarespace), auto-resize the parent iframe
+  // by posting our current document height to the parent page.
+  useEffect(() => {
+    const postHeight = () => {
+      // Prefer the largest of these to avoid edge cases with absolutely positioned content.
+      const body = document.body;
+      const html = document.documentElement;
+      const height = Math.max(
+        body?.scrollHeight ?? 0,
+        body?.offsetHeight ?? 0,
+        html?.clientHeight ?? 0,
+        html?.scrollHeight ?? 0,
+        html?.offsetHeight ?? 0
+      );
+
+      // Post to any parent; the parent page should validate origin before trusting.
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({ type: "playerwidget:height", height }, "*");
+      }
+    };
+
+    // Run immediately and after layout settles.
+    postHeight();
+    const raf = window.requestAnimationFrame(postHeight);
+    const t = window.setTimeout(postHeight, 250);
+
+    // Update on resizes and when the DOM changes size (e.g., images load).
+    window.addEventListener("resize", postHeight);
+
+    let ro;
+    if ("ResizeObserver" in window) {
+      ro = new ResizeObserver(() => postHeight());
+      if (document.body) ro.observe(document.body);
+    }
+
+    // Fallback: image load events can change height without a resize.
+    window.addEventListener("load", postHeight);
+
+    return () => {
+      window.cancelAnimationFrame(raf);
+      window.clearTimeout(t);
+      window.removeEventListener("resize", postHeight);
+      window.removeEventListener("load", postHeight);
+      if (ro) ro.disconnect();
+    };
+  }, [playerId]);
 
   return (
     <div className="bg-white rounded-xl shadow-sm overflow-hidden mb-8 w-full max-w-6xl mx-auto">
