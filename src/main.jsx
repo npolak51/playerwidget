@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import PlayerPage from "./Player/PlayerPage";
 import RosterMenuWidget from "./Player/RosterMenuWidget";
+import StatWidget from "./Player/StatWidget";
 import "./index.css";
 
 function WidgetRoot() {
@@ -9,6 +10,7 @@ function WidgetRoot() {
   const widget = params.get("widget");
 
   if (widget === "menu") return <RosterMenuWidget />;
+  if (widget === "stats") return <StatWidget />;
   return <PlayerPage />;
 }
 
