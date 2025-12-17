@@ -18,6 +18,8 @@ function buildPlayerPageUrl(siteBase, playerId) {
 export default function RosterMenuWidget() {
   const params = new URLSearchParams(window.location.search);
   const siteBase = params.get("siteBase") || "www.tahomabearsbaseball.com";
+  const heightParam = params.get("height"); // e.g. "600"
+  const fixedHeight = heightParam && !Number.isNaN(Number(heightParam)) ? Number(heightParam) : 600;
 
   const [isOpen, setIsOpen] = useState(true);
 
@@ -40,45 +42,8 @@ export default function RosterMenuWidget() {
     }
   }, []);
 
-  // Auto-resize parent iframe height (same message contract as the player widget)
-  useEffect(() => {
-    const postHeight = () => {
-      const body = document.body;
-      const html = document.documentElement;
-      const height = Math.max(
-        body?.scrollHeight ?? 0,
-        body?.offsetHeight ?? 0,
-        html?.clientHeight ?? 0,
-        html?.scrollHeight ?? 0,
-        html?.offsetHeight ?? 0
-      );
-
-      if (window.parent && window.parent !== window) {
-        window.parent.postMessage({ type: "playerwidget:height", height }, "*");
-      }
-    };
-
-    postHeight();
-    const raf = window.requestAnimationFrame(postHeight);
-    const t = window.setTimeout(postHeight, 250);
-
-    window.addEventListener("resize", postHeight);
-    window.addEventListener("load", postHeight);
-
-    let ro;
-    if ("ResizeObserver" in window) {
-      ro = new ResizeObserver(() => postHeight());
-      if (document.body) ro.observe(document.body);
-    }
-
-    return () => {
-      window.cancelAnimationFrame(raf);
-      window.clearTimeout(t);
-      window.removeEventListener("resize", postHeight);
-      window.removeEventListener("load", postHeight);
-      if (ro) ro.disconnect();
-    };
-  }, [isOpen, roster.length]);
+  // Note: this widget is intended to be fixed-height + internally scrollable,
+  // so we do NOT auto-resize the parent iframe here.
 
   const goToPlayer = (playerId) => {
     const target = buildPlayerPageUrl(siteBase, playerId);
@@ -102,7 +67,10 @@ export default function RosterMenuWidget() {
   }
 
   return (
-    <div className="w-72 max-w-full bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden min-h-screen sticky top-0">
+    <div
+      className="w-72 max-w-full bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden flex flex-col"
+      style={{ height: `${fixedHeight}px` }}
+    >
       <div className="p-4 bg-yellow-400 border-b border-yellow-500">
         <div className="flex items-center justify-between mb-3">
           <h2 className="text-lg">Roster</h2>
@@ -139,7 +107,7 @@ export default function RosterMenuWidget() {
         </div>
       </div>
 
-      <div className="divide-y divide-gray-100 overflow-y-auto">
+      <div className="flex-1 overflow-y-auto divide-y divide-gray-100">
         {roster.map((p) => (
           <button
             key={p.id}
