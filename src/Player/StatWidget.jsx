@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useState } from "react";
-import { ChevronDown } from "lucide-react";
 import playersData from "../data/players.json";
 import statsData from "../data/stats.json";
 
@@ -208,47 +207,16 @@ function PitchingTable({ rows, totalsOnly = false }) {
 
 export default function StatWidget() {
   const params = new URLSearchParams(window.location.search);
-  const initialPlayerId = params.get("player");
-
-  const roster = useMemo(() => {
-    const entries = Object.entries(playersData.players || {});
-    return entries
-      .map(([id, p]) => ({ id, name: p?.name || id }))
-      .sort((a, b) => a.name.localeCompare(b.name));
-  }, []);
-
-  const [selectedPlayerId, setSelectedPlayerId] = useState(
-    initialPlayerId || (roster[0]?.id ?? "")
-  );
-
-  // Keep state in sync if the URL changes (e.g. back/forward navigation)
-  useEffect(() => {
-    const onPopState = () => {
-      const p = new URLSearchParams(window.location.search).get("player");
-      if (p) setSelectedPlayerId(p);
-    };
-    window.addEventListener("popstate", onPopState);
-    return () => window.removeEventListener("popstate", onPopState);
-  }, []);
-
-  const setPlayerInUrl = (nextId) => {
-    const url = new URL(window.location.href);
-    url.searchParams.set("player", nextId);
-    // Preserve widget param if present (and anything else)
-    window.history.replaceState({}, "", url.toString());
-  };
-
-  const playerId = selectedPlayerId || initialPlayerId;
+  const playerId = params.get("player");
   const playerName = playerId ? playersData.players?.[playerId]?.name : null;
   const playerStats = playerId ? statsData.players?.[playerId] : null;
 
   const seasonTabs = useMemo(() => {
     const years = (playerStats?.batting?.seasons || []).map((s) => s.year).filter(Boolean);
-    // Sort by descending "YY-YY" using first number
     const unique = Array.from(new Set(years));
     unique.sort((a, b) => {
-      const ay = parseInt(String(a).split("-")[0], 10);
-      const by = parseInt(String(b).split("-")[0], 10);
+      const ay = Number(a);
+      const by = Number(b);
       if (Number.isNaN(ay) || Number.isNaN(by)) return String(b).localeCompare(String(a));
       return by - ay;
     });
@@ -333,30 +301,6 @@ export default function StatWidget() {
               {playerName ? playerName : playerId ? playerId : "Select a player"}
             </div>
           </div>
-
-          <div className="min-w-[220px]">
-            <div className="relative">
-              <select
-                className="w-full p-2 pr-8 border border-yellow-500/30 rounded bg-white appearance-none cursor-pointer text-sm"
-                value={playerId || ""}
-                onChange={(e) => {
-                  const next = e.target.value;
-                  setSelectedPlayerId(next);
-                  setPlayerInUrl(next);
-                }}
-              >
-                {roster.map((p) => (
-                  <option key={p.id} value={p.id}>
-                    {p.name}
-                  </option>
-                ))}
-              </select>
-              <ChevronDown
-                className="absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none text-blue-900"
-                size={16}
-              />
-            </div>
-          </div>
         </div>
 
         <div className="mt-3 flex gap-2 overflow-x-auto pb-1">
@@ -372,7 +316,15 @@ export default function StatWidget() {
       </div>
 
       <div className="p-4 sm:p-6 space-y-8">
-        {!playerStats ? (
+        {!playerId ? (
+          <div className="border border-gray-200 rounded-xl p-6 bg-white">
+            <div className="text-xl font-bold text-gray-900 mb-2">Select a player</div>
+            <div className="text-gray-700">
+              Add a player id to the URL, e.g.{" "}
+              <code>?widget=stats&amp;player=adam-jay</code>
+            </div>
+          </div>
+        ) : !playerStats ? (
           <div className="border border-gray-200 rounded-xl p-6 bg-white">
             <div className="text-xl font-bold text-gray-900 mb-2">No stats yet</div>
             <div className="text-gray-700">
