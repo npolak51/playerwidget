@@ -112,6 +112,29 @@ function pickYearFromFilename(csvPath) {
   return m[0];
 }
 
+function inferTeamFromFilename(csvPath) {
+  const base = path.basename(csvPath).toLowerCase();
+  if (base.includes("junior varsity")) return "JV";
+  if (base.includes("varsity")) return "Var.";
+  return "";
+}
+
+function normalizeTeam(t) {
+  const v = String(t ?? "").trim().toLowerCase();
+  if (!v) return "";
+  if (v.includes("junior") || v === "jv") return "JV";
+  if (v.startsWith("var")) return "Var.";
+  return v.toUpperCase();
+}
+
+function pickCareerSeasons(seasons) {
+  const hasVarsity = seasons.some((s) => normalizeTeam(s.team) === "Var.");
+  if (hasVarsity) return seasons.filter((s) => normalizeTeam(s.team) === "Var.");
+  const hasJV = seasons.some((s) => normalizeTeam(s.team) === "JV");
+  if (hasJV) return seasons.filter((s) => normalizeTeam(s.team) === "JV");
+  return [];
+}
+
 function migrateYearToYYYY(y) {
   const v = String(y ?? "").trim();
   // If already a 4-digit year, keep it
@@ -134,7 +157,8 @@ function migrateExistingStats(existing) {
       if (!block || !Array.isArray(block.seasons)) continue;
       block.seasons = block.seasons.map((s) => ({
         ...s,
-        year: migrateYearToYYYY(s.year)
+        year: migrateYearToYYYY(s.year),
+        team: normalizeTeam(s.team)
       }));
       // Re-sort after migration
       block.seasons.sort((a, b) => (Number(b.year) || 0) - (Number(a.year) || 0));
@@ -250,6 +274,7 @@ function main() {
 
   const playersPath = "src/data/players.json";
   const statsPath = "src/data/stats.json";
+  const inferredTeam = inferTeamFromFilename(csvPath);
 
   const players = JSON.parse(readText(playersPath));
   const playerIds = new Set(Object.keys(players.players || {}));
@@ -338,7 +363,7 @@ function main() {
     const battingSeason = {
       year: String(year),
       class: "",
-      team: "Var.",
+      team: inferredTeam,
       number: num || "",
       PA: toInt(safeGet(row, iPA)),
       H: toInt(safeGet(row, iH)),
@@ -364,7 +389,7 @@ function main() {
     const pitchingSeason = {
       year: String(year),
       class: "",
-      team: "Var.",
+      team: inferredTeam,
       number: num || "",
       IP: ipVal,
       H: toInt(safeGet(row, iH_pitch)),
@@ -391,7 +416,13 @@ function main() {
     // Sort by year desc numeric
     bFiltered.sort((a, b) => (Number(b.year) || 0) - (Number(a.year) || 0));
     existingPlayer.batting.seasons = bFiltered;
-    existingPlayer.batting.careerTotals = computeBattingTotals(bFiltered);
+    {
+      const careerSeasons = pickCareerSeasons(bFiltered);
+      existingPlayer.batting.careerTotals = careerSeasons.length ? computeBattingTotals(careerSeasons) : null;
+      if (existingPlayer.batting.careerTotals) {
+        existingPlayer.batting.careerTotals.team = normalizeTeam(careerSeasons[0]?.team) || "";
+      }
+    }
 
     // Pitching
     existingPlayer.pitching = existingPlayer.pitching || { seasons: [], careerTotals: null };
@@ -403,9 +434,39 @@ function main() {
     }
     pFiltered.sort((a, b) => (Number(b.year) || 0) - (Number(a.year) || 0));
     existingPlayer.pitching.seasons = pFiltered;
-    existingPlayer.pitching.careerTotals = pFiltered.length ? computePitchingTotals(pFiltered) : null;
+    {
+      const careerSeasons = pickCareerSeasons(pFiltered);
+      existingPlayer.pitching.careerTotals = careerSeasons.length ? computePitchingTotals(careerSeasons) : null;
+      if (existingPlayer.pitching.careerTotals) {
+        existingPlayer.pitching.careerTotals.team = normalizeTeam(careerSeasons[0]?.team) || "";
+      }
+    }
 
     updatedPlayers++;
+  }
+
+  // Recompute career totals for all players using the Varsity-first rule, in case this run
+  // didn't touch a given player but the year/team conventions changed.
+  for (const pid of Object.keys(existing.players)) {
+    const p = existing.players[pid];
+
+    if (p?.batting?.seasons) {
+      const b = p.batting.seasons.map((s) => ({ ...s, team: normalizeTeam(s.team), year: migrateYearToYYYY(s.year) }));
+      b.sort((a, b2) => (Number(b2.year) || 0) - (Number(a.year) || 0));
+      p.batting.seasons = b;
+      const careerSeasons = pickCareerSeasons(b);
+      p.batting.careerTotals = careerSeasons.length ? computeBattingTotals(careerSeasons) : null;
+      if (p.batting.careerTotals) p.batting.careerTotals.team = normalizeTeam(careerSeasons[0]?.team) || "";
+    }
+
+    if (p?.pitching?.seasons) {
+      const ps = p.pitching.seasons.map((s) => ({ ...s, team: normalizeTeam(s.team), year: migrateYearToYYYY(s.year) }));
+      ps.sort((a, b2) => (Number(b2.year) || 0) - (Number(a.year) || 0));
+      p.pitching.seasons = ps;
+      const careerSeasons = pickCareerSeasons(ps);
+      p.pitching.careerTotals = careerSeasons.length ? computePitchingTotals(careerSeasons) : null;
+      if (p.pitching.careerTotals) p.pitching.careerTotals.team = normalizeTeam(careerSeasons[0]?.team) || "";
+    }
   }
 
   const outJson = JSON.stringify(existing, null, 2) + "\n";
