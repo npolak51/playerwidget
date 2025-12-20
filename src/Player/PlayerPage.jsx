@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Twitter, Instagram } from "lucide-react";
+import TikTokIcon from "../assets/Icons/TikTok.svg";
 import playersData from "../data/players.json";
 
 export default function PlayerPage() {
@@ -24,6 +25,7 @@ export default function PlayerPage() {
         postGameMeal: "",
         twitter: "",
         instagram: "",
+        tiktok: "",
       };
 
   const {
@@ -41,7 +43,15 @@ export default function PlayerPage() {
     postGameMeal,
     twitter,
     instagram,
+    tiktok,
   } = player;
+
+  const tiktokUrl =
+    tiktok && tiktok.startsWith("http")
+      ? tiktok
+      : tiktok
+        ? `https://www.tiktok.com/@${String(tiktok).replace(/^@/, "").replace(/\/$/, "")}`
+        : "";
 
   // If embedded in an iframe (e.g. Squarespace), auto-resize the parent iframe
   // by posting our current document height to the parent page.
@@ -166,6 +176,17 @@ export default function PlayerPage() {
                       className="p-2 bg-pink-50 rounded-lg hover:bg-pink-100 transition-colors"
                     >
                       <Instagram size={20} className="text-pink-600" />
+                    </a>
+                  ) : null}
+                  {tiktokUrl ? (
+                    <a
+                      href={tiktokUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="TikTok"
+                      className="p-2 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+                    >
+                      <img src={TikTokIcon} alt="TikTok" className="w-5 h-5" />
                     </a>
                   ) : null}
                 </div>
