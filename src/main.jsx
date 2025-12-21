@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import PlayerPage from "./Player/PlayerPage";
 import RosterMenuWidget from "./Player/RosterMenuWidget";
 import StatWidget from "./Player/StatWidget";
+import ScoutPages from "./Player/ScoutPages";
 import "./index.css";
 
 function WidgetRoot() {
@@ -11,6 +12,7 @@ function WidgetRoot() {
 
   if (widget === "menu") return <RosterMenuWidget />;
   if (widget === "stats") return <StatWidget />;
+  if (widget === "scoutpages") return <ScoutPages />;
   return <PlayerPage />;
 }
 

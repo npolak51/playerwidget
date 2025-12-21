@@ -31,7 +31,12 @@
       "postGameMeal": "Chipotle Bowl",
       "twitter": "AdamJay1214",
       "instagram": "iamadamjay",
-      "tiktok": "adamjay1214"
+      "tiktok": "adamjay1214",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/players/playerprofile.aspx?ID=818378",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/Adam-Jay-0637418952-2017853694",
+        "baseballNorthwest": "https://baseballnorthwest.com/profiles/ajay"
+      }
     },
     "andrew-dyk": {
       "name": "Andrew Dyk",
