@@ -66,11 +66,7 @@ function TabButton({ active, onClick, children }) {
 }
 
 function SectionTitle({ children }) {
-  return (
-    <div className="flex items-center justify-between">
-      <h3 className="text-xl font-bold text-gray-900">{children}</h3>
-    </div>
-  );
+  return <h3 className="text-xl font-bold text-gray-900">{children}</h3>;
 }
 
 function StatCard({ title, items, accent = "blue" }) {
@@ -214,18 +210,12 @@ export default function StatWidget() {
   const seasonTabs = useMemo(() => {
     const years = (playerStats?.batting?.seasons || []).map((s) => s.year).filter(Boolean);
     const unique = Array.from(new Set(years));
-    unique.sort((a, b) => {
-      const ay = Number(a);
-      const by = Number(b);
-      if (Number.isNaN(ay) || Number.isNaN(by)) return String(b).localeCompare(String(a));
-      return by - ay;
-    });
+    unique.sort((a, b) => (Number(b) || 0) - (Number(a) || 0));
     return unique;
   }, [playerStats]);
 
   const [activeTab, setActiveTab] = useState(seasonTabs[0] || "Career");
   useEffect(() => {
-    // Keep active tab valid when player changes
     if (seasonTabs.length > 0) setActiveTab(seasonTabs[0]);
     else setActiveTab("Career");
   }, [playerId, seasonTabs]);
@@ -264,6 +254,7 @@ export default function StatWidget() {
 
   const battingMobileItems = (row) => [
     { label: "Year", value: row?.year || (activeTab === "Career" ? "Career" : "") },
+    { label: "Team", value: row?.team ?? "" },
     { label: "PA", value: row?.PA ?? "" },
     { label: "H", value: row?.H ?? "" },
     { label: "RBI", value: row?.RBI ?? "" },
@@ -277,6 +268,7 @@ export default function StatWidget() {
 
   const pitchingMobileItems = (row) => [
     { label: "Year", value: row?.year || (activeTab === "Career" ? "Career" : "") },
+    { label: "Team", value: row?.team ?? "" },
     { label: "IP", value: row?.IP ?? "" },
     { label: "H", value: row?.H ?? "" },
     { label: "R", value: row?.R ?? "" },
@@ -320,8 +312,7 @@ export default function StatWidget() {
           <div className="border border-gray-200 rounded-xl p-6 bg-white">
             <div className="text-xl font-bold text-gray-900 mb-2">Select a player</div>
             <div className="text-gray-700">
-              Add a player id to the URL, e.g.{" "}
-              <code>?widget=stats&amp;player=adam-jay</code>
+              Add a player id to the URL, e.g. <code>?widget=stats&amp;player=adam-jay</code>
             </div>
           </div>
         ) : !playerStats ? (
@@ -336,7 +327,6 @@ export default function StatWidget() {
             <div className="space-y-3">
               <SectionTitle>Batting</SectionTitle>
 
-              {/* Mobile: stacked cards */}
               <div className="md:hidden">
                 {mobileBattingRow ? (
                   <StatCard
@@ -349,7 +339,6 @@ export default function StatWidget() {
                 )}
               </div>
 
-              {/* Desktop: table */}
               <div className="hidden md:block">
                 <BattingTable rows={battingDesktopRows} totalsOnly={activeTab === "Career"} />
               </div>
@@ -358,7 +347,6 @@ export default function StatWidget() {
             <div className="space-y-3">
               <SectionTitle>Pitching</SectionTitle>
 
-              {/* Mobile: stacked cards */}
               <div className="md:hidden">
                 {mobilePitchingRow ? (
                   <StatCard
@@ -371,7 +359,6 @@ export default function StatWidget() {
                 )}
               </div>
 
-              {/* Desktop: table */}
               <div className="hidden md:block">
                 <PitchingTable rows={pitchingDesktopRows} totalsOnly={activeTab === "Career"} />
               </div>
