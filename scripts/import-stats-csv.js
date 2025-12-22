@@ -113,6 +113,29 @@ function normalizeTeam(t) {
   return v.toUpperCase();
 }
 
+function toGradYear(v) {
+  const n = Number(String(v ?? "").trim());
+  if (!Number.isFinite(n)) return null;
+  // Expect 4-digit year like 2025
+  if (n >= 1900 && n <= 2100) return n;
+  return null;
+}
+
+function deriveClassLabel({ gradYear, seasonYear }) {
+  const g = toGradYear(gradYear);
+  const s = Number(String(seasonYear ?? "").trim());
+  if (!g || !Number.isFinite(s)) return "";
+
+  // If gradYear is 2025:
+  // 2025 => Sr., 2024 => Jr., 2023 => So., 2022 => Fr.
+  const delta = g - s;
+  if (delta === 0) return "Sr.";
+  if (delta === 1) return "Jr.";
+  if (delta === 2) return "So.";
+  if (delta === 3) return "Fr.";
+  return "";
+}
+
 function migrateYearToYYYY(y) {
   const v = String(y ?? "").trim();
   if (/^(19|20)\d{2}$/.test(v)) return v;
@@ -294,6 +317,8 @@ function main() {
     if (!playerIds.has(playerId)) continue;
 
     const num = safeGet(row, iNum).trim();
+    const gradYear = players.players?.[playerId]?.class ?? "";
+    const classLabel = deriveClassLabel({ gradYear, seasonYear: year });
 
     const BB = toInt(safeGet(row, iBB_bat));
     const SO = toInt(safeGet(row, iSO_bat));
@@ -301,7 +326,7 @@ function main() {
 
     const battingSeason = {
       year: String(year),
-      class: "",
+      class: classLabel,
       team: normalizeTeam(teamFromFile),
       number: num || "",
       PA: toInt(safeGet(row, iPA)),
@@ -324,7 +349,7 @@ function main() {
 
     const pitchingSeason = {
       year: String(year),
-      class: "",
+      class: classLabel,
       team: normalizeTeam(teamFromFile),
       number: num || "",
       IP: String(safeGet(row, iIP)).trim(),
@@ -397,20 +422,38 @@ function main() {
   // Recompute careerTotals using Varsity-first rule
   for (const pid of Object.keys(existing.players)) {
     const p = existing.players[pid];
+    const gradYear = players.players?.[pid]?.class ?? "";
 
     if (p?.batting?.seasons) {
-      const seasons = p.batting.seasons.map((s) => ({ ...s, team: normalizeTeam(s.team) }));
+      const seasons = p.batting.seasons.map((s) => ({
+        ...s,
+        team: normalizeTeam(s.team),
+        year: migrateYearToYYYY(s.year),
+        class:
+          String(s.class ?? "").trim() ||
+          deriveClassLabel({ gradYear, seasonYear: migrateYearToYYYY(s.year) })
+      }));
       const varSeasons = seasons.filter((s) => s.team === "Var.");
       const jvSeasons = seasons.filter((s) => s.team === "JV");
       const careerSeasons = varSeasons.length ? varSeasons : jvSeasons;
+      // Persist backfilled class labels
+      p.batting.seasons = seasons.sort((a, b) => (Number(b.year) || 0) - (Number(a.year) || 0));
       p.batting.careerTotals = careerSeasons.length ? computeBattingTotals(careerSeasons, careerSeasons[0].team) : null;
     }
 
     if (p?.pitching?.seasons) {
-      const seasons = p.pitching.seasons.map((s) => ({ ...s, team: normalizeTeam(s.team) }));
+      const seasons = p.pitching.seasons.map((s) => ({
+        ...s,
+        team: normalizeTeam(s.team),
+        year: migrateYearToYYYY(s.year),
+        class:
+          String(s.class ?? "").trim() ||
+          deriveClassLabel({ gradYear, seasonYear: migrateYearToYYYY(s.year) })
+      }));
       const varSeasons = seasons.filter((s) => s.team === "Var.");
       const jvSeasons = seasons.filter((s) => s.team === "JV");
       const careerSeasons = varSeasons.length ? varSeasons : jvSeasons;
+      p.pitching.seasons = seasons.sort((a, b) => (Number(b.year) || 0) - (Number(a.year) || 0));
       p.pitching.careerTotals = careerSeasons.length ? computePitchingTotals(careerSeasons, careerSeasons[0].team) : null;
     }
   }
