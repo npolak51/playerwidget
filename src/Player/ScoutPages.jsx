@@ -84,7 +84,7 @@ export default function ScoutPages() {
   return (
     <div className="bg-white rounded-xl shadow-sm overflow-hidden mb-0 w-full max-w-6xl mx-auto border border-gray-200">
       <div className="bg-gradient-to-r from-[#1d4281] to-[#2554a8] px-4 py-3">
-        <h4 className="text-white text-center text-lg">Player Profiles</h4>
+        <h4 className="text-white text-center text-lg">Scouting Profiles</h4>
       </div>
 
       <div className="p-4">
