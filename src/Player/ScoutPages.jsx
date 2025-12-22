@@ -1,5 +1,4 @@
 import { useEffect, useMemo } from "react";
-import { ExternalLink } from "lucide-react";
 import playersData from "../data/players.json";
 
 import PGLogo from "../assets/Icons/PG_Logo.svg";
@@ -103,7 +102,7 @@ export default function ScoutPages() {
             <div className="text-gray-700">Check back soon for external scouting links.</div>
           </div>
         ) : (
-          <div className="flex flex-wrap gap-3 justify-center">
+          <div className="flex flex-wrap gap-5 justify-center">
             {links.map((link) => (
               <a
                 key={link.key}
@@ -112,13 +111,12 @@ export default function ScoutPages() {
                 rel="noopener noreferrer"
                 className="group flex-1 min-w-[170px] max-w-[260px] flex flex-col items-center gap-2 px-4 py-4 rounded-lg border-2 border-gray-200 hover:border-[#ffc525] hover:bg-[#ffc525]/5 transition-all duration-200"
               >
-                <div className="w-14 h-14 bg-gradient-to-br from-[#1d4281] to-[#2554a8] rounded-xl flex items-center justify-center shadow-sm group-hover:shadow-md group-hover:scale-105 transition-all">
-                  <img src={link.icon} alt={`${link.name} logo`} className="w-9 h-9 object-contain" />
+                <div className="w-16 h-16 bg-gradient-to-br from-[#1d4281] to-[#2554a8] rounded-xl flex items-center justify-center shadow-sm group-hover:shadow-md group-hover:scale-105 transition-all">
+                  <img src={link.icon} alt={`${link.name} logo`} className="w-11 h-11 object-contain" />
                 </div>
                 <span className="text-[#1d4281] text-center text-sm group-hover:text-[#2554a8] transition-colors">
                   {link.name}
                 </span>
-                <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-[#ffc525] transition-colors" />
               </a>
             ))}
           </div>
