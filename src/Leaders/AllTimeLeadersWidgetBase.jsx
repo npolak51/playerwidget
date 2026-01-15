@@ -197,7 +197,7 @@ export default function AllTimeLeadersWidgetBase({ title, categories }) {
 
       {/* Footer note */}
       <div className="px-4 sm:px-6 py-4 bg-white">
-        <div className="text-center text-gray-500 text-sm">* Denotes players who were pre-BBCOR bats</div>
+        <div className="text-center text-gray-500 text-sm">* Denotes pre-BBCOR bat era</div>
       </div>
     </div>
   );
