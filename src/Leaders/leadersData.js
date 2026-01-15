@@ -1201,69 +1201,76 @@ export const pitchingStatCategories = [
       },
       {
         "rank": 9,
+        "name": "Adam Jay",
+        "year": 2025,
+        "value": "56",
+        "games": "(38.1 IP)"
+      },
+      {
+        "rank": 10,
         "name": "Logan Pierce",
         "year": 2023,
         "value": "55",
         "games": "(56 IP)"
       },
       {
-        "rank": 10,
+        "rank": 11,
         "name": "Chris Marangon",
         "year": 2008,
         "value": "53",
         "games": "(53.1 IP)"
       },
       {
-        "rank": 11,
+        "rank": 12,
         "name": "Neal Burtis",
         "year": 2024,
         "value": "51",
         "games": "(32.2 IP)"
       },
       {
-        "rank": 12,
+        "rank": 13,
         "name": "Tait McCutchan",
         "year": 1997,
         "value": "50",
         "games": "(42 IP)"
       },
       {
-        "rank": 13,
+        "rank": 14,
         "name": "Tait McCutchan",
         "year": 1996,
         "value": "49",
         "games": "(42.2 IP)"
       },
       {
-        "rank": 14,
+        "rank": 15,
         "name": "Adam Jay",
         "year": 2023,
         "value": "48",
         "games": "(33 IP)"
       },
       {
-        "rank": 15,
+        "rank": 16,
         "name": "Jon Cutlip",
         "year": 1999,
         "value": "47",
         "games": "(65 IP)"
       },
       {
-        "rank": 15,
+        "rank": 16,
         "name": "Adam Jay",
         "year": 2022,
         "value": "47",
         "games": "(37 IP)"
       },
       {
-        "rank": 17,
+        "rank": 18,
         "name": "Chris Marangon",
         "year": 2009,
         "value": "46",
         "games": "(38.2 IP)"
       },
       {
-        "rank": 18,
+        "rank": 19,
         "name": "Kirk Wetmore",
         "year": 2006,
         "value": "42",
@@ -1301,14 +1308,14 @@ export const pitchingStatCategories = [
         "rank": 4,
         "name": "Kaelan Nesel",
         "year": 2022,
-        "value": "0.853",
+        "value": "0.85",
         "games": "(34 IP)"
       },
       {
         "rank": 5,
         "name": "James Joss",
         "year": 2019,
-        "value": "0.919",
+        "value": "0.92",
         "games": "(20.2 IP)"
       },
       {
@@ -1320,6 +1327,13 @@ export const pitchingStatCategories = [
       },
       {
         "rank": 7,
+        "name": "Adam Jay",
+        "year": 2025,
+        "value": "1.04",
+        "games": "(38.1 IP)"
+      },
+      {
+        "rank": 8,
         "name": "Scott Kelly",
         "year": 1995,
         "value": "1.09",
@@ -1329,74 +1343,81 @@ export const pitchingStatCategories = [
         "rank": 8,
         "name": "Jacob Bacon",
         "year": 2018,
-        "value": "1.091",
+        "value": "1.09",
         "games": "(44 IP)"
       },
       {
-        "rank": 9,
+        "rank": 10,
         "name": "Logan Pierce",
         "year": 2022,
-        "value": "1.1",
+        "value": "1.10",
         "games": "(36 IP)"
       },
       {
-        "rank": 10,
+        "rank": 11,
         "name": "Bret Ferguson",
         "year": 2007,
         "value": "1.11",
         "games": "(41.1 IP)"
       },
       {
-        "rank": 11,
+        "rank": 12,
         "name": "Christian Saez",
         "year": 2012,
         "value": "1.13",
         "games": "(27.1 IP)"
       },
       {
-        "rank": 12,
+        "rank": 13,
+        "name": "Neal Burtis",
+        "year": 2025,
+        "value": "1.17",
+        "games": "(29 IP)"
+      },
+      {
+        "rank": 14,
         "name": "Adam Jay",
         "year": 2024,
         "value": "1.19",
         "games": "(46.1 IP)"
       },
       {
-        "rank": 13,
+        "rank": 15,
         "name": "Andrew Osterman",
         "year": 2016,
-        "value": "1.2",
+        "value": "1.20",
         "games": "(51 IP)"
       },
       {
-        "rank": 14,
+        "rank": 16,
         "name": "Sean Evans",
         "year": 2023,
         "value": "1.21",
         "games": "(19 IP)"
       },
       {
-        "rank": 15,
+        "rank": 17,
         "name": "Matthew Lewis",
         "year": 2021,
         "value": "1.22",
         "games": "(24.2 IP)"
       },
       {
-        "rank": 15,
+        "rank": 17,
         "name": "Bryson Leach",
         "year": 2024,
         "value": "1.22",
         "games": "(23 IP)"
       },
       {
-        "rank": 17,
+        "rank": 19,
         "name": "Adam Jay",
         "year": 2023,
         "value": "1.23",
         "games": "(33 IP)"
       },
       {
-        "rank": 18,
+        "rank": 20,
         "name": "Jacob Bacon",
         "year": 2017,
         "value": "1.25",
@@ -1434,14 +1455,14 @@ export const pitchingStatCategories = [
         "rank": 4,
         "name": "Andrew Osterman",
         "year": 2017,
-        "value": "1.2",
+        "value": "1.20",
         "games": "(60 IP)"
       },
       {
         "rank": 5,
         "name": "Andrew Osterman",
         "year": 2016,
-        "value": "1.4",
+        "value": "1.40",
         "games": "(51 IP)"
       },
       {
@@ -1467,16 +1488,23 @@ export const pitchingStatCategories = [
       },
       {
         "rank": 9,
+        "name": "Adam Jay",
+        "year": 2025,
+        "value": "1.64",
+        "games": "(38.1 IP)"
+      },
+      {
+        "rank": 9,
         "name": "Matthew Lewis",
         "year": 2021,
-        "value": "1.7",
+        "value": "1.70",
         "games": "(24.2 IP)"
       },
       {
         "rank": 10,
         "name": "Jacob Bacon",
         "year": 2017,
-        "value": "1.8",
+        "value": "1.80",
         "games": "(38 IP)"
       },
       {
@@ -1495,41 +1523,48 @@ export const pitchingStatCategories = [
       },
       {
         "rank": 13,
+        "name": "Bryson Leach",
+        "year": 2025,
+        "value": "2.04",
+        "games": "(24 IP)"
+      },
+      {
+        "rank": 14,
         "name": "Adam Jay",
         "year": 2023,
-        "value": "2.1",
+        "value": "2.10",
         "games": "(33 IP)"
       },
       {
-        "rank": 13,
+        "rank": 14,
         "name": "Logan Pierce",
         "year": 2023,
-        "value": "2.1",
+        "value": "2.10",
         "games": "(55 IP)"
       },
       {
-        "rank": 15,
+        "rank": 16,
         "name": "Christian Saez",
         "year": 2012,
         "value": "2.11",
         "games": "(27.1 IP)"
       },
       {
-        "rank": 16,
+        "rank": 17,
         "name": "Logan Pierce",
         "year": 2022,
         "value": "2.12",
         "games": "(36 IP)"
       },
       {
-        "rank": 17,
+        "rank": 18,
         "name": "Jon Cutlip",
         "year": 1999,
         "value": "2.15",
         "games": "(65 IP)"
       },
       {
-        "rank": 18,
+        "rank": 19,
         "name": "Chris Marangon",
         "year": 2009,
         "value": "2.17",
