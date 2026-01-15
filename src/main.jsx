@@ -4,6 +4,9 @@ import PlayerPage from "./Player/PlayerPage";
 import RosterMenuWidget from "./Player/RosterMenuWidget";
 import StatWidget from "./Player/StatWidget";
 import ScoutPages from "./Player/ScoutPages";
+import AllTimeLeadersWidget from "./Leaders/AllTimeLeadersWidget";
+import AllTimeOffensiveLeadersWidget from "./Leaders/AllTimeOffensiveLeadersWidget";
+import AllTimePitchingLeadersWidget from "./Leaders/AllTimePitchingLeadersWidget";
 import "./index.css";
 
 function WidgetRoot() {
@@ -13,6 +16,9 @@ function WidgetRoot() {
   if (widget === "menu") return <RosterMenuWidget />;
   if (widget === "stats") return <StatWidget />;
   if (widget === "scoutpages") return <ScoutPages />;
+  if (widget === "leaders") return <AllTimeLeadersWidget />; // alias → offense
+  if (widget === "leaders-offense") return <AllTimeOffensiveLeadersWidget />;
+  if (widget === "leaders-pitching") return <AllTimePitchingLeadersWidget />;
   return <PlayerPage />;
 }
 
