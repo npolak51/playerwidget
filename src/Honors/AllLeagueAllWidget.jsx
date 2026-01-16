@@ -3,6 +3,27 @@ import { ChevronDown, Search } from "lucide-react";
 import { HonorsShell, useEmbedAutoHeight } from "./HonorsWidgetBase";
 import { allLeagueSelections } from "./honorsData";
 
+function TeamBadge({ team }) {
+  const t = String(team ?? "").trim();
+  if (!t) return <span className="text-gray-500">—</span>;
+
+  const norm = t.toLowerCase();
+  const cls =
+    norm === "1st team"
+      ? "bg-yellow-400 text-blue-900"
+      : norm === "2nd team"
+        ? "bg-gray-300 text-gray-700"
+        : norm === "honorable mention"
+          ? "bg-gray-100 text-gray-700"
+          : "bg-gray-200 text-gray-800";
+
+  return (
+    <span className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold ${cls}`}>
+      {t}
+    </span>
+  );
+}
+
 function splitPositions(position) {
   const raw = String(position ?? "").trim();
   if (!raw) return [];
@@ -162,8 +183,8 @@ export default function AllLeagueAllWidget() {
       {/* Table header (desktop) */}
       <div className="hidden md:grid md:grid-cols-12 gap-4 px-4 sm:px-6 py-3 bg-white border-b border-gray-200 text-sm">
         <div className="col-span-2 text-gray-600 font-semibold">Year</div>
-        <div className="col-span-3 text-gray-600 font-semibold">Team</div>
         <div className="col-span-4 text-gray-600 font-semibold">Player</div>
+        <div className="col-span-3 text-gray-600 font-semibold">Team</div>
         <div className="col-span-2 text-gray-600 font-semibold">Position</div>
         <div className="col-span-1 text-gray-600 font-semibold">Class</div>
       </div>
@@ -183,8 +204,10 @@ export default function AllLeagueAllWidget() {
                     {r.year}
                   </span>
                 </div>
-                <div className="col-span-3 text-gray-800">{r.team || "—"}</div>
                 <div className="col-span-4 text-blue-900 font-semibold">{r.name}</div>
+                <div className="col-span-3">
+                  <TeamBadge team={r.team} />
+                </div>
                 <div className="col-span-2 text-gray-800">{r.position || "—"}</div>
                 <div className="col-span-1 text-gray-600">{r.class || "—"}</div>
               </div>
@@ -198,11 +221,7 @@ export default function AllLeagueAllWidget() {
                   </span>
                 </div>
                 <div className="mt-2 flex flex-wrap gap-2 items-center text-sm">
-                  {r.team ? (
-                    <span className="inline-block px-2.5 py-0.5 bg-yellow-400/20 text-blue-900 rounded-full border border-yellow-400/40">
-                      {r.team}
-                    </span>
-                  ) : null}
+                  <TeamBadge team={r.team} />
                   {r.position ? (
                     <span className="inline-block px-2.5 py-0.5 bg-blue-900/10 text-blue-900 rounded-full">
                       {r.position}
