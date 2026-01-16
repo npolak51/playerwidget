@@ -10,9 +10,9 @@ function TeamBadge({ team }) {
   const norm = t.toLowerCase();
   const cls =
     norm === "1st team"
-      ? "bg-yellow-400 text-blue-900"
+      ? "bg-gradient-to-r from-yellow-300 to-yellow-500 text-blue-900"
       : norm === "2nd team"
-        ? "bg-gray-300 text-gray-700"
+        ? "bg-gradient-to-r from-gray-200 to-gray-400 text-gray-700"
         : norm === "honorable mention"
           ? "bg-gray-100 text-gray-700"
           : "bg-gray-200 text-gray-800";
