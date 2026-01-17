@@ -51,16 +51,29 @@ export default function AllLeagueMultiWidget() {
     const out = [];
     for (const v of counts.values()) {
       if (v.count >= 3) {
+        const yearsDesc = Array.from(v.years).sort((a, b) => b - a);
         out.push({
           name: v.name,
           count: v.count,
-          years: Array.from(v.years).sort((a, b) => b - a),
+          years: yearsDesc,
+          mostRecentYear: yearsDesc[0] ?? 0,
           teams: Array.from(v.teams),
         });
       }
     }
 
-    out.sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
+    // Order:
+    // - 4x+ selections first
+    // - then 3x selections
+    // - within each group: most recent year first, then count desc, then name
+    out.sort((a, b) => {
+      const aGroup = a.count >= 4 ? 0 : 1;
+      const bGroup = b.count >= 4 ? 0 : 1;
+      if (aGroup !== bGroup) return aGroup - bGroup;
+      if (b.mostRecentYear !== a.mostRecentYear) return b.mostRecentYear - a.mostRecentYear;
+      if (b.count !== a.count) return b.count - a.count;
+      return a.name.localeCompare(b.name);
+    });
     return out;
   }, []);
 
