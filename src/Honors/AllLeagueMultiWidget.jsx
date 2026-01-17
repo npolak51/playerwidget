@@ -84,7 +84,13 @@ export default function AllLeagueMultiWidget() {
             >
               <div className="p-4 flex items-center gap-4">
                 {/* 3x / 4x badge */}
-                <div className="w-12 h-12 rounded-xl bg-blue-900 text-white flex items-center justify-center flex-shrink-0">
+                <div
+                  className={`w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 ${
+                    p.count >= 4
+                      ? "bg-gradient-to-r from-yellow-300 to-yellow-500 text-blue-900"
+                      : "bg-gradient-to-r from-blue-700 to-blue-900 text-white"
+                  }`}
+                >
                   <span className="font-semibold">{p.count}×</span>
                 </div>
 
