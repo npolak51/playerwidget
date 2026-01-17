@@ -1,7 +1,15 @@
 import { useMemo } from "react";
-import { Trophy } from "lucide-react";
+import { Award } from "lucide-react";
 import { HonorsShell, useEmbedAutoHeight } from "./HonorsWidgetBase";
 import { mvps } from "./honorsData";
+
+function MvpIconTile() {
+  return (
+    <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-yellow-300 to-yellow-500 shadow-sm flex items-center justify-center flex-shrink-0">
+      <Award className="w-7 h-7 text-white" />
+    </div>
+  );
+}
 
 export default function LeagueMvpsWidget() {
   const rows = useMemo(() => mvps || [], []);
@@ -10,37 +18,43 @@ export default function LeagueMvpsWidget() {
 
   return (
     <HonorsShell title="League MVPs" subtitle="Tahoma Bears Baseball">
-      <div className="px-4 sm:px-6 py-3 bg-gradient-to-r from-blue-900 to-blue-700">
-        <div className="flex items-center gap-2">
-          <Trophy className="w-5 h-5 text-yellow-400" />
-          <div className="text-white font-semibold">Most Valuable Player</div>
-        </div>
-      </div>
-
-      <div className="divide-y divide-gray-200">
-        {rows.map((mvp) => {
-          const content = (
-            <div className="flex items-center justify-between gap-4">
-              <div className="text-blue-900 font-semibold">{mvp.name}</div>
-              <div className="inline-block px-3 py-1 bg-blue-900/10 text-blue-900 rounded-full text-sm">
-                {mvp.year}
+      <div className="p-4 sm:p-6 bg-white">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+          {rows.map((mvp) => {
+            const inner = (
+              <div className="p-4 flex items-center gap-4">
+                <MvpIconTile />
+                <div className="min-w-0">
+                  <div className="text-blue-900 font-semibold truncate">{mvp.name}</div>
+                  <div className="text-gray-600 text-sm mt-1">{mvp.year}</div>
+                </div>
               </div>
-            </div>
-          );
+            );
 
-          const cls =
-            "px-4 sm:px-6 py-4 hover:bg-gradient-to-r hover:from-yellow-400/10 hover:to-transparent transition-all duration-200";
+            const cardClass =
+              "bg-yellow-50/40 border border-yellow-300/70 rounded-xl shadow-sm hover:shadow-md transition-shadow";
 
-          return mvp.url ? (
-            <a key={`${mvp.year}-${mvp.name}`} href={mvp.url} className={cls} target="_top" rel="noreferrer">
-              {content}
-            </a>
-          ) : (
-            <div key={`${mvp.year}-${mvp.name}`} className={cls}>
-              {content}
-            </div>
-          );
-        })}
+            return mvp.url ? (
+              <a
+                key={`${mvp.year}-${mvp.name}`}
+                href={mvp.url}
+                target="_top"
+                rel="noreferrer"
+                className={cardClass}
+              >
+                {inner}
+              </a>
+            ) : (
+              <div key={`${mvp.year}-${mvp.name}`} className={cardClass}>
+                {inner}
+              </div>
+            );
+          })}
+        </div>
+
+        {rows.length === 0 ? (
+          <div className="py-10 text-center text-gray-500">No MVPs recorded yet.</div>
+        ) : null}
       </div>
     </HonorsShell>
   );
