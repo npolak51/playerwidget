@@ -73,7 +73,7 @@ export const allLeagueSelections = [
     "year": 2024,
     "name": "Beckett Turnbow",
     "team": "1st Team",
-    "position": "INF",
+    "position": "SS",
     "class": "So.",
     "url": ""
   },
@@ -81,7 +81,7 @@ export const allLeagueSelections = [
     "year": 2024,
     "name": "Jackson Walker",
     "team": "2nd Team",
-    "position": "INF",
+    "position": "1B",
     "class": "Sr.",
     "url": ""
   },
