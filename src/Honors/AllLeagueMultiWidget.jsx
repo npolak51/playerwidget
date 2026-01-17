@@ -80,11 +80,17 @@ export default function AllLeagueMultiWidget() {
   useEmbedAutoHeight([multi.length]);
 
   return (
-    <HonorsShell title="3× / 4× All‑League" subtitle="Players selected to 3+ All‑League teams">
-      <div className="px-4 sm:px-6 py-3 bg-gradient-to-r from-blue-900 to-blue-700">
+    <HonorsShell
+      title="3× / 4× All‑League"
+      subtitle="Players selected to 3+ All‑League teams"
+      headerClassName="bg-gradient-to-r from-blue-900 to-blue-700 px-4 sm:px-6 py-4 border-b border-blue-950/40"
+      titleClassName="text-white text-center text-xl sm:text-2xl font-bold"
+      subtitleClassName="mt-1 text-center text-white/80 text-sm"
+    >
+      <div className="px-4 sm:px-6 py-3 bg-gradient-to-r from-yellow-300 to-yellow-500 border-b border-yellow-500/60">
         <div className="flex items-center gap-2">
-          <Users className="w-5 h-5 text-yellow-400" />
-          <div className="text-white font-semibold">Multi‑time Honorees</div>
+          <Users className="w-5 h-5 text-blue-900" />
+          <div className="text-blue-900 font-semibold">Multi‑time Honorees</div>
         </div>
       </div>
 

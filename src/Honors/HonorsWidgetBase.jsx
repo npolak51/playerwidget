@@ -47,13 +47,26 @@ export function useEmbedAutoHeight(deps = []) {
   }, deps);
 }
 
-export function HonorsShell({ title, subtitle, children }) {
+export function HonorsShell({
+  title,
+  subtitle,
+  children,
+  headerClassName,
+  titleClassName,
+  subtitleClassName,
+}) {
+  const headerCls =
+    headerClassName ??
+    "bg-gradient-to-r from-yellow-400 to-yellow-300 px-4 sm:px-6 py-4 border-b border-yellow-500";
+  const titleCls = titleClassName ?? "text-blue-900 text-center text-xl sm:text-2xl font-bold";
+  const subtitleCls = subtitleClassName ?? "mt-1 text-center text-blue-900/80 text-sm";
+
   return (
     <div className="bg-white rounded-xl shadow-sm overflow-hidden w-full max-w-6xl mx-auto border border-gray-200">
-      <div className="bg-gradient-to-r from-yellow-400 to-yellow-300 px-4 sm:px-6 py-4 border-b border-yellow-500">
-        <h2 className="text-blue-900 text-center text-xl sm:text-2xl font-bold">{title}</h2>
+      <div className={headerCls}>
+        <h2 className={titleCls}>{title}</h2>
         {subtitle ? (
-          <div className="mt-1 text-center text-blue-900/80 text-sm">{subtitle}</div>
+          <div className={subtitleCls}>{subtitle}</div>
         ) : null}
       </div>
       {children}
