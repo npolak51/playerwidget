@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { ChevronDown, Search } from "lucide-react";
 import { HonorsShell } from "./HonorsWidgetBase";
 import { allLeagueSelections } from "./honorsData";
@@ -46,6 +46,14 @@ export default function AllLeagueAllWidget() {
   const heightParam = params.get("height"); // e.g. "720"
   const fixedHeight =
     heightParam && !Number.isNaN(Number(heightParam)) ? Number(heightParam) : 720;
+
+  // When embedded, make the page background transparent (so the parent page shows through).
+  // (We intentionally do NOT auto-resize this widget; it scrolls internally.)
+  useEffect(() => {
+    if (window.parent && window.parent !== window) {
+      document.documentElement.classList.add("embed");
+    }
+  }, []);
 
   const rows = useMemo(() => (allLeagueSelections || []).map((r) => ({ ...r, team: normalizeTeam(r.team) })), []);
 
