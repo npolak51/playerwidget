@@ -12,9 +12,9 @@ function TeamBadge({ team }) {
     norm === "1st team"
       ? "bg-gradient-to-r from-yellow-300 to-yellow-500 text-blue-900"
       : norm === "2nd team"
-        ? "bg-gradient-to-r from-gray-200 to-gray-400 text-gray-700"
+        ? "bg-gradient-to-r from-blue-700 to-blue-900 text-white"
         : norm === "honorable mention"
-          ? "bg-gray-100 text-gray-700"
+          ? "bg-gradient-to-r from-gray-200 to-gray-400 text-gray-700"
           : "bg-gray-200 text-gray-800";
 
   return (
