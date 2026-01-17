@@ -7,6 +7,33 @@ function normalizeName(name) {
   return String(name ?? "").trim();
 }
 
+function formatYearRanges(yearsDesc) {
+  // Input is currently sorted DESC; convert to unique ASC for range building.
+  const uniqAsc = Array.from(new Set((yearsDesc || []).map((y) => Number(y)).filter(Boolean))).sort((a, b) => a - b);
+  if (uniqAsc.length === 0) return "";
+
+  const ranges = [];
+  let start = uniqAsc[0];
+  let prev = uniqAsc[0];
+
+  for (let i = 1; i < uniqAsc.length; i++) {
+    const y = uniqAsc[i];
+    if (y === prev + 1) {
+      prev = y;
+      continue;
+    }
+    ranges.push([start, prev]);
+    start = y;
+    prev = y;
+  }
+  ranges.push([start, prev]);
+
+  // Use en dash for ranges to match the screenshot.
+  return ranges
+    .map(([a, b]) => (a === b ? String(a) : `${a}\u2013${b}`))
+    .join(", ");
+}
+
 export default function AllLeagueMultiWidget() {
   const multi = useMemo(() => {
     const counts = new Map();
@@ -48,46 +75,33 @@ export default function AllLeagueMultiWidget() {
         </div>
       </div>
 
-      <div className="hidden md:grid md:grid-cols-12 gap-4 px-4 sm:px-6 py-3 bg-white border-b border-gray-200 text-sm">
-        <div className="col-span-5 text-gray-600 font-semibold">Player</div>
-        <div className="col-span-2 text-gray-600 font-semibold">Selections</div>
-        <div className="col-span-5 text-gray-600 font-semibold">Years</div>
-      </div>
+      <div className="p-4 sm:p-6 bg-white">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+          {multi.map((p) => (
+            <div
+              key={p.name}
+              className="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div className="p-4 flex items-center gap-4">
+                {/* 3x / 4x badge */}
+                <div className="w-12 h-12 rounded-xl bg-blue-900 text-white flex items-center justify-center flex-shrink-0">
+                  <span className="font-semibold">{p.count}×</span>
+                </div>
 
-      <div className="divide-y divide-gray-200">
-        {multi.map((p) => (
-          <div
-            key={p.name}
-            className="px-4 sm:px-6 py-4 hover:bg-gradient-to-r hover:from-yellow-400/10 hover:to-transparent transition-all duration-200"
-          >
-            {/* Desktop */}
-            <div className="hidden md:grid md:grid-cols-12 gap-4 items-center">
-              <div className="col-span-5 text-blue-900 font-semibold">{p.name}</div>
-              <div className="col-span-2">
-                <span className="inline-block px-3 py-1 bg-yellow-400/25 text-blue-900 rounded-full font-semibold text-sm border border-yellow-400/40">
-                  {p.count}×
-                </span>
+                {/* name + years */}
+                <div className="min-w-0">
+                  <div className="text-blue-900 font-semibold truncate">{p.name}</div>
+                  <div className="text-gray-600 text-sm mt-1 truncate">
+                    {formatYearRanges(p.years)}
+                  </div>
+                </div>
               </div>
-              <div className="col-span-5 text-gray-800">{p.years.join(", ")}</div>
             </div>
-
-            {/* Mobile */}
-            <div className="md:hidden">
-              <div className="flex items-center justify-between gap-3">
-                <div className="text-blue-900 font-semibold">{p.name}</div>
-                <span className="inline-block px-3 py-1 bg-yellow-400/25 text-blue-900 rounded-full font-semibold text-sm border border-yellow-400/40">
-                  {p.count}×
-                </span>
-              </div>
-              <div className="mt-2 text-sm text-gray-700">{p.years.join(", ")}</div>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
 
         {multi.length === 0 ? (
-          <div className="px-4 sm:px-6 py-10 text-center text-gray-500">
-            No players have 3+ All‑League selections yet.
-          </div>
+          <div className="py-10 text-center text-gray-500">No players have 3+ All‑League selections yet.</div>
         ) : null}
       </div>
     </HonorsShell>
