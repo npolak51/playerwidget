@@ -136,7 +136,7 @@ export const alumniPlayers = [
   },
   {
     "gradYear": 2024,
-    "playerName": "Jackson Walker*",
+    "playerName": "Jackson Walker",
     "sport": "Baseball",
     "isActive": true,
     "division": "NWAC",
@@ -151,7 +151,7 @@ export const alumniPlayers = [
   },
   {
     "gradYear": 2024,
-    "playerName": "Kobe Fraizer*",
+    "playerName": "Kobe Fraizer",
     "sport": "Baseball",
     "isActive": true,
     "division": "NWAC",
@@ -166,7 +166,7 @@ export const alumniPlayers = [
   },
   {
     "gradYear": 2024,
-    "playerName": "Neville Till*",
+    "playerName": "Neville Till",
     "sport": "Baseball",
     "isActive": true,
     "division": "D-II",
@@ -181,7 +181,7 @@ export const alumniPlayers = [
   },
   {
     "gradYear": 2023,
-    "playerName": "Aaron Newton*",
+    "playerName": "Aaron Newton",
     "sport": "Baseball",
     "isActive": true,
     "division": "NAIA",
@@ -197,7 +197,7 @@ export const alumniPlayers = [
   },
   {
     "gradYear": 2023,
-    "playerName": "Brandon Berg*",
+    "playerName": "Brandon Berg",
     "sport": "Baseball",
     "isActive": true,
     "division": "NWAC",
@@ -213,7 +213,7 @@ export const alumniPlayers = [
   },
   {
     "gradYear": 2023,
-    "playerName": "Carson Ohland*",
+    "playerName": "Carson Ohland",
     "sport": "Baseball",
     "isActive": true,
     "division": "D-I",
@@ -229,7 +229,7 @@ export const alumniPlayers = [
   },
   {
     "gradYear": 2023,
-    "playerName": "Conrad Henkel*",
+    "playerName": "Conrad Henkel",
     "sport": "Baseball",
     "isActive": true,
     "division": "D-II",
@@ -245,7 +245,7 @@ export const alumniPlayers = [
   },
   {
     "gradYear": 2023,
-    "playerName": "Henry Henkel*",
+    "playerName": "Henry Henkel",
     "sport": "Baseball",
     "isActive": true,
     "division": "D-II",
@@ -261,7 +261,7 @@ export const alumniPlayers = [
   },
   {
     "gradYear": 2023,
-    "playerName": "Jackson Burtis*",
+    "playerName": "Jackson Burtis",
     "sport": "Baseball",
     "isActive": true,
     "division": "D-II",
@@ -277,7 +277,7 @@ export const alumniPlayers = [
   },
   {
     "gradYear": 2023,
-    "playerName": "Logan Pierce*",
+    "playerName": "Logan Pierce",
     "sport": "Baseball",
     "isActive": true,
     "division": "D-II",
@@ -292,7 +292,7 @@ export const alumniPlayers = [
   },
   {
     "gradYear": 2023,
-    "playerName": "Noah Lee*",
+    "playerName": "Noah Lee",
     "sport": "Baseball",
     "isActive": false,
     "division": "NWAC",
@@ -308,7 +308,7 @@ export const alumniPlayers = [
   },
   {
     "gradYear": 2023,
-    "playerName": "Noah Parks*",
+    "playerName": "Noah Parks",
     "sport": "Baseball",
     "isActive": true,
     "division": "D-III",
@@ -323,7 +323,7 @@ export const alumniPlayers = [
   },
   {
     "gradYear": 2022,
-    "playerName": "Chase Easter-Harrison*",
+    "playerName": "Chase Easter-Harrison",
     "sport": "Baseball",
     "isActive": true,
     "division": "D-II",
@@ -338,7 +338,7 @@ export const alumniPlayers = [
   },
   {
     "gradYear": 2022,
-    "playerName": "Dylan Shipley*",
+    "playerName": "Dylan Shipley",
     "sport": "Football",
     "isActive": true,
     "division": "NAIA",
@@ -370,7 +370,7 @@ export const alumniPlayers = [
   },
   {
     "gradYear": 2022,
-    "playerName": "Jackson Warner*",
+    "playerName": "Jackson Warner",
     "sport": "Baseball",
     "isActive": false,
     "division": "D-III",
@@ -476,7 +476,7 @@ export const alumniPlayers = [
   },
   {
     "gradYear": 2020,
-    "playerName": "Albert Jennings*",
+    "playerName": "Albert Jennings",
     "sport": "Baseball",
     "isActive": true,
     "division": "NAIA",
@@ -507,7 +507,7 @@ export const alumniPlayers = [
   },
   {
     "gradYear": 2020,
-    "playerName": "Kole Bennett*",
+    "playerName": "Kole Bennett",
     "sport": "Baseball",
     "isActive": false,
     "division": "NAIA",
@@ -539,7 +539,7 @@ export const alumniPlayers = [
   },
   {
     "gradYear": 2020,
-    "playerName": "Richard Reding*",
+    "playerName": "Richard Reding",
     "sport": "Baseball",
     "isActive": false,
     "division": "NAIA",
