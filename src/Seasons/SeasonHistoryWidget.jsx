@@ -98,8 +98,8 @@ export default function SeasonHistoryWidget() {
     const s = seasons || [];
     const nonCovid = s.filter((x) => x.year !== 2020);
     return {
-      totalSeasons: nonCovid.length,
       leagueChampionships: nonCovid.filter((x) => x.isLeagueChampion).length,
+      districtChampionships: nonCovid.filter((x) => x.isDistrictChamp).length,
       stateAppearances: nonCovid.filter((x) => x.isStateAppearance).length,
       finalFourAppearances: nonCovid.filter((x) => x.isFinalFour).length,
     };
@@ -122,8 +122,8 @@ export default function SeasonHistoryWidget() {
 
         {/* Stats Summary */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 p-6 bg-gray-50 border-b border-gray-200">
-          <StatBlock label="Seasons" value={totals.totalSeasons} />
           <StatBlock label="League Titles" value={totals.leagueChampionships} />
+          <StatBlock label="District Titles" value={totals.districtChampionships} />
           <StatBlock label="State Appearances" value={totals.stateAppearances} />
           <StatBlock label="Final Fours" value={totals.finalFourAppearances} />
         </div>
