@@ -10,6 +10,7 @@ import AllTimePitchingLeadersWidget from "./Leaders/AllTimePitchingLeadersWidget
 import LeagueMvpsWidget from "./Honors/LeagueMvpsWidget";
 import AllLeagueMultiWidget from "./Honors/AllLeagueMultiWidget";
 import AllLeagueAllWidget from "./Honors/AllLeagueAllWidget";
+import SeasonHistoryWidget from "./Seasons/SeasonHistoryWidget";
 import "./index.css";
 
 function WidgetRoot() {
@@ -25,6 +26,7 @@ function WidgetRoot() {
   if (widget === "league-mvps") return <LeagueMvpsWidget />;
   if (widget === "all-league-multi") return <AllLeagueMultiWidget />;
   if (widget === "all-league-all") return <AllLeagueAllWidget />;
+  if (widget === "seasons") return <SeasonHistoryWidget />;
   return <PlayerPage />;
 }
 
