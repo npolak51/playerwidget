@@ -11,6 +11,7 @@ import LeagueMvpsWidget from "./Honors/LeagueMvpsWidget";
 import AllLeagueMultiWidget from "./Honors/AllLeagueMultiWidget";
 import AllLeagueAllWidget from "./Honors/AllLeagueAllWidget";
 import SeasonHistoryWidget from "./Seasons/SeasonHistoryWidget";
+import AlumniWidget from "./Alumni/AlumniWidget";
 import "./index.css";
 
 function WidgetRoot() {
@@ -27,6 +28,7 @@ function WidgetRoot() {
   if (widget === "all-league-multi") return <AllLeagueMultiWidget />;
   if (widget === "all-league-all") return <AllLeagueAllWidget />;
   if (widget === "seasons") return <SeasonHistoryWidget />;
+  if (widget === "alumni") return <AlumniWidget />;
   return <PlayerPage />;
 }
 
