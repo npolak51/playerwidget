@@ -105,6 +105,7 @@ export default function AlumniWidget() {
   const [selectedDivision, setSelectedDivision] = useState("all");
   const [selectedYear, setSelectedYear] = useState("all");
   const [showActiveOnly, setShowActiveOnly] = useState(true);
+  const [showDraftedOnly, setShowDraftedOnly] = useState(false);
 
   const years = useMemo(() => {
     const set = new Set((alumniPlayers || []).map((p) => p.gradYear).filter(Boolean));
@@ -129,10 +130,11 @@ export default function AlumniWidget() {
       const matchesDivision = selectedDivision === "all" || player.division === selectedDivision;
       const matchesYear = selectedYear === "all" || player.gradYear === Number(selectedYear);
       const matchesActive = !showActiveOnly || player.isActive;
+      const matchesDrafted = !showDraftedOnly || !!player.drafted;
 
-      return matchesSearch && matchesDivision && matchesYear && matchesActive;
+      return matchesSearch && matchesDivision && matchesYear && matchesActive && matchesDrafted;
     });
-  }, [searchQuery, selectedDivision, selectedYear, showActiveOnly]);
+  }, [searchQuery, selectedDivision, selectedYear, showActiveOnly, showDraftedOnly]);
 
   const stats = useMemo(() => {
     const baseball = (alumniPlayers || []).filter((p) => p.sport === "Baseball");
@@ -223,6 +225,17 @@ export default function AlumniWidget() {
                   className="w-4 h-4 text-blue-900 border-gray-300 rounded focus:ring-blue-900"
                 />
                 <span className="text-sm text-gray-700 whitespace-nowrap">Active Only</span>
+              </label>
+
+              {/* Drafted Only Toggle */}
+              <label className="flex items-center gap-2 px-4 py-2.5 border border-gray-300 rounded-lg bg-white cursor-pointer hover:border-blue-900 transition-all min-w-fit">
+                <input
+                  type="checkbox"
+                  checked={showDraftedOnly}
+                  onChange={(e) => setShowDraftedOnly(e.target.checked)}
+                  className="w-4 h-4 text-blue-900 border-gray-300 rounded focus:ring-blue-900"
+                />
+                <span className="text-sm text-gray-700 whitespace-nowrap">Drafted Only</span>
               </label>
             </div>
           </div>
