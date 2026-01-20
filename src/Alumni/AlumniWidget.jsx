@@ -152,7 +152,7 @@ export default function AlumniWidget() {
         <div className="bg-gradient-to-r from-yellow-400 to-yellow-300 px-6 py-5 border-b border-yellow-500">
           <div className="flex items-center justify-center gap-3">
             <GraduationCap className="w-7 h-7 text-blue-900" />
-            <h1 className="text-blue-900 text-center text-2xl font-bold">College Baseball Alumni</h1>
+            <h1 className="text-blue-900 text-center text-2xl font-bold">College Baseball Alumni (2003-Present)</h1>
             <GraduationCap className="w-7 h-7 text-blue-900" />
           </div>
           <p className="text-blue-900/70 text-center mt-2">Tahoma Bears Playing at the Next Level</p>
@@ -162,7 +162,7 @@ export default function AlumniWidget() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 p-6 bg-gray-50 border-b border-gray-200">
           <StatBlock label="Total Alumni" value={stats.totalPlayers} />
           <StatBlock label="Active Players" value={stats.activePlayers} />
-          <StatBlock label="D1 Players" value={stats.d1Players} />
+          <StatBlock label="D-I Players" value={stats.d1Players} />
           <StatBlock label="Drafted" value={stats.draftedPlayers} />
         </div>
       </div>

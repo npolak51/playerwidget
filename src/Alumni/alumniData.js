@@ -200,7 +200,7 @@ export const alumniPlayers = [
     "playerName": "Brandon Berg",
     "sport": "Baseball",
     "isActive": true,
-    "division": "NWAC",
+    "division": "NAIA",
     "colleges": [
       "Olympic",
       "Waldorf"
