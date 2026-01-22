@@ -19,6 +19,25 @@ function varsityFirstCareerSeasons(seasons) {
   return careerSeasons;
 }
 
+function formatBattingRate3(v) {
+  const s = String(v ?? "").trim();
+  if (!s) return "";
+  const num = Number(s);
+  if (!Number.isFinite(num)) return s;
+  let out = num.toFixed(3);
+  // Prefer ".300" style over "0.300"
+  if (out.startsWith("0")) out = out.slice(1);
+  return out;
+}
+
+function formatPitchingRate2(v) {
+  const s = String(v ?? "").trim();
+  if (!s) return "";
+  const num = Number(s);
+  if (!Number.isFinite(num)) return s;
+  return num.toFixed(2);
+}
+
 function useEmbedAutoHeight(deps = []) {
   useEffect(() => {
     // When embedded, make the page background transparent (so the parent page shows through).
@@ -151,7 +170,9 @@ function BattingTable({ rows, totalsOnly = false }) {
                     key={c.key}
                     className={`px-3 py-3 text-sm ${isTotals ? "font-semibold" : "text-gray-900"}`}
                   >
-                    {row[c.key] ?? ""}
+                    {c.key === "AVG" || c.key === "OBP" || c.key === "SLG"
+                      ? formatBattingRate3(row[c.key])
+                      : (row[c.key] ?? "")}
                   </td>
                 ))}
               </tr>
@@ -206,7 +227,9 @@ function PitchingTable({ rows, totalsOnly = false }) {
                     key={c.key}
                     className={`px-3 py-3 text-sm ${isTotals ? "font-semibold" : "text-gray-900"}`}
                   >
-                    {row[c.key] ?? ""}
+                    {c.key === "ERA" || c.key === "WHIP"
+                      ? formatPitchingRate2(row[c.key])
+                      : (row[c.key] ?? "")}
                   </td>
                 ))}
               </tr>
@@ -307,9 +330,9 @@ export default function StatWidget() {
     { label: "RBI", value: row?.RBI ?? "" },
     { label: "R", value: row?.R ?? "" },
     { label: "SB", value: row?.SB ?? "" },
-    { label: "AVG", value: row?.AVG ?? "" },
-    { label: "OBP", value: row?.OBP ?? "" },
-    { label: "SLG", value: row?.SLG ?? "" },
+    { label: "AVG", value: formatBattingRate3(row?.AVG) },
+    { label: "OBP", value: formatBattingRate3(row?.OBP) },
+    { label: "SLG", value: formatBattingRate3(row?.SLG) },
     { label: "K/BB", value: row?.KBB ?? "" }
   ];
 
@@ -322,8 +345,8 @@ export default function StatWidget() {
     { label: "ER", value: row?.ER ?? "" },
     { label: "BB", value: row?.BB ?? "" },
     { label: "K", value: row?.K ?? "" },
-    { label: "ERA", value: row?.ERA ?? "" },
-    { label: "WHIP", value: row?.WHIP ?? "" },
+    { label: "ERA", value: formatPitchingRate2(row?.ERA) },
+    { label: "WHIP", value: formatPitchingRate2(row?.WHIP) },
     { label: "BAA", value: row?.BAA ?? "" }
   ];
 
