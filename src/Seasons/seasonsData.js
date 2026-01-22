@@ -34,11 +34,11 @@ export const seasons = [
   },
   {
     "year": 2022,
-    "leagueRecord": "14-5",
-    "leagueFinish": "T-1st",
+    "leagueRecord": "8-4",
+    "leagueFinish": "2nd",
     "overallRecord": "16-7",
     "playoffResults": "State: 1st Round",
-    "isLeagueChampion": true,
+    "isLeagueChampion": false,
     "isStateAppearance": true,
     "isFinalFour": false,
     "isDistrictChamp": false
@@ -91,7 +91,7 @@ export const seasons = [
     "year": 2017,
     "leagueRecord": "9-5",
     "leagueFinish": "4th",
-    "overallRecord": "18-6",
+    "overallRecord": "16-8",
     "playoffResults": "State: 1st Round",
     "isLeagueChampion": false,
     "isStateAppearance": true,
@@ -210,7 +210,7 @@ export const seasons = [
   },
   {
     "year": 2006,
-    "leagueRecord": "17-1",
+    "leagueRecord": "15-1",
     "leagueFinish": "2nd",
     "overallRecord": "22-5",
     "playoffResults": "Final Four: 4th Place, Regional Champs, District Champs",
