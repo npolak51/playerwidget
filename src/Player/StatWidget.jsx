@@ -207,6 +207,18 @@ export default function StatWidget() {
   const playerName = playerId ? playersData.players?.[playerId]?.name : null;
   const playerStats = playerId ? statsData.players?.[playerId] : null;
 
+  const battingSeasonsSorted = useMemo(() => {
+    const seasons = [...(playerStats?.batting?.seasons || [])];
+    seasons.sort((a, b) => (Number(b?.year) || 0) - (Number(a?.year) || 0));
+    return seasons;
+  }, [playerStats]);
+
+  const pitchingSeasonsSorted = useMemo(() => {
+    const seasons = [...(playerStats?.pitching?.seasons || [])];
+    seasons.sort((a, b) => (Number(b?.year) || 0) - (Number(a?.year) || 0));
+    return seasons;
+  }, [playerStats]);
+
   const seasonTabs = useMemo(() => {
     const years = (playerStats?.batting?.seasons || []).map((s) => s.year).filter(Boolean);
     const unique = Array.from(new Set(years));
@@ -236,18 +248,40 @@ export default function StatWidget() {
 
   const battingDesktopRows =
     activeTab === "Career"
-      ? battingTotals
-        ? [{ class: "", team: battingTotals.team || "", year: "", ...battingTotals, __totals: true }]
-        : []
+      ? [
+          ...battingSeasonsSorted,
+          ...(battingTotals
+            ? [
+                {
+                  class: "",
+                  team: battingTotals.team || "",
+                  year: "Career",
+                  ...battingTotals,
+                  __totals: true,
+                },
+              ]
+            : []),
+        ]
       : battingSeason
         ? [battingSeason]
         : [];
 
   const pitchingDesktopRows =
     activeTab === "Career"
-      ? pitchingTotals
-        ? [{ class: "", team: pitchingTotals.team || "", year: "", ...pitchingTotals, __totals: true }]
-        : []
+      ? [
+          ...pitchingSeasonsSorted,
+          ...(pitchingTotals
+            ? [
+                {
+                  class: "",
+                  team: pitchingTotals.team || "",
+                  year: "Career",
+                  ...pitchingTotals,
+                  __totals: true,
+                },
+              ]
+            : []),
+        ]
       : pitchingSeason
         ? [pitchingSeason]
         : [];
@@ -337,10 +371,16 @@ export default function StatWidget() {
                 ) : (
                   <div className="text-gray-600">No batting stats for this tab.</div>
                 )}
+
+                {activeTab === "Career" && battingDesktopRows.length > 0 ? (
+                  <div className="mt-3">
+                    <BattingTable rows={battingDesktopRows} />
+                  </div>
+                ) : null}
               </div>
 
               <div className="hidden md:block">
-                <BattingTable rows={battingDesktopRows} totalsOnly={activeTab === "Career"} />
+                <BattingTable rows={battingDesktopRows} />
               </div>
             </div>
 
@@ -357,10 +397,16 @@ export default function StatWidget() {
                 ) : (
                   <div className="text-gray-600">No pitching stats for this tab.</div>
                 )}
+
+                {activeTab === "Career" && pitchingDesktopRows.length > 0 ? (
+                  <div className="mt-3">
+                    <PitchingTable rows={pitchingDesktopRows} />
+                  </div>
+                ) : null}
               </div>
 
               <div className="hidden md:block">
-                <PitchingTable rows={pitchingDesktopRows} totalsOnly={activeTab === "Career"} />
+                <PitchingTable rows={pitchingDesktopRows} />
               </div>
             </div>
           </>
