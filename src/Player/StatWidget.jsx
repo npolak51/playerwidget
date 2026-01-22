@@ -2,6 +2,23 @@ import { useEffect, useMemo, useState } from "react";
 import playersData from "../data/players.json";
 import statsData from "../data/stats.json";
 
+function normalizeTeam(t) {
+  const v = String(t ?? "").trim().toLowerCase();
+  if (!v) return "";
+  if (v.includes("junior") || v === "jv") return "JV";
+  if (v.startsWith("var")) return "Var.";
+  return v.toUpperCase();
+}
+
+function varsityFirstCareerSeasons(seasons) {
+  const normalized = (seasons || []).map((s) => ({ ...s, team: normalizeTeam(s.team) }));
+  const varSeasons = normalized.filter((s) => s.team === "Var.");
+  const jvSeasons = normalized.filter((s) => s.team === "JV");
+  const careerSeasons = varSeasons.length ? varSeasons : jvSeasons;
+  careerSeasons.sort((a, b) => (Number(b?.year) || 0) - (Number(a?.year) || 0));
+  return careerSeasons;
+}
+
 function useEmbedAutoHeight(deps = []) {
   useEffect(() => {
     // When embedded, make the page background transparent (so the parent page shows through).
@@ -207,16 +224,12 @@ export default function StatWidget() {
   const playerName = playerId ? playersData.players?.[playerId]?.name : null;
   const playerStats = playerId ? statsData.players?.[playerId] : null;
 
-  const battingSeasonsSorted = useMemo(() => {
-    const seasons = [...(playerStats?.batting?.seasons || [])];
-    seasons.sort((a, b) => (Number(b?.year) || 0) - (Number(a?.year) || 0));
-    return seasons;
+  const battingCareerSeasonsSorted = useMemo(() => {
+    return varsityFirstCareerSeasons(playerStats?.batting?.seasons || []);
   }, [playerStats]);
 
-  const pitchingSeasonsSorted = useMemo(() => {
-    const seasons = [...(playerStats?.pitching?.seasons || [])];
-    seasons.sort((a, b) => (Number(b?.year) || 0) - (Number(a?.year) || 0));
-    return seasons;
+  const pitchingCareerSeasonsSorted = useMemo(() => {
+    return varsityFirstCareerSeasons(playerStats?.pitching?.seasons || []);
   }, [playerStats]);
 
   const seasonTabs = useMemo(() => {
@@ -249,7 +262,7 @@ export default function StatWidget() {
   const battingDesktopRows =
     activeTab === "Career"
       ? [
-          ...battingSeasonsSorted,
+          ...battingCareerSeasonsSorted,
           ...(battingTotals
             ? [
                 {
@@ -269,7 +282,7 @@ export default function StatWidget() {
   const pitchingDesktopRows =
     activeTab === "Career"
       ? [
-          ...pitchingSeasonsSorted,
+          ...pitchingCareerSeasonsSorted,
           ...(pitchingTotals
             ? [
                 {
