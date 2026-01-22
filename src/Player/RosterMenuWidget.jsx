@@ -2,6 +2,76 @@ import { useEffect, useMemo, useState } from "react";
 import { ChevronDown, ChevronLeft } from "lucide-react";
 import playersData from "../data/players.json";
 
+const POSITION_ABBREVIATIONS = {
+  Pitcher: "P",
+  Catcher: "C",
+  "First Base": "1B",
+  "First Baseman": "1B",
+  "Second Base": "2B",
+  "Second Baseman": "2B",
+  "Third Base": "3B",
+  "Third Baseman": "3B",
+  Shortstop: "SS",
+  Infield: "INF",
+  Outfield: "OF",
+  Utility: "UTL",
+  "Designated Hitter": "DH",
+  DH: "DH",
+};
+
+const POSITION_PILL_CLASSES = {
+  P: "bg-blue-600 text-white border-blue-700",
+  C: "bg-purple-600 text-white border-purple-700",
+  "1B": "bg-yellow-400 text-blue-900 border-yellow-500",
+  "2B": "bg-amber-500 text-white border-amber-600",
+  "3B": "bg-orange-500 text-white border-orange-600",
+  SS: "bg-red-500 text-white border-red-600",
+  INF: "bg-green-600 text-white border-green-700",
+  OF: "bg-emerald-500 text-white border-emerald-600",
+  UTL: "bg-gray-600 text-white border-gray-700",
+  DH: "bg-pink-500 text-white border-pink-600",
+};
+
+function abbreviatePosition(pos) {
+  const raw = String(pos ?? "").trim();
+  if (!raw) return "";
+
+  // Already abbreviated (e.g. "P", "SS", "1B")
+  if (/^[0-9]B$/.test(raw)) return raw.toUpperCase();
+  if (/^[A-Za-z]{1,3}$/.test(raw)) return raw.toUpperCase();
+
+  if (POSITION_ABBREVIATIONS[raw]) return POSITION_ABBREVIATIONS[raw];
+
+  const normalized = raw
+    .replace(/\s+Baseman$/i, " Base")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  return POSITION_ABBREVIATIONS[normalized] || raw;
+}
+
+function splitAndAbbreviatePositions(positionsStr) {
+  const parts = String(positionsStr ?? "")
+    .split("/")
+    .map((p) => p.trim())
+    .filter(Boolean);
+
+  const out = [];
+  const seen = new Set();
+  for (const p of parts) {
+    const abbr = abbreviatePosition(p);
+    if (!abbr) continue;
+    if (seen.has(abbr)) continue;
+    seen.add(abbr);
+    out.push(abbr);
+  }
+  return out;
+}
+
+function pillClassFor(abbr) {
+  return POSITION_PILL_CLASSES[abbr] || "bg-gray-200 text-gray-800 border-gray-300";
+}
+
 function normalizeSiteBase(siteBase) {
   if (!siteBase) return "";
   return siteBase.startsWith("http") ? siteBase : `https://${siteBase}`;
@@ -30,7 +100,7 @@ export default function RosterMenuWidget() {
         id,
         name: p?.name || id,
         number: p?.number || "",
-        position: p?.positions || "",
+        positionPills: splitAndAbbreviatePositions(p?.positions || ""),
       }))
       .sort((a, b) => a.name.localeCompare(b.name));
   }, []);
@@ -118,8 +188,17 @@ export default function RosterMenuWidget() {
               <div className="text-sm text-gray-600 mb-1">#{p.number}</div>
             ) : null}
             <div className="mb-1">{p.name}</div>
-            {p.position ? (
-              <div className="text-sm text-gray-600">{p.position}</div>
+            {p.positionPills?.length ? (
+              <div className="mt-1 flex flex-wrap gap-2">
+                {p.positionPills.map((abbr) => (
+                  <span
+                    key={abbr}
+                    className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold border ${pillClassFor(abbr)}`}
+                  >
+                    {abbr}
+                  </span>
+                ))}
+              </div>
             ) : null}
           </button>
         ))}
