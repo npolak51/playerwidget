@@ -10,7 +10,7 @@ function TabButton({ active, onClick, children }) {
     <button
       type="button"
       onClick={onClick}
-      className={`px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap transition-colors ${
+      className={`px-4 py-2 min-h-[44px] rounded-full text-base sm:text-sm font-semibold whitespace-nowrap transition-colors ${
         active ? "bg-blue-900 text-white" : "bg-white/80 text-blue-900 hover:bg-white"
       }`}
     >
@@ -46,7 +46,7 @@ export default function HonorsHubWidget() {
     );
 
   return (
-    <HonorsShell title="Honors" subtitle="Tahoma Bears Baseball">
+    <HonorsShell title="League Honors" subtitle="Tahoma Bears Baseball">
       <div className="px-4 sm:px-6 py-3 bg-gradient-to-r from-blue-900 to-blue-700 border-b border-blue-950/40">
         <div className="flex flex-wrap items-center justify-center gap-2">
           <TabButton active={activeTab === "mvps"} onClick={() => setActiveTab("mvps")}>
