@@ -55,6 +55,14 @@ export default function AllLeagueAllWidget() {
     }
   }, []);
 
+  return (
+    <HonorsShell title="All‑League Teams" subtitle="Search, filter, and browse all selections">
+      <AllLeagueAllBody fixedHeight={fixedHeight} />
+    </HonorsShell>
+  );
+}
+
+export function AllLeagueAllBody({ fixedHeight = 720 }) {
   const rows = useMemo(() => (allLeagueSelections || []).map((r) => ({ ...r, team: normalizeTeam(r.team) })), []);
 
   const years = useMemo(() => {
@@ -115,7 +123,7 @@ export default function AllLeagueAllWidget() {
   }, [rows, searchQuery, yearFilter, teamFilter, positionFilter]);
 
   return (
-    <HonorsShell title="All‑League Teams" subtitle="Search, filter, and browse all selections">
+    <>
       {/* Fixed-height widget: keep filters + headers frozen, scroll only the list */}
       <div className="flex flex-col" style={{ height: `${fixedHeight}px` }}>
         {/* Search + filters */}
@@ -268,7 +276,7 @@ export default function AllLeagueAllWidget() {
           ) : null}
         </div>
       </div>
-    </HonorsShell>
+    </>
   );
 }
 

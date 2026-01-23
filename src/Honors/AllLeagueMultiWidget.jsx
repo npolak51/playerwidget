@@ -35,47 +35,7 @@ function formatYearRanges(yearsDesc) {
 }
 
 export default function AllLeagueMultiWidget() {
-  const multi = useMemo(() => {
-    const counts = new Map();
-
-    for (const r of allLeagueSelections || []) {
-      const name = normalizeName(r.name);
-      if (!name) continue;
-      const cur = counts.get(name) || { name, count: 0, years: new Set(), teams: new Set() };
-      cur.count += 1;
-      if (r.year) cur.years.add(r.year);
-      if (r.team) cur.teams.add(r.team);
-      counts.set(name, cur);
-    }
-
-    const out = [];
-    for (const v of counts.values()) {
-      if (v.count >= 3) {
-        const yearsDesc = Array.from(v.years).sort((a, b) => b - a);
-        out.push({
-          name: v.name,
-          count: v.count,
-          years: yearsDesc,
-          mostRecentYear: yearsDesc[0] ?? 0,
-          teams: Array.from(v.teams),
-        });
-      }
-    }
-
-    // Order:
-    // - 4x+ selections first
-    // - then 3x selections
-    // - within each group: most recent year first, then count desc, then name
-    out.sort((a, b) => {
-      const aGroup = a.count >= 4 ? 0 : 1;
-      const bGroup = b.count >= 4 ? 0 : 1;
-      if (aGroup !== bGroup) return aGroup - bGroup;
-      if (b.mostRecentYear !== a.mostRecentYear) return b.mostRecentYear - a.mostRecentYear;
-      if (b.count !== a.count) return b.count - a.count;
-      return a.name.localeCompare(b.name);
-    });
-    return out;
-  }, []);
+  const multi = useMemo(() => buildAllLeagueMulti(allLeagueSelections), []);
 
   useEmbedAutoHeight([multi.length]);
 
@@ -87,6 +47,14 @@ export default function AllLeagueMultiWidget() {
       titleClassName="text-white text-center text-xl sm:text-2xl font-bold"
       subtitleClassName="mt-1 text-center text-white/80 text-sm"
     >
+      <AllLeagueMultiBody multi={multi} />
+    </HonorsShell>
+  );
+}
+
+export function AllLeagueMultiBody({ multi }) {
+  return (
+    <>
       <div className="px-4 sm:px-6 py-3 bg-gradient-to-r from-yellow-300 to-yellow-500 border-b border-yellow-500/60">
         <div className="flex items-center gap-2">
           <Users className="w-5 h-5 text-blue-900" />
@@ -129,7 +97,50 @@ export default function AllLeagueMultiWidget() {
           <div className="py-10 text-center text-gray-500">No players have 3+ All‑League selections yet.</div>
         ) : null}
       </div>
-    </HonorsShell>
+    </>
   );
+}
+
+export function buildAllLeagueMulti(selections) {
+  const counts = new Map();
+
+  for (const r of selections || []) {
+    const name = normalizeName(r.name);
+    if (!name) continue;
+    const cur = counts.get(name) || { name, count: 0, years: new Set(), teams: new Set() };
+    cur.count += 1;
+    if (r.year) cur.years.add(r.year);
+    if (r.team) cur.teams.add(r.team);
+    counts.set(name, cur);
+  }
+
+  const out = [];
+  for (const v of counts.values()) {
+    if (v.count >= 3) {
+      const yearsDesc = Array.from(v.years).sort((a, b) => b - a);
+      out.push({
+        name: v.name,
+        count: v.count,
+        years: yearsDesc,
+        mostRecentYear: yearsDesc[0] ?? 0,
+        teams: Array.from(v.teams),
+      });
+    }
+  }
+
+  // Order:
+  // - 4x+ selections first
+  // - then 3x selections
+  // - within each group: most recent year first, then count desc, then name
+  out.sort((a, b) => {
+    const aGroup = a.count >= 4 ? 0 : 1;
+    const bGroup = b.count >= 4 ? 0 : 1;
+    if (aGroup !== bGroup) return aGroup - bGroup;
+    if (b.mostRecentYear !== a.mostRecentYear) return b.mostRecentYear - a.mostRecentYear;
+    if (b.count !== a.count) return b.count - a.count;
+    return a.name.localeCompare(b.name);
+  });
+
+  return out;
 }
 

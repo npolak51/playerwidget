@@ -11,6 +11,7 @@ import AllTimePitchingLeadersWidget from "./Leaders/AllTimePitchingLeadersWidget
 import LeagueMvpsWidget from "./Honors/LeagueMvpsWidget";
 import AllLeagueMultiWidget from "./Honors/AllLeagueMultiWidget";
 import AllLeagueAllWidget from "./Honors/AllLeagueAllWidget";
+import HonorsHubWidget from "./Honors/HonorsHubWidget";
 import SeasonHistoryWidget from "./Seasons/SeasonHistoryWidget";
 import AlumniWidget from "./Alumni/AlumniWidget";
 import TeamRecordsWidget from "./Team_Records/TeamRecordsWidget";
@@ -27,6 +28,7 @@ function WidgetRoot() {
   if (widget === "leaders") return <AllTimeLeadersWidget />; // alias → offense
   if (widget === "leaders-offense") return <AllTimeOffensiveLeadersWidget />;
   if (widget === "leaders-pitching") return <AllTimePitchingLeadersWidget />;
+  if (widget === "honors") return <HonorsHubWidget />;
   if (widget === "league-mvps") return <LeagueMvpsWidget />;
   if (widget === "all-league-multi") return <AllLeagueMultiWidget />;
   if (widget === "all-league-all") return <AllLeagueAllWidget />;
