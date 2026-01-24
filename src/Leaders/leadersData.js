@@ -1203,7 +1203,7 @@ export const pitchingStatCategories = [
         "rank": 9,
         "name": "Adam Jay",
         "year": 2025,
-        "value": "64",
+        "value": "56",
         "games": "(46.1 IP)"
       },
       {
