@@ -5,6 +5,7 @@ import RosterMenuWidget from "./Player/RosterMenuWidget";
 import StatWidget from "./Player/StatWidget";
 import ScoutPages from "./Player/ScoutPages";
 import PlayerProfileBundleWidget from "./Player/PlayerProfileBundleWidget";
+import PlayerNewProfileWidget from "./PlayerNew/PlayerNewProfileWidget";
 import AllTimeLeadersWidget from "./Leaders/AllTimeLeadersWidget";
 import AllTimeOffensiveLeadersWidget from "./Leaders/AllTimeOffensiveLeadersWidget";
 import AllTimePitchingLeadersWidget from "./Leaders/AllTimePitchingLeadersWidget";
@@ -23,6 +24,7 @@ function WidgetRoot() {
 
   if (widget === "menu") return <RosterMenuWidget />;
   if (widget === "player-profile") return <PlayerProfileBundleWidget />;
+  if (widget === "playernew-profile") return <PlayerNewProfileWidget />;
   if (widget === "stats") return <StatWidget />;
   if (widget === "scoutpages") return <ScoutPages />;
   if (widget === "leaders") return <AllTimeLeadersWidget />; // alias → offense

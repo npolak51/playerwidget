@@ -8,12 +8,15 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "import-stats": "node scripts/import-stats-csv.js"
+    "import-stats": "node scripts/import-stats-csv.js",
+    "import-game-logs": "node scripts/import-game-logs-csv.js",
+    "import-scouting-links": "node scripts/import-scouting-links.js"
   },
   "dependencies": {
     "lucide-react": "^0.555.0",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "recharts": "^3.7.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",

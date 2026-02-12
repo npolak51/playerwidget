@@ -14,7 +14,12 @@
       "favoriteTeam": "Mariners",
       "postGameMeal": "Chicken and Fried Rice",
       "twitter": "AdamJay1214",
-      "instagram": "iamadamjay"
+      "instagram": "iamadamjay",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=947222",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/aaron-abadilla",
+        "baseballNorthwest": ""
+      }
     },
     "adam-jay": {
       "name": "Adam Jay",
@@ -24,6 +29,8 @@
       "headerImg": "/headers/adam-jay-header.jpg",
       "logoImg": "",
       "school": "",
+      "committed": "Lower Columbia",
+      "committedDivision": "NWAC",
       "class": "2025",
       "heightWeight": "5’10/190 lbs",
       "batThrow": "L/L",
@@ -33,9 +40,9 @@
       "instagram": "iamadamjay",
       "tiktok": "adamjay1214",
       "scoutPages": {
-        "perfectGame": "https://www.perfectgame.org/players/playerprofile.aspx?ID=818378",
-        "pbr": "https://www.prepbaseballreport.com/profiles/WA/Adam-Jay-0637418952-2017853694",
-        "baseballNorthwest": "https://baseballnorthwest.com/profiles/ajay"
+        "perfectGame": "",
+        "pbr": "",
+        "baseballNorthwest": ""
       }
     },
     "andrew-dyk": {
@@ -46,13 +53,18 @@
       "headerImg": "/headers/andrew-dyk-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2025",
       "heightWeight": "6’1/205 lbs",
       "batThrow": "",
       "favoriteTeam": "Sonic’s",
       "postGameMeal": "Jersey Mikes",
       "twitter": "andrewdyk06",
-      "instagram": "andrew.r.dyk"
+      "instagram": "andrew.r.dyk",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=1055711",
+        "pbr": "",
+        "baseballNorthwest": ""
+      }
     },
     "beckett-turnbow": {
       "name": "Beckett Turnbow",
@@ -62,13 +74,18 @@
       "headerImg": "/headers/beckett-turnbow-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2026",
       "heightWeight": "5’10/175 lbs",
       "batThrow": "",
       "favoriteTeam": "Milwaukee Brewers",
       "postGameMeal": "Anywhere the whole teams goes",
       "twitter": "BeckettTurnbow",
-      "instagram": "beckett_turnbow"
+      "instagram": "beckett_turnbow",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=880247",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/Beckett-Turnbow-7510648239",
+        "baseballNorthwest": "https://baseballnorthwest.com/profiles/beckett-turnbow"
+      }
     },
     "brayden-fenton": {
       "name": "Brayden Fenton",
@@ -78,13 +95,18 @@
       "headerImg": "/headers/brayden-fenton-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2026",
       "heightWeight": "6'5/170 lbs",
       "batThrow": "",
       "favoriteTeam": "Tampa Bay Rays",
       "postGameMeal": "Prime rib with some potatoes and tater tots",
       "twitter": "BraydenF51",
-      "instagram": "brayden_fenton_51"
+      "instagram": "brayden_fenton_51",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=947194",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/Brayden-Fenton-3568091472",
+        "baseballNorthwest": ""
+      }
     },
     "bryce-bottemiller": {
       "name": "Bryce Bottemiller",
@@ -94,13 +116,18 @@
       "headerImg": "/headers/bryce-bottemiller-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2025",
       "heightWeight": "6'0/185 lbs",
       "batThrow": "",
       "favoriteTeam": "Mariners",
       "postGameMeal": "Steak (medium rare)",
       "twitter": "BryceBott15",
-      "instagram": "bryce_bott15"
+      "instagram": "bryce_bott15",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=1077867",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/Bryce-Bottemiller-3217698540-5706124398",
+        "baseballNorthwest": ""
+      }
     },
     "bryson-leach": {
       "name": "Bryson Leach",
@@ -110,45 +137,60 @@
       "headerImg": "/headers/bryson-leach-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2025",
       "heightWeight": "6’1/205 lbs",
       "batThrow": "",
       "favoriteTeam": "Seahawks",
       "postGameMeal": "Mcdonalds",
       "twitter": "BrysonLeach20",
-      "instagram": "brysonleach20"
+      "instagram": "brysonleach20",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=818435",
+        "pbr": "https://www.prepbaseballreport.com/profiles/DE/Bryson-Leach-8416073259",
+        "baseballNorthwest": "https://baseballnorthwest.com/profiles/bleach"
+      }
     },
-    "cameron": {
-      "name": "Cameron",
+    "cameron-martinez": {
+      "name": "Cameron Martinez",
       "number": "",
       "positions": "",
       "playerImg": "/players/cameron.jpg",
       "headerImg": "/headers/cameron-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2027",
       "heightWeight": "5'10/220 lbs",
       "batThrow": "",
       "favoriteTeam": "Mariners",
       "postGameMeal": "Water",
       "twitter": "",
-      "instagram": ""
+      "instagram": "",
+      "scoutPages": {
+        "perfectGame": "",
+        "pbr": "",
+        "baseballNorthwest": ""
+      }
     },
     "carter-stumpges": {
-      "name": "carter stumpges",
+      "name": "Carter Stumpges",
       "number": "",
       "positions": "",
       "playerImg": "/players/carter-stumpges.jpg",
       "headerImg": "/headers/carter-stumpges-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2027",
       "heightWeight": "5’9/155 lbs",
       "batThrow": "",
       "favoriteTeam": "mariners",
       "postGameMeal": "chipotle",
       "twitter": "",
-      "instagram": "carter_stumpges"
+      "instagram": "carter_stumpges",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=920883",
+        "pbr": "",
+        "baseballNorthwest": ""
+      }
     },
     "chase-hollowell": {
       "name": "Chase Hollowell",
@@ -158,13 +200,18 @@
       "headerImg": "/headers/chase-hollowell-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2028",
       "heightWeight": "5'8/155 lbs",
       "batThrow": "",
       "favoriteTeam": "LSU baseball",
       "postGameMeal": "Chipotle",
       "twitter": "ChaseHollowell_",
-      "instagram": "chasehollowelll"
+      "instagram": "chasehollowelll",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=1052887",
+        "pbr": "",
+        "baseballNorthwest": ""
+      }
     },
     "colby-rice": {
       "name": "Colby Rice",
@@ -174,13 +221,18 @@
       "headerImg": "/headers/colby-rice-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2025",
       "heightWeight": "6'1/200 lbs",
       "batThrow": "",
       "favoriteTeam": "Pirates",
       "postGameMeal": "4- corners teriyaki",
       "twitter": "",
-      "instagram": "Colbyrice783"
+      "instagram": "Colbyrice783",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=1141067",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/colby-rice",
+        "baseballNorthwest": ""
+      }
     },
     "colin-clem": {
       "name": "Colin Clem",
@@ -190,13 +242,18 @@
       "headerImg": "/headers/colin-clem-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2028",
       "heightWeight": "5'11/145 lbs",
       "batThrow": "",
       "favoriteTeam": "Mariners unfortunetly",
       "postGameMeal": "Chipotle or MOD",
       "twitter": "",
-      "instagram": "colinclem3"
+      "instagram": "colinclem3",
+      "scoutPages": {
+        "perfectGame": "",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/colin-clem",
+        "baseballNorthwest": "https://baseballnorthwest.com/profiles/colin-clem"
+      }
     },
     "drew-yount": {
       "name": "Drew Yount",
@@ -206,13 +263,18 @@
       "headerImg": "/headers/drew-yount-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2025",
       "heightWeight": "5'8/155 lbs",
       "batThrow": "",
       "favoriteTeam": "Seattle Mariners",
       "postGameMeal": "Chipotle Burrito",
       "twitter": "",
-      "instagram": "drew._.yount"
+      "instagram": "drew._.yount",
+      "scoutPages": {
+        "perfectGame": "",
+        "pbr": "",
+        "baseballNorthwest": ""
+      }
     },
     "eli-grant": {
       "name": "Eli Grant",
@@ -222,13 +284,18 @@
       "headerImg": "/headers/eli-grant-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2028",
       "heightWeight": "6’2/185 lbs",
       "batThrow": "",
       "favoriteTeam": "Seattle Mariners",
       "postGameMeal": "Subway",
       "twitter": "",
-      "instagram": "eli.grant13"
+      "instagram": "eli.grant13",
+      "scoutPages": {
+        "perfectGame": "",
+        "pbr": "",
+        "baseballNorthwest": ""
+      }
     },
     "grayson-perkins": {
       "name": "Grayson Perkins",
@@ -238,13 +305,18 @@
       "headerImg": "/headers/grayson-perkins-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2026",
       "heightWeight": "6’3”/170 lbs",
       "batThrow": "",
       "favoriteTeam": "Settle Mariners",
       "postGameMeal": "Cheerios",
       "twitter": "",
-      "instagram": "gperk6"
+      "instagram": "gperk6",
+      "scoutPages": {
+        "perfectGame": "",
+        "pbr": "",
+        "baseballNorthwest": ""
+      }
     },
     "grayson-turnbow": {
       "name": "Grayson Turnbow",
@@ -254,13 +326,18 @@
       "headerImg": "/headers/grayson-turnbow-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2027",
       "heightWeight": "5’9/160 lbs",
       "batThrow": "",
       "favoriteTeam": "Seattle Mariners",
       "postGameMeal": "Steak",
       "twitter": "GraysonTurnbow9",
-      "instagram": "grayson_tbow"
+      "instagram": "grayson_tbow",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=808804",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/grayson-turnbow",
+        "baseballNorthwest": "https://baseballnorthwest.com/profiles/grayson-turnbow"
+      }
     },
     "griffin-saldivar": {
       "name": "Griffin Saldivar",
@@ -270,13 +347,18 @@
       "headerImg": "/headers/griffin-saldivar-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2027",
       "heightWeight": "5’10/145 lbs",
       "batThrow": "",
       "favoriteTeam": "Mariners",
       "postGameMeal": "Probably some sort of homemade meal",
       "twitter": "GriffinSaldivar",
-      "instagram": "griffin.saldivar"
+      "instagram": "griffin.saldivar",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=922231",
+        "pbr": "",
+        "baseballNorthwest": ""
+      }
     },
     "hoss-seitz": {
       "name": "Hoss Seitz",
@@ -286,13 +368,18 @@
       "headerImg": "/headers/hoss-seitz-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2028",
       "heightWeight": "5’10/145 lbs",
       "batThrow": "",
       "favoriteTeam": "Seattle Mariners",
       "postGameMeal": "Chicken rice and veggies",
       "twitter": "Hoss_seitz",
-      "instagram": "hoss_seitz"
+      "instagram": "hoss_seitz",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=1052895",
+        "pbr": "",
+        "baseballNorthwest": ""
+      }
     },
     "hudson-thom": {
       "name": "Hudson Thom",
@@ -302,29 +389,18 @@
       "headerImg": "/headers/hudson-thom-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2027",
       "heightWeight": "510/175 lbs",
       "batThrow": "",
       "favoriteTeam": "Mariners",
       "postGameMeal": "Steak",
       "twitter": "",
-      "instagram": "hudsonthom_25"
-    },
-    "jack-mcewen": {
-      "name": "Jack McEwen",
-      "number": "",
-      "positions": "",
-      "playerImg": "/players/jack-mcewen.jpg",
-      "headerImg": "/headers/jack-mcewen-header.jpg",
-      "logoImg": "",
-      "school": "",
-      "class": "",
-      "heightWeight": "5.8/135 lbs",
-      "batThrow": "",
-      "favoriteTeam": "Seahawks",
-      "postGameMeal": "Big Beefy Burrito",
-      "twitter": "",
-      "instagram": "jackmcewen3"
+      "instagram": "hudsonthom_25",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=920796",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/hudson-thom",
+        "baseballNorthwest": ""
+      }
     },
     "jackson-mcewen": {
       "name": "Jackson McEwen",
@@ -334,13 +410,18 @@
       "headerImg": "/headers/jackson-mcewen-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2028",
       "heightWeight": "5.8/135 lbs",
       "batThrow": "",
       "favoriteTeam": "Seahawks",
       "postGameMeal": "Big Beefy Bean Cheese and sausage Burrito!",
       "twitter": "",
-      "instagram": "jackmcewen3"
+      "instagram": "jackmcewen3",
+      "scoutPages": {
+        "perfectGame": "",
+        "pbr": "",
+        "baseballNorthwest": ""
+      }
     },
     "jacob-bakken": {
       "name": "Jacob Bakken",
@@ -350,13 +431,18 @@
       "headerImg": "/headers/jacob-bakken-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2028",
       "heightWeight": "5'7/136 lbs",
       "batThrow": "",
       "favoriteTeam": "seattle mariners",
       "postGameMeal": "wings",
       "twitter": "",
-      "instagram": "Jacob_op72"
+      "instagram": "Jacob_op72",
+      "scoutPages": {
+        "perfectGame": "",
+        "pbr": "",
+        "baseballNorthwest": ""
+      }
     },
     "jacob-lee": {
       "name": "Jacob Lee",
@@ -366,13 +452,18 @@
       "headerImg": "/headers/jacob-lee-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2025",
       "heightWeight": "6’/185 lbs",
       "batThrow": "",
       "favoriteTeam": "Mariners",
       "postGameMeal": "Emerald city smoothie",
       "twitter": "JacobLee0623",
-      "instagram": "_jacoblee06"
+      "instagram": "_jacoblee06",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=930791",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/Jacob-Lee-2680497531",
+        "baseballNorthwest": "https://baseballnorthwest.com/profiles/jacob_lee2506"
+      }
     },
     "jacob-nold": {
       "name": "Jacob Nold",
@@ -382,13 +473,18 @@
       "headerImg": "/headers/jacob-nold-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2026",
       "heightWeight": "5'11/178 lbs",
       "batThrow": "",
       "favoriteTeam": "Seattle Mariners",
       "postGameMeal": "None",
       "twitter": "jacob_nold0110",
-      "instagram": "jacob.nold0110"
+      "instagram": "jacob.nold0110",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=1040480",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/jacob-nold",
+        "baseballNorthwest": "https://baseballnorthwest.com/profiles/jacob-nold"
+      }
     },
     "jacob-remfert": {
       "name": "Jacob Remfert",
@@ -398,13 +494,18 @@
       "headerImg": "/headers/jacob-remfert-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2026",
       "heightWeight": "5’9/177 lbs",
       "batThrow": "",
       "favoriteTeam": "Mariners",
       "postGameMeal": "Chipotle",
       "twitter": "JacobRemfert",
-      "instagram": "Jacob_remfert12"
+      "instagram": "Jacob_remfert12",
+      "scoutPages": {
+        "perfectGame": "",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/jacob-remfert",
+        "baseballNorthwest": ""
+      }
     },
     "jasper-sarkany": {
       "name": "Jasper Sarkany",
@@ -414,29 +515,39 @@
       "headerImg": "/headers/jasper-sarkany-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2026",
       "heightWeight": "6’1/180 lbs",
       "batThrow": "",
       "favoriteTeam": "Seattle mariners",
       "postGameMeal": "Chipotle bowl",
       "twitter": "JasperSarkany",
-      "instagram": "jaspersarkany"
+      "instagram": "jaspersarkany",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/PlayerProfile.aspx?ID=1156553",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/jasper-sarkany",
+        "baseballNorthwest": "https://baseballnorthwest.com/profiles/jasper-sarkany"
+      }
     },
     "jonah-mcghee": {
-      "name": "Jonah mcghee",
+      "name": "Jonah McGhee",
       "number": "",
       "positions": "",
       "playerImg": "/players/jonah-mcghee.jpg",
       "headerImg": "/headers/jonah-mcghee-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2028",
       "heightWeight": "5'10/180 lbs",
       "batThrow": "",
       "favoriteTeam": "Washington football/basketball/ baseball",
       "postGameMeal": "A protein bar or fruit mix",
       "twitter": "",
-      "instagram": "Jonah McGhee"
+      "instagram": "Jonah McGhee",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/PlayerProfile.aspx?ID=1228916",
+        "pbr": "",
+        "baseballNorthwest": ""
+      }
     },
     "kolton-ackley": {
       "name": "Kolton Ackley",
@@ -446,13 +557,18 @@
       "headerImg": "/headers/kolton-ackley-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2028",
       "heightWeight": "5'9'/160 lbs",
       "batThrow": "",
       "favoriteTeam": "Mariners",
       "postGameMeal": "Ground beef, rice, bbq sauce, cheese and spinach",
       "twitter": "",
-      "instagram": "ko1t6n"
+      "instagram": "ko1t6n",
+      "scoutPages": {
+        "perfectGame": "",
+        "pbr": "",
+        "baseballNorthwest": ""
+      }
     },
     "kyson-chamberlin": {
       "name": "Kyson Chamberlin",
@@ -462,13 +578,18 @@
       "headerImg": "/headers/kyson-chamberlin-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2027",
       "heightWeight": "5'10/180 lbs",
       "batThrow": "",
       "favoriteTeam": "Mariners",
       "postGameMeal": "Panda Express",
       "twitter": "KysonC27",
-      "instagram": "kysonchamberlin"
+      "instagram": "kysonchamberlin",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=920932",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/kyson-chamberlin",
+        "baseballNorthwest": "https://baseballnorthwest.com/profiles/kyson-chamberlin"
+      }
     },
     "logan-lykken": {
       "name": "Logan Lykken",
@@ -478,13 +599,18 @@
       "headerImg": "/headers/logan-lykken-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2025",
       "heightWeight": "5'11/170 lbs",
       "batThrow": "",
       "favoriteTeam": "Seahawks/Mariners",
       "postGameMeal": "Chipotle burrito",
       "twitter": "loganlykken",
-      "instagram": "loganlykken"
+      "instagram": "loganlykken",
+      "scoutPages": {
+        "perfectGame": "",
+        "pbr": "",
+        "baseballNorthwest": ""
+      }
     },
     "lucas-perez": {
       "name": "Lucas Perez",
@@ -494,13 +620,18 @@
       "headerImg": "/headers/lucas-perez-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2025",
       "heightWeight": "6’1/195 lbs",
       "batThrow": "",
       "favoriteTeam": "Team USA Powerlifting",
       "postGameMeal": "Wingstop",
       "twitter": "LucasPerez1644",
-      "instagram": "lucas.perez1644"
+      "instagram": "lucas.perez1644",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=984324",
+        "pbr": "",
+        "baseballNorthwest": ""
+      }
     },
     "lucas-post": {
       "name": "Lucas Post",
@@ -510,29 +641,39 @@
       "headerImg": "/headers/lucas-post-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2026",
       "heightWeight": "5’9’’/190 lbs",
       "batThrow": "",
       "favoriteTeam": "Mariners",
       "postGameMeal": "Steak and eggs",
       "twitter": "PostLucas16",
-      "instagram": "lucaspost4"
+      "instagram": "lucaspost4",
+      "scoutPages": {
+        "perfectGame": "",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/lucas-post",
+        "baseballNorthwest": ""
+      }
     },
     "mason-lee": {
-      "name": "Mason lee",
+      "name": "Mason Lee",
       "number": "",
       "positions": "",
       "playerImg": "/players/mason-lee.jpg",
       "headerImg": "/headers/mason-lee-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2027",
       "heightWeight": "5'7/155 lbs",
       "batThrow": "",
       "favoriteTeam": "Mariners",
       "postGameMeal": "Chicken and rice",
       "twitter": "",
-      "instagram": "masonlee2027"
+      "instagram": "masonlee2027",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=941391",
+        "pbr": "",
+        "baseballNorthwest": ""
+      }
     },
     "mateo-grijalva": {
       "name": "Mateo Grijalva",
@@ -542,13 +683,18 @@
       "headerImg": "/headers/mateo-grijalva-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2027",
       "heightWeight": "5'7/160 lbs",
       "batThrow": "",
       "favoriteTeam": "Yankees",
       "postGameMeal": "a good carbanar",
       "twitter": "mateogrijalva27",
-      "instagram": "mateo_grijalva2"
+      "instagram": "mateo_grijalva2",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/%28S%28245g3j45o3kgy245crybkw55%29%29/Players/Playerprofile.aspx?ID=939246",
+        "pbr": "",
+        "baseballNorthwest": ""
+      }
     },
     "max-butcher": {
       "name": "Max Butcher",
@@ -558,13 +704,18 @@
       "headerImg": "/headers/max-butcher-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2027",
       "heightWeight": "5’10/150 lbs",
       "batThrow": "",
       "favoriteTeam": "Dodgers",
       "postGameMeal": "Chicken bake",
       "twitter": "maxbutcher2027",
-      "instagram": "maxbutcher2027"
+      "instagram": "maxbutcher2027",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=920853",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/max-butcher",
+        "baseballNorthwest": "https://baseballnorthwest.com/profiles/max-butcher"
+      }
     },
     "neal-burtis": {
       "name": "Neal Burtis",
@@ -574,13 +725,18 @@
       "headerImg": "/headers/neal-burtis-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2026",
       "heightWeight": "6’1/175 lbs",
       "batThrow": "",
       "favoriteTeam": "Mariners",
       "postGameMeal": "Red Robin",
       "twitter": "NealBurtis",
-      "instagram": "neal.burtis"
+      "instagram": "neal.burtis",
+      "scoutPages": {
+        "perfectGame": "",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/Neal-Burtis",
+        "baseballNorthwest": "https://baseballnorthwest.com/profiles/neal-burtis"
+      }
     },
     "noah-ruud": {
       "name": "Noah Ruud",
@@ -590,13 +746,18 @@
       "headerImg": "/headers/noah-ruud-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2028",
       "heightWeight": "6'/185 lbs",
       "batThrow": "",
       "favoriteTeam": "Mariners",
       "postGameMeal": "Burger",
       "twitter": "",
-      "instagram": "noah_ruud25"
+      "instagram": "noah_ruud25",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/PlayerProfile.aspx?ID=1228919",
+        "pbr": "",
+        "baseballNorthwest": ""
+      }
     },
     "parker-peschel": {
       "name": "Parker Peschel",
@@ -606,13 +767,18 @@
       "headerImg": "/headers/parker-peschel-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2025",
       "heightWeight": "6’0/175 lbs",
       "batThrow": "",
       "favoriteTeam": "Titans",
       "postGameMeal": "Titans",
       "twitter": "",
-      "instagram": "p_a_r_k_e_rp"
+      "instagram": "p_a_r_k_e_rp",
+      "scoutPages": {
+        "perfectGame": "",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/Parker--Peschel-4289136750",
+        "baseballNorthwest": ""
+      }
     },
     "rowan-douglas": {
       "name": "Rowan Douglas",
@@ -622,13 +788,18 @@
       "headerImg": "/headers/rowan-douglas-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2027",
       "heightWeight": "5’10/167 lbs",
       "batThrow": "",
       "favoriteTeam": "Seahawks",
       "postGameMeal": "Steak and Rice",
       "twitter": "RowanDouglas23",
-      "instagram": "rowandoug23"
+      "instagram": "rowandoug23",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=920867",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/rowan-douglas",
+        "baseballNorthwest": "https://baseballnorthwest.com/profiles/rowan-douglas"
+      }
     },
     "rylee-sennert": {
       "name": "Rylee Sennert",
@@ -638,13 +809,18 @@
       "headerImg": "/headers/rylee-sennert-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2028",
       "heightWeight": "5'10/140 lbs",
       "batThrow": "",
       "favoriteTeam": "Mariners",
       "postGameMeal": "Chicken burgers",
       "twitter": "",
-      "instagram": "ryleesennert"
+      "instagram": "ryleesennert",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=1052888",
+        "pbr": "",
+        "baseballNorthwest": ""
+      }
     },
     "sean-evans": {
       "name": "Sean Evans",
@@ -654,13 +830,18 @@
       "headerImg": "/headers/sean-evans-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2026",
       "heightWeight": "6’3/210 lbs",
       "batThrow": "",
       "favoriteTeam": "tahoma bears",
       "postGameMeal": "mcdonalds",
       "twitter": "seannnevans",
-      "instagram": "seannnnevans"
+      "instagram": "seannnnevans",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/players/playerprofile.aspx?ID=900702",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/Sean-Evans-7812394065",
+        "baseballNorthwest": "https://baseballnorthwest.com/profiles/sevans"
+      }
     },
     "talon-coker": {
       "name": "Talon Coker",
@@ -670,13 +851,18 @@
       "headerImg": "/headers/talon-coker-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2027",
       "heightWeight": "6’3/180 lbs",
       "batThrow": "",
       "favoriteTeam": "Seattle Mariners",
       "postGameMeal": "Street Tacos",
       "twitter": "Talon_Coker",
-      "instagram": "iamtaloncoker_"
+      "instagram": "iamtaloncoker_",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=920781",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/talon-coker",
+        "baseballNorthwest": "https://baseballnorthwest.com/profiles/talon-coker"
+      }
     },
     "timmy-mcewen": {
       "name": "Timmy McEwen",
@@ -686,13 +872,18 @@
       "headerImg": "/headers/timmy-mcewen-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2026",
       "heightWeight": "6'2/200 lbs",
       "batThrow": "",
       "favoriteTeam": "Seattle Seahawks",
       "postGameMeal": "Wendy's double stacks",
       "twitter": "",
-      "instagram": "timmy_mcewen24"
+      "instagram": "timmy_mcewen24",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=1219244",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/timmy-mcewen",
+        "baseballNorthwest": "https://baseballnorthwest.com/profiles/timothy-mcewen"
+      }
     },
     "trey-davies": {
       "name": "Trey Davies",
@@ -702,13 +893,18 @@
       "headerImg": "/headers/trey-davies-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2027",
       "heightWeight": "6’0/160 lbs",
       "batThrow": "",
       "favoriteTeam": "Seattle mariners",
       "postGameMeal": "Chipotle",
       "twitter": "TreyDavies120",
-      "instagram": "treydavies_1"
+      "instagram": "treydavies_1",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=920838",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/Trey-Davies",
+        "baseballNorthwest": "https://baseballnorthwest.com/profiles/cameron-trey-davies"
+      }
     },
     "zachary-moser": {
       "name": "Zachary Moser",
@@ -718,13 +914,18 @@
       "headerImg": "/headers/zachary-moser-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2026",
       "heightWeight": "5’7”/170 lbs",
       "batThrow": "",
       "favoriteTeam": "Idk",
       "postGameMeal": "Pizza",
       "twitter": "",
-      "instagram": "zach_moser7"
+      "instagram": "zach_moser7",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=1144361",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/zach-moser",
+        "baseballNorthwest": ""
+      }
     },
     "chase-fritz": {
       "name": "Chase Fritz",
@@ -734,13 +935,18 @@
       "headerImg": "/headers/chase-fritz-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2028",
       "heightWeight": "5’7’’/140 lbs",
       "batThrow": "",
       "favoriteTeam": "Seattle Mariners",
       "postGameMeal": "Cereal",
       "twitter": "",
-      "instagram": "chase_fritz22"
+      "instagram": "chase_fritz22",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=1228735",
+        "pbr": "",
+        "baseballNorthwest": ""
+      }
     },
     "nolan-fahey": {
       "name": "Nolan Fahey",
@@ -750,13 +956,60 @@
       "headerImg": "/headers/nolan-fahey-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2026",
       "heightWeight": "5”11/160 lbs",
       "batThrow": "",
       "favoriteTeam": "Mariners",
       "postGameMeal": "Smash burgers",
       "twitter": "NolanFahey32",
-      "instagram": "nolan_fahey32"
+      "instagram": "nolan_fahey32",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=880235",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/Nolan--Fahey-6183925704",
+        "baseballNorthwest": ""
+      }
+    },
+    "anthony-wagner": {
+      "name": "Anthony Wagner",
+      "number": "",
+      "positions": "",
+      "playerImg": "/players/anthony-wagner.jpg",
+      "headerImg": "/headers/anthony-wagner-header.jpg",
+      "logoImg": "",
+      "school": "",
+      "class": "",
+      "heightWeight": "",
+      "batThrow": "",
+      "favoriteTeam": "",
+      "postGameMeal": "",
+      "twitter": "",
+      "instagram": "",
+      "scoutPages": {
+        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=947176",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/Anthony-Wagner-7598264013",
+        "baseballNorthwest": "https://baseballnorthwest.com/profiles/anthony-wagner1"
+      }
+    },
+    "evan-kim": {
+      "name": "Evan Kim",
+      "number": "",
+      "positions": "",
+      "playerImg": "/players/evan-kim.jpg",
+      "headerImg": "/headers/evan-kim-header.jpg",
+      "logoImg": "",
+      "school": "",
+      "class": "",
+      "heightWeight": "",
+      "batThrow": "",
+      "favoriteTeam": "",
+      "postGameMeal": "",
+      "twitter": "",
+      "instagram": "",
+      "scoutPages": {
+        "perfectGame": "",
+        "pbr": "https://www.prepbaseballreport.com/profiles/WA/evan-kim",
+        "baseballNorthwest": ""
+      }
     }
   }
 }
