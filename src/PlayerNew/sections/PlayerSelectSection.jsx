@@ -74,7 +74,20 @@ function normalizeNumber(n) {
   return Number.isFinite(num) ? num : null;
 }
 
-export default function PlayerSelectSection({ roster, selectedId, onSelect, matchHeight }) {
+function normalizeSiteBase(siteBase) {
+  if (!siteBase) return "";
+  return siteBase.startsWith("http") ? siteBase : `https://${siteBase}`;
+}
+
+export function buildPlayerPageUrl(siteBase, playerId) {
+  const base = normalizeSiteBase(siteBase);
+  if (!base) return "";
+  const url = new URL(base);
+  url.pathname = `/${playerId}`;
+  return url.toString();
+}
+
+export default function PlayerSelectSection({ roster, selectedId, onSelect, matchHeight, siteBase }) {
   const [query, setQuery] = useState("");
 
   const filtered = useMemo(() => {
@@ -86,6 +99,20 @@ export default function PlayerSelectSection({ roster, selectedId, onSelect, matc
       return name.includes(q) || num.includes(q);
     });
   }, [query, roster]);
+
+  const useNavigation = Boolean(siteBase);
+
+  const handlePlayerClick = (playerId) => {
+    if (useNavigation) {
+      const target = buildPlayerPageUrl(siteBase, playerId);
+      if (target) {
+        if (window.top) window.top.location.href = target;
+        else window.location.href = target;
+      }
+    } else {
+      onSelect?.(playerId);
+    }
+  };
 
   return (
     <div
@@ -114,43 +141,62 @@ export default function PlayerSelectSection({ roster, selectedId, onSelect, matc
           const active = p.id === selectedId;
           const pills = splitAndAbbreviatePositions(p?.positions || "");
           const number = normalizeNumber(p?.number);
+          const playerUrl = useNavigation ? buildPlayerPageUrl(siteBase, p.id) : null;
+          const rowClass = `w-full text-left px-4 py-3 rounded-lg border transition ${
+                active
+                  ? "bg-[#1d4281] text-white border-[#1d4281]"
+                  : "bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100"
+              }`;
+
+          const content = (
+            <div className="flex items-center gap-2">
+              <span className={`font-semibold ${active ? "text-white/90" : "text-slate-500"}`}>
+                {number !== null ? `#${number}` : "#--"}
+              </span>
+
+              <div className="flex-1 min-w-0 flex items-center gap-2">
+                <span className={`font-semibold truncate ${active ? "text-white" : "text-slate-900"}`}>
+                  {p.name}
+                </span>
+
+                {pills.length ? (
+                  <div className="flex flex-wrap gap-2">
+                    {pills.map((abbr) => (
+                      <span
+                        key={abbr}
+                        className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold border ${
+                          active ? "bg-white/15 text-white border-white/25" : pillClassFor(abbr)
+                        }`}
+                      >
+                        {abbr}
+                      </span>
+                    ))}
+                  </div>
+                ) : null}
+              </div>
+            </div>
+          );
+
+          if (useNavigation && playerUrl) {
+            return (
+              <a
+                key={p.id}
+                href={playerUrl}
+                className={`block ${rowClass} no-underline`}
+              >
+                {content}
+              </a>
+            );
+          }
+
           return (
             <button
               key={p.id}
               type="button"
-              onClick={() => onSelect(p.id)}
-              className={`w-full text-left px-4 py-3 rounded-lg border transition ${
-                active
-                  ? "bg-[#1d4281] text-white border-[#1d4281]"
-                  : "bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100"
-              }`}
+              onClick={() => handlePlayerClick(p.id)}
+              className={rowClass}
             >
-              <div className="flex items-center gap-2">
-                <span className={`font-semibold ${active ? "text-white/90" : "text-slate-500"}`}>
-                  {number !== null ? `#${number}` : "#--"}
-                </span>
-
-                <div className="flex-1 min-w-0 flex items-center gap-2">
-                  <span className={`font-semibold truncate ${active ? "text-white" : "text-slate-900"}`}>
-                    {p.name}
-                  </span>
-
-                  {pills.length ? (
-                    <div className="flex flex-wrap gap-2">
-                      {pills.map((abbr) => (
-                        <span
-                          key={abbr}
-                          className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold border ${
-                            active ? "bg-white/15 text-white border-white/25" : pillClassFor(abbr)
-                          }`}
-                        >
-                          {abbr}
-                        </span>
-                      ))}
-                    </div>
-                  ) : null}
-                </div>
-              </div>
+              {content}
             </button>
           );
         })}

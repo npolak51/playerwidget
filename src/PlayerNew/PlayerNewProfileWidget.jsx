@@ -602,6 +602,10 @@ export default function PlayerNewProfileWidget() {
     return buildRosterFromPlayersJson(playersData.players || {});
   }, []);
 
+  const siteBase = useMemo(() => {
+    return new URLSearchParams(window.location.search).get("siteBase") || "www.tahomabearsbaseball.com";
+  }, []);
+
   const [playerId, setPlayerId] = useState(() => readPlayerIdFromUrl());
   const [playerSelectMatchHeight, setPlayerSelectMatchHeight] = useState(null);
   const [expandedSections, setExpandedSections] = useState({
@@ -1213,6 +1217,7 @@ export default function PlayerNewProfileWidget() {
             selectedId={playerId}
             onSelect={selectPlayer}
             matchHeight={playerSelectMatchHeight}
+            siteBase={siteBase}
           />
           <div className="lg:col-span-2 space-y-6">
             <div ref={personalInfoRef}>
