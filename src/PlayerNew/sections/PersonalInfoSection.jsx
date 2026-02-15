@@ -73,7 +73,7 @@ export default function PersonalInfoSection({ player, social }) {
                       aria-label="Twitter"
                       className="p-4 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors"
                     >
-                      <Twitter size={40} className="text-blue-600" />
+                      <Twitter size={30} className="text-blue-600" />
                     </a>
                   ) : null}
                   {instagram ? (
@@ -84,7 +84,7 @@ export default function PersonalInfoSection({ player, social }) {
                       aria-label="Instagram"
                       className="p-4 bg-pink-50 rounded-xl hover:bg-pink-100 transition-colors"
                     >
-                      <Instagram size={40} className="text-pink-600" />
+                      <Instagram size={30} className="text-pink-600" />
                     </a>
                   ) : null}
                   {tiktokUrl ? (
@@ -95,7 +95,7 @@ export default function PersonalInfoSection({ player, social }) {
                       aria-label="TikTok"
                       className="p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors"
                     >
-                      <img src={TikTokIcon} alt="TikTok" className="w-10 h-10" />
+                      <img src={TikTokIcon} alt="TikTok" className="w-[30px] h-[30px]" />
                     </a>
                   ) : null}
                 </div>
@@ -131,7 +131,7 @@ export default function PersonalInfoSection({ player, social }) {
           {(player?.scoutingProfiles || []).length ? (
             <div>
               <div className="text-slate-600 text-base mb-2 leading-tight">Scouting Profiles</div>
-              <div className="flex flex-nowrap items-center gap-3 overflow-x-auto pb-1">
+              <div className="flex flex-wrap items-center gap-3 pb-1">
                 {player.scoutingProfiles
                   .filter((p) => p?.url && p.url !== "#")
                   .map((profile) => {
@@ -144,13 +144,13 @@ export default function PersonalInfoSection({ player, social }) {
                         rel="noopener noreferrer"
                         title={profile.name}
                         aria-label={profile.name}
-                        className="group inline-flex items-center justify-center w-24 h-24 rounded-full bg-white border border-gray-200 shadow-sm hover:border-[#ffc525] hover:bg-[#ffc525]/5 transition-all duration-200 flex-shrink-0"
+                        className="group inline-flex items-center justify-center w-[72px] h-[72px] rounded-full bg-white border border-gray-200 shadow-sm hover:border-[#ffc525] hover:bg-[#ffc525]/5 transition-all duration-200 flex-shrink-0"
                       >
                         {icon ? (
                           <img
                             src={icon}
                             alt={`${profile.name} logo`}
-                            className="w-14 h-14 object-contain group-hover:scale-105 transition-transform"
+                            className="w-[42px] h-[42px] object-contain group-hover:scale-105 transition-transform"
                           />
                         ) : (
                           <span className="text-base font-bold text-slate-700">
