@@ -9,15 +9,8 @@ export function useEmbedAutoHeight(deps = []) {
     }
 
     const postHeight = () => {
-      const body = document.body;
-      const html = document.documentElement;
-      const height = Math.max(
-        body?.scrollHeight ?? 0,
-        body?.offsetHeight ?? 0,
-        html?.clientHeight ?? 0,
-        html?.scrollHeight ?? 0,
-        html?.offsetHeight ?? 0
-      );
+      const root = document.getElementById("root");
+      const height = root ? root.scrollHeight : document.body.scrollHeight;
 
       if (window.parent && window.parent !== window) {
         window.parent.postMessage({ type: "playerwidget:height", height }, "*");
@@ -34,7 +27,9 @@ export function useEmbedAutoHeight(deps = []) {
     let ro;
     if ("ResizeObserver" in window) {
       ro = new ResizeObserver(() => postHeight());
-      if (document.body) ro.observe(document.body);
+      const root = document.getElementById("root");
+      if (root) ro.observe(root);
+      else if (document.body) ro.observe(document.body);
     }
 
     return () => {
