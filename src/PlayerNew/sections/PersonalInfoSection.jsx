@@ -131,7 +131,7 @@ export default function PersonalInfoSection({ player, social }) {
           {(player?.scoutingProfiles || []).length ? (
             <div>
               <div className="text-slate-600 text-base mb-2 leading-tight">Scouting Profiles</div>
-              <div className="flex flex-wrap items-center gap-3 pb-1">
+              <div className="flex flex-nowrap items-center gap-3 overflow-x-auto pb-1">
                 {player.scoutingProfiles
                   .filter((p) => p?.url && p.url !== "#")
                   .map((profile) => {

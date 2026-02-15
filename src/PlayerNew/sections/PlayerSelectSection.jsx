@@ -87,7 +87,7 @@ export function buildPlayerPageUrl(siteBase, playerId) {
   return url.toString();
 }
 
-export default function PlayerSelectSection({ roster, selectedId, onSelect, siteBase }) {
+export default function PlayerSelectSection({ roster, selectedId, onSelect, matchHeight, siteBase }) {
   const [query, setQuery] = useState("");
 
   const filtered = useMemo(() => {
@@ -115,7 +115,10 @@ export default function PlayerSelectSection({ roster, selectedId, onSelect, site
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-lg p-7 flex flex-col">
+    <div
+      className="bg-white rounded-xl shadow-lg p-7 lg:h-full flex flex-col overflow-hidden"
+      style={matchHeight ? { height: `${matchHeight}px` } : undefined}
+    >
       <h2 className="text-2xl font-bold text-[#1d4281] mb-4">Select Player</h2>
 
       <div className="relative mb-3">
@@ -133,7 +136,7 @@ export default function PlayerSelectSection({ roster, selectedId, onSelect, site
         Showing {filtered.length} of {roster.length} players
       </div>
 
-      <div className="space-y-2 pr-1">
+      <div className="max-h-[520px] lg:max-h-none lg:flex-1 lg:min-h-0 overflow-y-auto pr-1 space-y-2">
         {filtered.map((p) => {
           const active = p.id === selectedId;
           const pills = splitAndAbbreviatePositions(p?.positions || "");

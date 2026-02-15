@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import playersData from "../data/players.json";
 import statsData from "../data/stats.json";
 import gameLogsData from "../data/gameLogs.json";
@@ -607,12 +607,15 @@ export default function PlayerNewProfileWidget() {
   }, []);
 
   const [playerId, setPlayerId] = useState(() => readPlayerIdFromUrl());
+  const [playerSelectMatchHeight, setPlayerSelectMatchHeight] = useState(null);
   const [expandedSections, setExpandedSections] = useState({
     achievements: true,
     recentGames: true,
     seasonStats: true,
     careerStats: true,
   });
+  const personalInfoRef = useRef(null);
+
   // Keep state synced with browser navigation (back/forward).
   useEffect(() => {
     const onPop = () => setPlayerId(readPlayerIdFromUrl());
@@ -1135,6 +1138,48 @@ export default function PlayerNewProfileWidget() {
     return { seasonHitting, seasonPitching, careerBattingRows, careerPitchingRows };
   }, [selectedStats]);
 
+  // Keep the left "Select Player" card the same height as Personal Info (desktop only).
+  useEffect(() => {
+    const refEl = personalInfoRef.current;
+    if (!refEl) return undefined;
+
+    const mql = window.matchMedia("(min-width: 1024px)");
+    let raf = 0;
+    let ro;
+
+    const update = () => {
+      if (!mql.matches) {
+        setPlayerSelectMatchHeight(null);
+        return;
+      }
+      const h = refEl.offsetHeight || 0;
+      setPlayerSelectMatchHeight(h > 0 ? h : null);
+    };
+
+    const schedule = () => {
+      if (raf) window.cancelAnimationFrame(raf);
+      raf = window.requestAnimationFrame(update);
+    };
+
+    schedule();
+
+    if ("ResizeObserver" in window) {
+      ro = new ResizeObserver(() => schedule());
+      ro.observe(refEl);
+    }
+
+    const onChange = () => schedule();
+    if (mql.addEventListener) mql.addEventListener("change", onChange);
+    else mql.addListener(onChange);
+
+    return () => {
+      if (raf) window.cancelAnimationFrame(raf);
+      if (ro) ro.disconnect();
+      if (mql.removeEventListener) mql.removeEventListener("change", onChange);
+      else mql.removeListener(onChange);
+    };
+  }, [playerId]);
+
   const toggleSection = (section) => {
     setExpandedSections((prev) => ({ ...prev, [section]: !prev[section] }));
   };
@@ -1166,15 +1211,16 @@ export default function PlayerNewProfileWidget() {
         />
 
         {/* Player selection & personal info */}
-        <div className="grid lg:grid-cols-3 gap-6 items-start">
+        <div className="grid lg:grid-cols-3 gap-6 items-stretch">
           <PlayerSelectSection
             roster={roster}
             selectedId={playerId}
             onSelect={selectPlayer}
+            matchHeight={playerSelectMatchHeight}
             siteBase={siteBase}
           />
           <div className="lg:col-span-2 space-y-6">
-            <div>
+            <div ref={personalInfoRef}>
               <PersonalInfoSection
                 player={mock.player}
                 social={{
