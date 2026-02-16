@@ -182,6 +182,8 @@ export default function PlayerSelectSection({ roster, selectedId, onSelect, matc
               <a
                 key={p.id}
                 href={playerUrl}
+                target="_top"
+                rel="noopener noreferrer"
                 className={`block ${rowClass} no-underline`}
               >
                 {content}
