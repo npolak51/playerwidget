@@ -1010,6 +1010,27 @@
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/evan-kim",
         "baseballNorthwest": ""
       }
+    },
+    "riley-smart": {
+      "name": "Riley Smart",
+      "number": "",
+      "positions": "Pitcher",
+      "playerImg": "/players/riley-smart.jpg",
+      "headerImg": "/headers/riley-smart-header.jpg",
+      "logoImg": "",
+      "school": "",
+      "class": "",
+      "heightWeight": "",
+      "batThrow": "R/R",
+      "favoriteTeam": "",
+      "postGameMeal": "",
+      "twitter": "",
+      "instagram": "",
+      "scoutPages": {
+        "perfectGame": "",
+        "pbr": "",
+        "baseballNorthwest": ""
+      }
     }
   }
 }

@@ -3,6 +3,7 @@ import playersData from "../data/players.json";
 import statsData from "../data/stats.json";
 import gameLogsData from "../data/gameLogs.json";
 import { allLeagueSelections } from "../Honors/honorsData";
+import { offensiveStatCategories, pitchingStatCategories } from "../Leaders/leadersData";
 import { useEmbedAutoHeight } from "./useEmbedAutoHeight";
 import { getPlayerNewMockData } from "./playerNewMockData";
 import { MILESTONE_RULES } from "./milestoneRules";
@@ -677,11 +678,47 @@ export default function PlayerNewProfileWidget() {
       }));
   }, [selectedStats, playerId]);
 
+  const recordAchievements = useMemo(() => {
+    const playerName = selectedPlayer?.name || mock?.player?.name || "";
+    const key = normalizeNameForMatch(playerName);
+    if (!key) return [];
+
+    const allCategories = [...(offensiveStatCategories || []), ...(pitchingStatCategories || [])];
+    const records = [];
+
+    for (const cat of allCategories) {
+      const leaders = cat?.leaders || [];
+      for (const leader of leaders) {
+        if (normalizeNameForMatch(leader?.name) !== key) continue;
+        const rank = leader?.rank;
+        const statName = cat?.name || "";
+        const year = leader?.year;
+        const value = leader?.value || "";
+        const games = leader?.games || "";
+        const descParts = [value, games].filter(Boolean).join(" ");
+        const description = descParts ? `${descParts} • ${year}` : String(year || "");
+        const c = String(leader?.class ?? "").trim().toLowerCase();
+        const active = c && c !== "sr" && c !== "senior";
+        records.push({
+          year: year || "",
+          type: "record",
+          title: `#${rank} All-Time Single-Season ${statName}`,
+          description,
+          active,
+          __sortKey: Number(year) || 0,
+        });
+      }
+    }
+
+    records.sort((a, b) => b.__sortKey - a.__sortKey);
+    return records.map(({ __sortKey, ...r }) => r);
+  }, [selectedPlayer?.name, mock?.player?.name]);
+
   const combinedAchievements = useMemo(() => {
-    const combined = [...(achievements || []), ...(milestoneAchievements || [])];
+    const combined = [...(achievements || []), ...(milestoneAchievements || []), ...(recordAchievements || [])];
     combined.sort((a, b) => (Number(b?.year) || 0) - (Number(a?.year) || 0));
     return combined;
-  }, [achievements, milestoneAchievements]);
+  }, [achievements, milestoneAchievements, recordAchievements]);
 
   const milestones = useMemo(() => {
     const computed = buildMilestonesFromStats(selectedStats, playerId);

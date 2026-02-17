@@ -1365,7 +1365,8 @@ export const pitchingStatCategories = [
         "name": "Adam Jay",
         "year": 2024,
         "value": "1.19",
-        "games": "(46.1 IP)"
+        "games": "(46.1 IP)",
+        "class": "Jr."
       },
       {
         "rank": 13,
@@ -1379,7 +1380,8 @@ export const pitchingStatCategories = [
         "name": "Sean Evans",
         "year": 2023,
         "value": "1.21",
-        "games": "(19 IP)"
+        "games": "(19 IP)",
+        "class": "Fr."
       },
       {
         "rank": 15,
@@ -1393,14 +1395,16 @@ export const pitchingStatCategories = [
         "name": "Bryson Leach",
         "year": 2024,
         "value": "1.22",
-        "games": "(23 IP)"
+        "games": "(23 IP)",
+        "class": "Jr."
       },
       {
         "rank": 17,
         "name": "Adam Jay",
         "year": 2023,
         "value": "1.23",
-        "games": "(33 IP)"
+        "games": "(33 IP)",
+        "class": "So."
       },
       {
         "rank": 18,

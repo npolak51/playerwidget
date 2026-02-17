@@ -48,6 +48,12 @@ function useEmbedAutoHeight(deps = []) {
   }, deps);
 }
 
+function isLeaderActive(leader) {
+  const c = String(leader?.class ?? "").trim().toLowerCase();
+  if (!c) return false;
+  return c !== "sr" && c !== "senior";
+}
+
 function RankBadge({ rank }) {
   const cls =
     rank === 1
@@ -157,8 +163,13 @@ export default function AllTimeLeadersWidgetBase({ title, categories }) {
               <div className="col-span-1">
                 <RankBadge rank={leader.rank} />
               </div>
-              <div className="col-span-6">
+              <div className="col-span-6 flex items-center gap-2 flex-wrap">
                 <span className="text-blue-900 font-semibold">{leader.name}</span>
+                {isLeaderActive(leader) ? (
+                  <span className="inline-block px-2 py-0.5 bg-emerald-500/20 text-emerald-700 text-xs font-medium rounded-full">
+                    Active
+                  </span>
+                ) : null}
               </div>
               <div className="col-span-2">
                 <span className="inline-block px-3 py-1 bg-blue-900/10 text-blue-900 rounded-full text-sm">
@@ -179,7 +190,14 @@ export default function AllTimeLeadersWidgetBase({ title, categories }) {
                 <RankBadge rank={leader.rank} />
               </div>
               <div className="flex-1 min-w-0">
-                <div className="text-blue-900 font-semibold truncate">{leader.name}</div>
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="text-blue-900 font-semibold truncate">{leader.name}</span>
+                  {isLeaderActive(leader) ? (
+                    <span className="inline-block px-2 py-0.5 bg-emerald-500/20 text-emerald-700 text-xs font-medium rounded-full flex-shrink-0">
+                      Active
+                    </span>
+                  ) : null}
+                </div>
                 <div className="mt-2 flex flex-wrap gap-2 items-center">
                   <span className="inline-block px-2.5 py-0.5 bg-blue-900/10 text-blue-900 text-sm rounded-full">
                     {leader.year}
@@ -195,9 +213,12 @@ export default function AllTimeLeadersWidgetBase({ title, categories }) {
         ))}
       </div>
 
-      {/* Footer note */}
-      <div className="px-4 sm:px-6 py-4 bg-white">
+      {/* Footer notes */}
+      <div className="px-4 sm:px-6 py-4 bg-white space-y-1">
         <div className="text-center text-gray-500 text-sm">* Denotes pre-BBCOR bat era</div>
+        <div className="text-center text-gray-500 text-sm">
+          <span className="inline-block px-2 py-0.5 bg-emerald-500/20 text-emerald-700 text-xs font-medium rounded-full align-middle">Active</span> = Current roster member (record set as Fr./So./Jr.)
+        </div>
       </div>
     </div>
   );
