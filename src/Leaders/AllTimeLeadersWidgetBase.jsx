@@ -50,8 +50,21 @@ function useEmbedAutoHeight(deps = []) {
 
 function isLeaderActive(leader) {
   const c = String(leader?.class ?? "").trim().toLowerCase();
-  if (!c) return false;
-  return c !== "sr" && c !== "senior";
+  const year = Number(leader?.year) || 0;
+  if (!c || !year) return false;
+  if (c === "sr" || c === "senior") return false;
+
+  // Years until graduation: Fr=3, So=2, Jr=1
+  const yearsUntilGrad = c === "fr" || c === "freshman" ? 3 : c === "so" || c === "sophomore" ? 2 : c === "jr" || c === "junior" ? 1 : 0;
+  const gradYear = year + yearsUntilGrad;
+
+  const now = new Date();
+  const currentYear = now.getFullYear();
+  const currentMonth = now.getMonth(); // 0-indexed; June = 5
+  // Seniors are no longer active once it reaches June of their senior year
+  if (gradYear < currentYear) return false;
+  if (gradYear > currentYear) return true;
+  return currentMonth < 5; // Before June
 }
 
 function RankBadge({ rank }) {
@@ -217,7 +230,7 @@ export default function AllTimeLeadersWidgetBase({ title, categories }) {
       <div className="px-4 sm:px-6 py-4 bg-white space-y-1">
         <div className="text-center text-gray-500 text-sm">* Denotes pre-BBCOR bat era</div>
         <div className="text-center text-gray-500 text-sm">
-          <span className="inline-block px-2 py-0.5 bg-emerald-500/20 text-emerald-700 text-xs font-medium rounded-full align-middle">Active</span> = Current roster member (record set as Fr./So./Jr.)
+          <span className="inline-block px-2 py-0.5 bg-emerald-500/20 text-emerald-700 text-xs font-medium rounded-full align-middle">Active</span> = Still on roster (graduation year not yet reached; seniors inactive after June)
         </div>
       </div>
     </div>

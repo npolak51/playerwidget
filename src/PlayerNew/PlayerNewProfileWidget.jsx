@@ -124,6 +124,21 @@ function normalizeNameForMatch(name) {
     .trim();
 }
 
+function isRecordHolderActive(leader) {
+  const c = String(leader?.class ?? "").trim().toLowerCase();
+  const year = Number(leader?.year) || 0;
+  if (!c || !year) return false;
+  if (c === "sr" || c === "senior") return false;
+  const yearsUntilGrad = c === "fr" || c === "freshman" ? 3 : c === "so" || c === "sophomore" ? 2 : c === "jr" || c === "junior" ? 1 : 0;
+  const gradYear = year + yearsUntilGrad;
+  const now = new Date();
+  const currentYear = now.getFullYear();
+  const currentMonth = now.getMonth();
+  if (gradYear < currentYear) return false;
+  if (gradYear > currentYear) return true;
+  return currentMonth < 5;
+}
+
 function allLeagueTeamRank(team) {
   const t = String(team ?? "").toLowerCase();
   if (t.includes("1st") || t.includes("first")) return 1;
@@ -697,8 +712,7 @@ export default function PlayerNewProfileWidget() {
         const games = leader?.games || "";
         const descParts = [value, games].filter(Boolean).join(" ");
         const description = descParts ? `${descParts} • ${year}` : String(year || "");
-        const c = String(leader?.class ?? "").trim().toLowerCase();
-        const active = c && c !== "sr" && c !== "senior";
+        const active = isRecordHolderActive(leader);
         records.push({
           year: year || "",
           type: "record",
