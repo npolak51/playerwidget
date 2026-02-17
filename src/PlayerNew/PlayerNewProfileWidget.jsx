@@ -125,18 +125,16 @@ function normalizeNameForMatch(name) {
 }
 
 function isRecordHolderActive(leader) {
-  const c = String(leader?.class ?? "").trim().toLowerCase();
-  const year = Number(leader?.year) || 0;
-  if (!c || !year) return false;
-  if (c === "sr" || c === "senior") return false;
-  const yearsUntilGrad = c === "fr" || c === "freshman" ? 3 : c === "so" || c === "sophomore" ? 2 : c === "jr" || c === "junior" ? 1 : 0;
-  const gradYear = year + yearsUntilGrad;
-  const now = new Date();
-  const currentYear = now.getFullYear();
-  const currentMonth = now.getMonth();
-  if (gradYear < currentYear) return false;
-  if (gradYear > currentYear) return true;
-  return currentMonth < 5;
+  const leaderKey = normalizeNameForMatch(leader?.name);
+  if (!leaderKey) return false;
+
+  const players = playersData?.players || {};
+  const player = Object.values(players).find((p) => normalizeNameForMatch(p?.name) === leaderKey);
+  if (!player) return false;
+
+  const classYear = Number(player?.class) || 0;
+  const currentYear = new Date().getFullYear();
+  return classYear >= currentYear;
 }
 
 function allLeagueTeamRank(team) {
