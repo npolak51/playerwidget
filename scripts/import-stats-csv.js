@@ -478,7 +478,16 @@ function main() {
         const BB = toInt(safeGet(row, iBB_bat));
         const SO = toInt(safeGet(row, iSO_bat));
         const HR = toInt(safeGet(row, iHR));
-        const XBH = toInt(safeGet(row, i2B)) + toInt(safeGet(row, i3B)) + HR;
+        const d2B = toInt(safeGet(row, i2B));
+        const d3B = toInt(safeGet(row, i3B));
+        const XBH = d2B + d3B + HR;
+        const H = toInt(safeGet(row, iH));
+        const AB = toInt(safeGet(row, iAB));
+
+        let TB = toInt(safeGet(row, iTB));
+        if (TB === 0 && AB > 0 && H > 0) {
+          TB = H + d2B + 2 * d3B + 3 * HR;
+        }
 
         const battingSeason = {
           year: String(groupYear),
@@ -486,7 +495,7 @@ function main() {
           team: normalizeTeam(groupTeam),
           number: num || "",
           PA: toInt(safeGet(row, iPA)),
-          H: toInt(safeGet(row, iH)),
+          H,
           RBI: toInt(safeGet(row, iRBI)),
           R: toInt(safeGet(row, iR)),
           XBH,
@@ -496,12 +505,12 @@ function main() {
           AVG: normRate(safeGet(row, iAVG)),
           OBP: normRate(safeGet(row, iOBP)),
           SLG: normRate(safeGet(row, iSLG)),
-          AB: toInt(safeGet(row, iAB)),
+          AB,
           BB,
           SO,
           HBP: toInt(safeGet(row, iHBP_bat)),
           SF: toInt(safeGet(row, iSF_bat)),
-          TB: toInt(safeGet(row, iTB)),
+          TB,
         };
 
         const ipStr = String(safeGet(row, iIP)).trim();
