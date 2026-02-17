@@ -12,11 +12,13 @@ export default function ProfileHeaderSection({
   quickStats,
   committed,
   committedDivision,
+  committedLogo,
 }) {
   const headerImg = images?.headerImg || "";
   const playerImg = images?.playerImg || "";
   const committedText = String(committed ?? "").trim();
   const committedDivisionText = String(committedDivision ?? "").trim();
+  const logoUrl = String(committedLogo ?? "").trim();
 
   return (
     <div className="bg-gradient-to-r from-[#1d4281] to-[#2a5ba8] text-white overflow-hidden rounded-2xl shadow-lg">
@@ -74,9 +76,16 @@ export default function ProfileHeaderSection({
               {committedText ? (
                 <div className="mb-4">
                   <div className="inline-flex items-center gap-4 bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl px-5 py-4">
-                    <div className="w-16 h-16 rounded-2xl bg-white flex items-center justify-center shadow-sm">
-                      {/* College logo goes here later */}
-                      <GraduationCap className="w-9 h-9 text-[#1d4281]" />
+                    <div className="w-16 h-16 rounded-2xl bg-white flex items-center justify-center shadow-sm overflow-hidden p-1">
+                      {logoUrl ? (
+                        <img
+                          src={logoUrl}
+                          alt={committedText}
+                          className="w-full h-full object-contain"
+                        />
+                      ) : (
+                        <GraduationCap className="w-9 h-9 text-[#1d4281]" />
+                      )}
                     </div>
                     <div className="text-left">
                       <div className="text-white/80 text-sm">Committed to</div>

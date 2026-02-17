@@ -1256,6 +1256,7 @@ export default function PlayerNewProfileWidget() {
           images={{ playerImg: selectedPlayer?.playerImg, headerImg: selectedPlayer?.headerImg }}
           committed={selectedPlayer?.committed}
           committedDivision={selectedPlayer?.committedDivision}
+          committedLogo={selectedPlayer?.committedLogo}
           quickStats={headerQuickStats}
         />
 
