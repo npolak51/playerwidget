@@ -1212,11 +1212,11 @@ export const alumniPlayers = [
       "Seattle U",
       "Minnesota Twins"
     ],
-    "drafted": false,
-    "draftTeam": "",
-    "draftYear": null,
-    "draftRound": null,
-    "draftPick": null
+    "drafted": true,
+    "draftTeam": "Minnesota Twins",
+    "draftYear": 2015,
+    "draftRound": 34,
+    "draftPick": 1010
   },
   {
     "gradYear": 2011,
