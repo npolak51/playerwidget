@@ -1004,7 +1004,7 @@ export const offensiveStatCategories = [
       },
       {
         "rank": 4,
-        "name": "Julius HOoks",
+        "name": "Julius Hooks",
         "year": 2022,
         "value": "6",
         "games": "(23 gms)"
