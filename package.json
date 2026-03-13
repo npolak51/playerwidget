@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "import-stats": "node scripts/import-stats-csv.js",
     "import-game-logs": "node scripts/import-game-logs-csv.js",
+    "update-game-logs": "node scripts/update-game-logs-from-stats.js",
     "import-scouting-links": "node scripts/import-scouting-links.js"
   },
   "dependencies": {

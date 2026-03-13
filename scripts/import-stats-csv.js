@@ -353,14 +353,13 @@ function main() {
   const csvPathArg = process.argv.find((a) => a.startsWith("--csv="));
   const csvDirArg = process.argv.find((a) => a.startsWith("--csvDir="));
   const yearArg = process.argv.find((a) => a.startsWith("--year="));
-  const csvDir = csvDirArg ? csvDirArg.slice("--csvDir=".length) : "";
 
-  const defaultCsv = "src/data/stats-csv/Tahoma Varsity Bears Spring 2025 Stats.csv";
-  const csvPath = csvPathArg ? csvPathArg.slice("--csv=".length) : defaultCsv;
+  // Default: import all years from stats-csv dir. Use --csv=path for single file, --year=YYYY to filter.
+  const defaultCsvDir = "src/data/stats-csv";
+  const csvDir = csvDirArg ? csvDirArg.slice("--csvDir=".length) : (csvPathArg ? "" : defaultCsvDir);
+  const csvPath = csvPathArg ? csvPathArg.slice("--csv=".length) : "";
 
-  // If a directory is provided and the user didn't explicitly specify --year,
-  // we treat this as "import all years" (do NOT default to the year in defaultCsv).
-  const inferredYear = pickYearFromFilename(csvPath);
+  const inferredYear = csvPath ? pickYearFromFilename(csvPath) : null;
   const year = yearArg ? yearArg.slice("--year=".length) : csvDir ? null : inferredYear;
 
   const inputCsvPaths = csvDir
@@ -645,6 +644,13 @@ function main() {
       p.pitching.seasons = seasons.sort((a, b) => (Number(b.year) || 0) - (Number(a.year) || 0));
       p.pitching.careerTotals = careerSeasons.length ? computePitchingTotals(careerSeasons, careerSeasons[0].team) : null;
     }
+  }
+
+  // Save previous stats before overwriting (for update-game-logs-from-stats diff)
+  const dataDir = path.join(process.cwd(), "src", "data");
+  const statsPrevPath = path.join(dataDir, "stats_previous.json");
+  if (fs.existsSync(statsPath)) {
+    fs.copyFileSync(statsPath, statsPrevPath);
   }
 
   writeText(statsPath, JSON.stringify(existing, null, 2) + "\n");
