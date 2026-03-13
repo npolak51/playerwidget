@@ -1022,7 +1022,7 @@ export default function PlayerNewProfileWidget() {
       const era = g?.__nums?.era;
       const whip = g?.__nums?.whip;
       if (innings >= 1) {
-        if (er === 0 && (so >= 4 || (whip !== null && whip <= 1.0))) return "hot";
+        if (er <= 1 && (so >= 4 || (whip !== null && whip <= 1.0))) return "hot";
         if (er !== null && er >= 3) return "cold";
         if (era !== null && era >= 6) return "cold";
         if (whip !== null && whip >= 2.0) return "cold";
