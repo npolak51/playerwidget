@@ -69,8 +69,14 @@ function isBlankOrInvalid(v) {
 
 function normRate(s) {
   const v = String(s ?? "").trim();
-  if (isBlankOrInvalid(v)) return "";
+  if (isBlankOrInvalid(v)) return ".000";
   if (v.startsWith("0.")) return v.slice(1);
+  return v;
+}
+
+function normEraOrWhip(s) {
+  const v = String(s ?? "").trim();
+  if (isBlankOrInvalid(v)) return "0.00";
   return v;
 }
 
@@ -184,9 +190,9 @@ function computeBattingTotals(seasons, teamLabel = "") {
     XBH,
     KBB: `${SO}/${BB}`,
     SB,
-    AVG: avg ? normRate(avg.toFixed(3)) : "",
-    OBP: obp ? normRate(obp.toFixed(3)) : "",
-    SLG: slg ? normRate(slg.toFixed(3)) : ""
+    AVG: avg ? normRate(avg.toFixed(3)) : ".000",
+    OBP: obp ? normRate(obp.toFixed(3)) : ".000",
+    SLG: slg ? normRate(slg.toFixed(3)) : ".000"
   };
 }
 
@@ -226,9 +232,9 @@ function computePitchingTotals(seasons, teamLabel = "") {
     K,
     HBP,
     WP,
-    ERA: era ? era.toFixed(2) : "",
-    WHIP: whip ? whip.toFixed(2) : "",
-    BAA: baa ? normRate(baa.toFixed(3)) : ""
+    ERA: era ? era.toFixed(2) : "0.00",
+    WHIP: whip ? whip.toFixed(2) : "0.00",
+    BAA: baa ? normRate(baa.toFixed(3)) : ".000"
   };
 }
 
@@ -302,9 +308,9 @@ function sumSeasonBatting(a, b) {
     HR,
     XBH,
     KBB: `${SO}/${BB}`,
-    AVG: avg ? normRate(avg.toFixed(3)) : "",
-    OBP: obp ? normRate(obp.toFixed(3)) : "",
-    SLG: slg ? normRate(slg.toFixed(3)) : "",
+    AVG: avg ? normRate(avg.toFixed(3)) : ".000",
+    OBP: obp ? normRate(obp.toFixed(3)) : ".000",
+    SLG: slg ? normRate(slg.toFixed(3)) : ".000",
   };
 }
 
@@ -342,9 +348,9 @@ function sumSeasonPitching(a, b) {
     K,
     HBP,
     WP,
-    ERA: era ? era.toFixed(2) : "",
-    WHIP: whip ? whip.toFixed(2) : "",
-    BAA: baa ? normRate(baa.toFixed(3)) : "",
+    ERA: era ? era.toFixed(2) : "0.00",
+    WHIP: whip ? whip.toFixed(2) : "0.00",
+    BAA: baa ? normRate(baa.toFixed(3)) : ".000",
     __estAB: estAB,
   };
 }
@@ -523,14 +529,14 @@ function main() {
           class: classLabel,
           team: normalizeTeam(groupTeam),
           number: num || "",
-          IP: ipStr,
+          IP: ipStr || "0.0",
           H: hPitch,
           R: toInt(safeGet(row, iR_pitch)),
           ER: toInt(safeGet(row, iER_pitch)),
           BB: toInt(safeGet(row, iBB_pitch)),
           K: toInt(safeGet(row, iSO_pitch)),
-          ERA: String(safeGet(row, iERA)).trim(),
-          WHIP: String(safeGet(row, iWHIP)).trim(),
+          ERA: normEraOrWhip(safeGet(row, iERA)),
+          WHIP: normEraOrWhip(safeGet(row, iWHIP)),
           BAA: baa,
           HBP: toInt(safeGet(row, iHBP_pitch)),
           WP: toInt(safeGet(row, iWP)),
