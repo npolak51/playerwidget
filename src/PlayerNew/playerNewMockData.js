@@ -182,7 +182,7 @@ export function getPlayerNewMockData(playerId, player) {
       email: `${first.toLowerCase()}.${last.toLowerCase().replace(/\s+/g, "")}@email.com`,
       phone: "(555) 555-0123",
       favoriteTeam: player?.favoriteTeam || pick(seed, "fav", ["Mariners", "Cubs", "Padres", "Dodgers", "Yankees"]),
-      favoriteMeal: player?.postGameMeal || pick(seed, "meal", meals),
+      preGameMeal: player?.preGameMeal || pick(seed, "meal", meals),
       bio:
         "Dynamic two-way player known for steady leadership and a strong work ethic. Competitive presence with a team-first mindset and a love for the game.",
       scoutingProfiles: buildScoutingProfiles(player),

@@ -58,7 +58,7 @@ function emptyPlayer(name) {
     heightWeight: "",
     batThrow: "",
     favoriteTeam: "",
-    postGameMeal: "",
+    preGameMeal: "",
     twitter: "",
     instagram: "",
     scoutPages: {

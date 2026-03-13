@@ -180,7 +180,7 @@ function main() {
     const gradClass = normalizeClass(row[classKey]);
     const heightWeight = normalizeHeightWeight(row[heightKey], row[weightKey]);
     const favoriteTeam = trim(row[teamKey]) ? titleCase(trim(row[teamKey])) : "";
-    const postGameMeal = trim(row[mealKey]) || "";
+    const preGameMeal = trim(row[mealKey]) || "";
 
     const committedInfo = resolveCommitted(row[committedKey], row[schoolKey]);
 
@@ -199,8 +199,9 @@ function main() {
       batThrow: batThrow || undefined,
       class: gradClass || undefined,
       heightWeight: heightWeight || undefined,
+      hometown: hometown || undefined,
       favoriteTeam: favoriteTeam || undefined,
-      postGameMeal: postGameMeal || undefined,
+      preGameMeal: preGameMeal || undefined,
       twitter: twitter || undefined,
       instagram: instagram || undefined,
       tiktok: tiktok || undefined,
@@ -232,8 +233,9 @@ function main() {
         class: gradClass || "",
         heightWeight: heightWeight || "",
         batThrow: batThrow || "",
+        hometown: hometown || "",
         favoriteTeam: favoriteTeam || "",
-        postGameMeal: postGameMeal || "",
+        preGameMeal: preGameMeal || "",
         twitter: twitter || "",
         instagram: instagram || "",
         tiktok: tiktok || "",

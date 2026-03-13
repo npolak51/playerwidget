@@ -12,14 +12,15 @@
       "heightWeight": "5’8/145 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "Mariners",
-      "postGameMeal": "Fried rice",
+      "preGameMeal": "Fried rice",
       "twitter": "AdamJay1214",
       "instagram": "iamadamjay",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=947222",
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/aaron-abadilla",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": "maple valley"
     },
     "adam-jay": {
       "name": "Adam Jay",
@@ -35,7 +36,7 @@
       "heightWeight": "5’10/190 lbs",
       "batThrow": "L/L",
       "favoriteTeam": "Chicago Cubs",
-      "postGameMeal": "Chipotle Bowl",
+      "preGameMeal": "Chipotle Bowl",
       "twitter": "AdamJay1214",
       "instagram": "iamadamjay",
       "tiktok": "adamjay1214",
@@ -43,7 +44,8 @@
         "perfectGame": "https://www.perfectgame.org/players/playerprofile.aspx?ID=818378",
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/Adam-Jay-0637418952-2017853694",
         "baseballNorthwest": "https://baseballnorthwest.com/profiles/ajay"
-      }
+      },
+      "hometown": ""
     },
     "andrew-dyk": {
       "name": "Andrew Dyk",
@@ -57,14 +59,15 @@
       "heightWeight": "6’1/205 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "Sonic’s",
-      "postGameMeal": "Jersey Mikes",
+      "preGameMeal": "Jersey Mikes",
       "twitter": "andrewdyk06",
       "instagram": "andrew.r.dyk",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=1055711",
         "pbr": "",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": ""
     },
     "anthony-wagner": {
       "name": "Anthony Wagner",
@@ -74,18 +77,19 @@
       "headerImg": "/headers/anthony-wagner-header.jpg",
       "logoImg": "",
       "school": "",
-      "class": "",
+      "class": "2026",
       "heightWeight": "",
       "batThrow": "R/R",
       "favoriteTeam": "",
-      "postGameMeal": "",
+      "preGameMeal": "",
       "twitter": "",
       "instagram": "",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=947176",
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/Anthony-Wagner-7598264013",
         "baseballNorthwest": "https://baseballnorthwest.com/profiles/anthony-wagner1"
-      }
+      },
+      "hometown": ""
     },
     "austen-abadilla": {
       "name": "Austen Abadilla",
@@ -99,7 +103,7 @@
       "heightWeight": "5’10/135 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "Los Angeles Dodgers",
-      "postGameMeal": "Gushers.",
+      "preGameMeal": "Gushers.",
       "twitter": "austen_abadilla",
       "instagram": "austen_abadilla_baseball",
       "tiktok": "",
@@ -107,7 +111,8 @@
         "perfectGame": "",
         "pbr": "",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": "Maple Valley"
     },
     "beckett-turnbow": {
       "name": "Beckett Turnbow",
@@ -124,14 +129,15 @@
       "heightWeight": "5’11/185 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "Milwaukee Brewers",
-      "postGameMeal": "Reese’s peanut butter cups",
+      "preGameMeal": "Reese’s peanut butter cups",
       "twitter": "BeckettTurnbow",
       "instagram": "beckett_turnbow",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=880247",
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/Beckett-Turnbow-7510648239",
         "baseballNorthwest": "https://baseballnorthwest.com/profiles/beckett-turnbow"
-      }
+      },
+      "hometown": "Scottsdale, Arizona"
     },
     "brayden-fenton": {
       "name": "Brayden Fenton",
@@ -148,14 +154,15 @@
       "heightWeight": "6’5/180 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "Seattle Seahawks",
-      "postGameMeal": "Peanut butter and banana sandwich",
+      "preGameMeal": "Peanut butter and banana sandwich",
       "twitter": "BraydenF51",
       "instagram": "bfent_51",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=947194",
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/Brayden-Fenton-3568091472",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": "Maple Valley"
     },
     "bryce-bottemiller": {
       "name": "Bryce Bottemiller",
@@ -169,14 +176,15 @@
       "heightWeight": "6'0/185 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "Mariners",
-      "postGameMeal": "Steak (medium rare)",
+      "preGameMeal": "Steak (medium rare)",
       "twitter": "BryceBott15",
       "instagram": "bryce_bott15",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=1077867",
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/Bryce-Bottemiller-3217698540-5706124398",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": ""
     },
     "bryson-leach": {
       "name": "Bryson Leach",
@@ -190,14 +198,15 @@
       "heightWeight": "6’1/205 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "Seahawks",
-      "postGameMeal": "Mcdonalds",
+      "preGameMeal": "Mcdonalds",
       "twitter": "BrysonLeach20",
       "instagram": "brysonleach20",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=818435",
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/Bryson-Leach-8416073259",
         "baseballNorthwest": "https://baseballnorthwest.com/profiles/bleach"
-      }
+      },
+      "hometown": ""
     },
     "cameron-martinez": {
       "name": "Cameron Martinez",
@@ -211,14 +220,15 @@
       "heightWeight": "5'10/220 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "Mariners",
-      "postGameMeal": "Water",
+      "preGameMeal": "Water",
       "twitter": "",
       "instagram": "",
       "scoutPages": {
         "perfectGame": "",
         "pbr": "",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": ""
     },
     "carter-stumpges": {
       "name": "Carter Stumpges",
@@ -232,14 +242,15 @@
       "heightWeight": "5’9/155 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "mariners",
-      "postGameMeal": "chipotle",
+      "preGameMeal": "chipotle",
       "twitter": "",
       "instagram": "carter_stumpges",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=920883",
         "pbr": "",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": ""
     },
     "chase-fritz": {
       "name": "Chase Fritz",
@@ -253,14 +264,15 @@
       "heightWeight": "5’7’’/140 lbs",
       "batThrow": "",
       "favoriteTeam": "Seattle Mariners",
-      "postGameMeal": "Cereal",
+      "preGameMeal": "Cereal",
       "twitter": "",
       "instagram": "chase_fritz22",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=1228735",
         "pbr": "",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": ""
     },
     "chase-hollowell": {
       "name": "Chase Hollowell",
@@ -274,14 +286,15 @@
       "heightWeight": "5'9/165 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "Tahoma Wrestling",
-      "postGameMeal": "Applesauce",
+      "preGameMeal": "Applesauce",
       "twitter": "chasehollowelll",
       "instagram": "chasehollowelll",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=1052887",
         "pbr": "",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": "Maple Valley, Wa"
     },
     "colby-rice": {
       "name": "Colby Rice",
@@ -295,14 +308,15 @@
       "heightWeight": "6'1/200 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "Pirates",
-      "postGameMeal": "4- corners teriyaki",
+      "preGameMeal": "4- corners teriyaki",
       "twitter": "",
       "instagram": "Colbyrice783",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=1141067",
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/colby-rice",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": ""
     },
     "colin-clem": {
       "name": "Colin Clem",
@@ -316,7 +330,7 @@
       "heightWeight": "6’0/160 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "Mariners",
-      "postGameMeal": "Starbucka",
+      "preGameMeal": "Starbucka",
       "twitter": "",
       "instagram": "colinclem3",
       "scoutPages": {
@@ -324,7 +338,8 @@
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/colin-clem",
         "baseballNorthwest": "https://baseballnorthwest.com/profiles/colin-clem"
       },
-      "tiktok": "colin.clem03"
+      "tiktok": "colin.clem03",
+      "hometown": "Born in Anchorage Alaska, currently live in Maple valley WA"
     },
     "drew-yount": {
       "name": "Drew Yount",
@@ -338,14 +353,15 @@
       "heightWeight": "5'8/155 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "Seattle Mariners",
-      "postGameMeal": "Chipotle Burrito",
+      "preGameMeal": "Chipotle Burrito",
       "twitter": "",
       "instagram": "drew._.yount",
       "scoutPages": {
         "perfectGame": "",
         "pbr": "",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": ""
     },
     "dylan-marx": {
       "name": "Dylan Marx",
@@ -359,7 +375,7 @@
       "heightWeight": "5’10/155 lbs",
       "batThrow": "L/L",
       "favoriteTeam": "Washington Nationals",
-      "postGameMeal": "Protein bar",
+      "preGameMeal": "Protein bar",
       "twitter": "",
       "instagram": "dylan_marx7",
       "tiktok": "",
@@ -367,7 +383,8 @@
         "perfectGame": "",
         "pbr": "",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": "Maple Valley"
     },
     "eli-grant": {
       "name": "Eli Grant",
@@ -381,14 +398,15 @@
       "heightWeight": "6’3/195 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "Seattle Mariners",
-      "postGameMeal": "Protein Bar",
+      "preGameMeal": "Protein Bar",
       "twitter": "",
       "instagram": "eli.grant13",
       "scoutPages": {
         "perfectGame": "",
         "pbr": "",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": "Maple Valley"
     },
     "evan-kim": {
       "name": "Evan Kim",
@@ -402,14 +420,15 @@
       "heightWeight": "",
       "batThrow": "R/R",
       "favoriteTeam": "",
-      "postGameMeal": "",
+      "preGameMeal": "",
       "twitter": "",
       "instagram": "",
       "scoutPages": {
         "perfectGame": "",
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/evan-kim",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": ""
     },
     "grayson-perkins": {
       "name": "Grayson Perkins",
@@ -423,14 +442,15 @@
       "heightWeight": "6’3”/170 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "Settle Mariners",
-      "postGameMeal": "Cheerios",
+      "preGameMeal": "Cheerios",
       "twitter": "",
       "instagram": "gperk6",
       "scoutPages": {
         "perfectGame": "",
         "pbr": "",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": ""
     },
     "grayson-turnbow": {
       "name": "Grayson Turnbow",
@@ -444,14 +464,15 @@
       "heightWeight": "5’10/160 lbs",
       "batThrow": "L/R",
       "favoriteTeam": "Mariners",
-      "postGameMeal": "Banana",
+      "preGameMeal": "Banana",
       "twitter": "GraysonTurnbow9",
       "instagram": "grayson_tbow",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=808804",
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/grayson-turnbow",
         "baseballNorthwest": "https://baseballnorthwest.com/profiles/grayson-turnbow"
-      }
+      },
+      "hometown": "Maple Valley"
     },
     "griffin-saldivar": {
       "name": "Griffin Saldivar",
@@ -465,14 +486,15 @@
       "heightWeight": "6’1/168 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "Mariners",
-      "postGameMeal": "Wild berry skittles",
+      "preGameMeal": "Wild berry skittles",
       "twitter": "GriffinSaldivar",
       "instagram": "Griffin.Saldivar",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=922231",
         "pbr": "",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": "Maple valley"
     },
     "hoss-seitz": {
       "name": "Hoss Seitz",
@@ -486,14 +508,15 @@
       "heightWeight": "5’11/155 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "Seattle Mariners",
-      "postGameMeal": "Peanut butter and honey sandwich",
+      "preGameMeal": "Peanut butter and honey sandwich",
       "twitter": "SeitzHoss",
       "instagram": "hoss_seitz",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=1052895",
         "pbr": "",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": "Maple valley"
     },
     "hudson-thom": {
       "name": "Hudson Thom",
@@ -507,14 +530,15 @@
       "heightWeight": "510/175 lbs",
       "batThrow": "L/L",
       "favoriteTeam": "Mariners",
-      "postGameMeal": "Steak",
+      "preGameMeal": "Steak",
       "twitter": "",
       "instagram": "hudsonthom_25",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=920796",
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/hudson-thom",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": ""
     },
     "jace-fleming": {
       "name": "Jace Fleming",
@@ -528,7 +552,7 @@
       "heightWeight": "6’0/168 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "Seahawks And Dodgers",
-      "postGameMeal": "Airheads",
+      "preGameMeal": "Airheads",
       "twitter": "",
       "instagram": "jj_fleming24",
       "tiktok": "j_flem24",
@@ -536,7 +560,8 @@
         "perfectGame": "",
         "pbr": "",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": "Maple valley"
     },
     "jackson-mcewen": {
       "name": "Jackson McEwen",
@@ -550,14 +575,15 @@
       "heightWeight": "5.8/135 lbs",
       "batThrow": "",
       "favoriteTeam": "Seahawks",
-      "postGameMeal": "Big Beefy Bean Cheese and sausage Burrito!",
+      "preGameMeal": "Big Beefy Bean Cheese and sausage Burrito!",
       "twitter": "",
       "instagram": "jackmcewen3",
       "scoutPages": {
         "perfectGame": "",
         "pbr": "",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": ""
     },
     "jacob-bakken": {
       "name": "Jacob Bakken",
@@ -571,7 +597,7 @@
       "heightWeight": "5'8/145 lbs",
       "batThrow": "L/R",
       "favoriteTeam": "Mariners",
-      "postGameMeal": "Sandwich",
+      "preGameMeal": "Sandwich",
       "twitter": "",
       "instagram": "Jacobbakken4",
       "scoutPages": {
@@ -579,7 +605,8 @@
         "pbr": "",
         "baseballNorthwest": ""
       },
-      "tiktok": "Jacobbakk4"
+      "tiktok": "Jacobbakk4",
+      "hometown": "Maple valley"
     },
     "jacob-lee": {
       "name": "Jacob Lee",
@@ -593,14 +620,15 @@
       "heightWeight": "6’/185 lbs",
       "batThrow": "",
       "favoriteTeam": "Mariners",
-      "postGameMeal": "Emerald city smoothie",
+      "preGameMeal": "Emerald city smoothie",
       "twitter": "JacobLee0623",
       "instagram": "_jacoblee06",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=930791",
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/Jacob-Lee-2680497531",
         "baseballNorthwest": "https://baseballnorthwest.com/profiles/jacob_lee2506"
-      }
+      },
+      "hometown": ""
     },
     "jacob-nold": {
       "name": "Jacob Nold",
@@ -617,14 +645,15 @@
       "heightWeight": "5'11/178 lbs",
       "batThrow": "",
       "favoriteTeam": "Seattle Mariners",
-      "postGameMeal": "None",
+      "preGameMeal": "None",
       "twitter": "jacob_nold0110",
       "instagram": "jacob.nold0110",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=1040480",
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/jacob-nold",
         "baseballNorthwest": "https://baseballnorthwest.com/profiles/jacob-nold"
-      }
+      },
+      "hometown": ""
     },
     "jacob-remfert": {
       "name": "Jacob Remfert",
@@ -638,14 +667,15 @@
       "heightWeight": "5’9/175 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "Mariners",
-      "postGameMeal": "Chicken Teriyaki",
+      "preGameMeal": "Chicken Teriyaki",
       "twitter": "JacobRemfert",
       "instagram": "jacob_remfert12",
       "scoutPages": {
         "perfectGame": "",
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/jacob-remfert",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": "Maple Valley"
     },
     "jasper-sarkany": {
       "name": "Jasper Sarkany",
@@ -659,7 +689,7 @@
       "heightWeight": "6’1/183 lbs",
       "batThrow": "L/L",
       "favoriteTeam": "Seattle Mariners",
-      "postGameMeal": "Pasta & Meatballs",
+      "preGameMeal": "Pasta & Meatballs",
       "twitter": "JasperSarkany2026",
       "instagram": "jaspersarkany",
       "scoutPages": {
@@ -669,7 +699,8 @@
       },
       "committed": "Eastern Oregon",
       "committedDivision": "NAIA",
-      "committedLogo": "/logos/Eastern Oregon.png"
+      "committedLogo": "/logos/Eastern Oregon.png",
+      "hometown": "Maple Valley"
     },
     "jonah-mcghee": {
       "name": "Jonah Mcghee",
@@ -683,14 +714,15 @@
       "heightWeight": "510/185 lbs",
       "batThrow": "L/L",
       "favoriteTeam": "Seattle Mariners/ Uw Huskies",
-      "postGameMeal": "Protein bar with vitamin water",
+      "preGameMeal": "Protein bar with vitamin water",
       "twitter": "",
       "instagram": "jonah_mcghee44?igsh=d284eTBkMm1zZWZ5&utm_source=qr",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/PlayerProfile.aspx?ID=1228916",
         "pbr": "",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": "Ravensdale"
     },
     "kolton-ackley": {
       "name": "Kolton Ackley",
@@ -704,7 +736,7 @@
       "heightWeight": "5'11/165 lbs",
       "batThrow": "L/L",
       "favoriteTeam": "Mariners",
-      "postGameMeal": "Rice & Beef plus a Banana",
+      "preGameMeal": "Rice & Beef plus a Banana",
       "twitter": "kolton_ack",
       "instagram": "ko1t6n",
       "scoutPages": {
@@ -712,7 +744,8 @@
         "pbr": "",
         "baseballNorthwest": ""
       },
-      "tiktok": "ko1txn"
+      "tiktok": "ko1txn",
+      "hometown": "Maple Valley"
     },
     "kyson-chamberlin": {
       "name": "Kyson Chamberlin",
@@ -726,14 +759,15 @@
       "heightWeight": "5'10/180 lbs",
       "batThrow": "",
       "favoriteTeam": "Mariners",
-      "postGameMeal": "Panda Express",
+      "preGameMeal": "Panda Express",
       "twitter": "KysonC27",
       "instagram": "kysonchamberlin",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=920932",
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/kyson-chamberlin",
         "baseballNorthwest": "https://baseballnorthwest.com/profiles/kyson-chamberlin"
-      }
+      },
+      "hometown": ""
     },
     "logan-lykken": {
       "name": "Logan Lykken",
@@ -747,14 +781,15 @@
       "heightWeight": "5'11/170 lbs",
       "batThrow": "",
       "favoriteTeam": "Seahawks/Mariners",
-      "postGameMeal": "Chipotle burrito",
+      "preGameMeal": "Chipotle burrito",
       "twitter": "loganlykken",
       "instagram": "loganlykken",
       "scoutPages": {
         "perfectGame": "",
         "pbr": "",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": ""
     },
     "lucas-perez": {
       "name": "Lucas Perez",
@@ -768,14 +803,15 @@
       "heightWeight": "6’1/195 lbs",
       "batThrow": "",
       "favoriteTeam": "Team USA Powerlifting",
-      "postGameMeal": "Wingstop",
+      "preGameMeal": "Wingstop",
       "twitter": "LucasPerez1644",
       "instagram": "lucas.perez1644",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=984324",
         "pbr": "",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": ""
     },
     "lucas-post": {
       "name": "Lucas Post",
@@ -792,7 +828,7 @@
       "heightWeight": "5’10”/195 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "Seattle Seahawks",
-      "postGameMeal": "Rice cakes and bananas",
+      "preGameMeal": "Rice cakes and bananas",
       "twitter": "PostLucas16",
       "instagram": "lucaspost_16",
       "scoutPages": {
@@ -800,7 +836,8 @@
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/lucas-post",
         "baseballNorthwest": ""
       },
-      "tiktok": "the_ginger16"
+      "tiktok": "the_ginger16",
+      "hometown": "Fairbanks, Alaska"
     },
     "mason-lee": {
       "name": "Mason Lee",
@@ -814,14 +851,15 @@
       "heightWeight": "5'8/155 lbs",
       "batThrow": "L/R",
       "favoriteTeam": "Mariners",
-      "postGameMeal": "Protein bar/ granola bars",
+      "preGameMeal": "Protein bar/ granola bars",
       "twitter": "None",
       "instagram": "masonlee2027",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=941391",
         "pbr": "",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": "Maple valley"
     },
     "mateo-grijalva": {
       "name": "Mateo Grijalva",
@@ -835,14 +873,15 @@
       "heightWeight": "5'7/160 lbs",
       "batThrow": "",
       "favoriteTeam": "Yankees",
-      "postGameMeal": "a good carbanar",
+      "preGameMeal": "a good carbanar",
       "twitter": "mateogrijalva27",
       "instagram": "mateo_grijalva2",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/%28S%28245g3j45o3kgy245crybkw55%29%29/Players/Playerprofile.aspx?ID=939246",
         "pbr": "",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": ""
     },
     "max-butcher": {
       "name": "Max Butcher",
@@ -856,14 +895,15 @@
       "heightWeight": "5’9/170 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "Dodgers",
-      "postGameMeal": "Beef Jerky",
+      "preGameMeal": "Beef Jerky",
       "twitter": "MaxButcher2027",
       "instagram": "maxbutcher2027",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=920853",
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/max-butcher",
         "baseballNorthwest": "https://baseballnorthwest.com/profiles/max-butcher"
-      }
+      },
+      "hometown": "Hobart"
     },
     "miller-sternberg": {
       "name": "Miller Sternberg",
@@ -877,7 +917,7 @@
       "heightWeight": "5’8/140 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "Mairniers",
-      "postGameMeal": "apple sauce",
+      "preGameMeal": "apple sauce",
       "twitter": "",
       "instagram": "miller.stern2",
       "tiktok": "",
@@ -885,7 +925,8 @@
         "perfectGame": "",
         "pbr": "",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": "Maple Valley"
     },
     "neal-burtis": {
       "name": "Neal Burtis",
@@ -902,7 +943,7 @@
       "heightWeight": "6’3/180 lbs",
       "batThrow": "L/L",
       "favoriteTeam": "Wazzu/osu/cwu/mariners/seahawks",
-      "postGameMeal": "Banana",
+      "preGameMeal": "Banana",
       "twitter": "NealBurtis",
       "instagram": "neal.burtis",
       "scoutPages": {
@@ -910,7 +951,8 @@
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/Neal-Burtis",
         "baseballNorthwest": "https://baseballnorthwest.com/profiles/neal-burtis"
       },
-      "tiktok": "neal.burtis"
+      "tiktok": "neal.burtis",
+      "hometown": "Maple Valley"
     },
     "noah-ruud": {
       "name": "Noah Ruud",
@@ -924,14 +966,15 @@
       "heightWeight": "6’/194 lbs",
       "batThrow": "L/R",
       "favoriteTeam": "Mariners",
-      "postGameMeal": "Chicken",
+      "preGameMeal": "Chicken",
       "twitter": "",
       "instagram": "noah_ruud25",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/PlayerProfile.aspx?ID=1228919",
         "pbr": "",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": "Maple Valley"
     },
     "nolan-fahey": {
       "name": "Nolan Fahey",
@@ -948,14 +991,15 @@
       "heightWeight": "5”11/165 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "Mariners",
-      "postGameMeal": "Mini tacos from Costco",
+      "preGameMeal": "Mini tacos from Costco",
       "twitter": "NolanFahey32",
       "instagram": "nolan_fahey32",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=880235",
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/Nolan--Fahey-6183925704",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": "Maple Valley"
     },
     "parker-peschel": {
       "name": "Parker Peschel",
@@ -969,14 +1013,15 @@
       "heightWeight": "6’0/175 lbs",
       "batThrow": "",
       "favoriteTeam": "Titans",
-      "postGameMeal": "Titans",
+      "preGameMeal": "Titans",
       "twitter": "",
       "instagram": "p_a_r_k_e_rp",
       "scoutPages": {
         "perfectGame": "",
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/Parker--Peschel-4289136750",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": ""
     },
     "riley-smart": {
       "name": "Riley Smart",
@@ -990,14 +1035,15 @@
       "heightWeight": "",
       "batThrow": "R/R",
       "favoriteTeam": "",
-      "postGameMeal": "",
+      "preGameMeal": "",
       "twitter": "",
       "instagram": "",
       "scoutPages": {
         "perfectGame": "",
         "pbr": "",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": ""
     },
     "rowan-douglas": {
       "name": "Rowan Douglas",
@@ -1011,14 +1057,15 @@
       "heightWeight": "5’10/170 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "Mariners, Seahawks",
-      "postGameMeal": "Jersey Mikes",
+      "preGameMeal": "Jersey Mikes",
       "twitter": "RowanDouglas23",
       "instagram": "rowandoug23",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=920867",
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/rowan-douglas",
         "baseballNorthwest": "https://baseballnorthwest.com/profiles/rowan-douglas"
-      }
+      },
+      "hometown": "Maple Valley"
     },
     "rylee-sennert": {
       "name": "Rylee Sennert",
@@ -1032,14 +1079,15 @@
       "heightWeight": "5”11/155 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "Mariners",
-      "postGameMeal": "2 McDonald’s burgers",
+      "preGameMeal": "2 McDonald’s burgers",
       "twitter": "",
       "instagram": "ryleesennert",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=1052888",
         "pbr": "",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": "Black diamond"
     },
     "sean-evans": {
       "name": "Sean Evans",
@@ -1053,14 +1101,15 @@
       "heightWeight": "6’3/210 lbs",
       "batThrow": "",
       "favoriteTeam": "tahoma bears",
-      "postGameMeal": "mcdonalds",
+      "preGameMeal": "mcdonalds",
       "twitter": "seannnevans",
       "instagram": "seannnnevans",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/players/playerprofile.aspx?ID=900702",
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/Sean-Evans-7812394065",
         "baseballNorthwest": "https://baseballnorthwest.com/profiles/sevans"
-      }
+      },
+      "hometown": ""
     },
     "silas-woods": {
       "name": "Silas Woods",
@@ -1074,7 +1123,7 @@
       "heightWeight": "5’11/155 lbs",
       "batThrow": "L/L",
       "favoriteTeam": "Mariners",
-      "postGameMeal": "Monster and some sort of grounded meat/protein. (Turkey or beef)",
+      "preGameMeal": "Monster and some sort of grounded meat/protein. (Turkey or beef)",
       "twitter": "",
       "instagram": "silaswoods.10",
       "tiktok": "woodser.10",
@@ -1082,7 +1131,8 @@
         "perfectGame": "",
         "pbr": "",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": "Ravensdale"
     },
     "talon-coker": {
       "name": "Talon Coker",
@@ -1099,7 +1149,7 @@
       "heightWeight": "6’3/190 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "Mariners",
-      "postGameMeal": "MacNCheese/Gushers",
+      "preGameMeal": "MacNCheese/Gushers",
       "twitter": "Talon_Coker",
       "instagram": "talonnnn7",
       "scoutPages": {
@@ -1107,7 +1157,8 @@
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/talon-coker",
         "baseballNorthwest": "https://baseballnorthwest.com/profiles/talon-coker"
       },
-      "tiktok": "ta1on.cok3r"
+      "tiktok": "ta1on.cok3r",
+      "hometown": "Maple Valley"
     },
     "timmy-mcewen": {
       "name": "Timmy Mcewen",
@@ -1124,14 +1175,15 @@
       "heightWeight": "6’2”/205 lbs",
       "batThrow": "L/R",
       "favoriteTeam": "Seahawks",
-      "postGameMeal": "Chicken pesto pasta",
+      "preGameMeal": "Chicken pesto pasta",
       "twitter": "",
       "instagram": "timmy_mcewen24",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=1219244",
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/timmy-mcewen",
         "baseballNorthwest": "https://baseballnorthwest.com/profiles/timothy-mcewen"
-      }
+      },
+      "hometown": "Maple Valley"
     },
     "trey-davies": {
       "name": "Trey Davies",
@@ -1145,7 +1197,7 @@
       "heightWeight": "6’2/165 lbs",
       "batThrow": "R/R",
       "favoriteTeam": "Washington Huskies",
-      "postGameMeal": "Banana",
+      "preGameMeal": "Banana",
       "twitter": "Treydavies120",
       "instagram": "trey_davies1",
       "scoutPages": {
@@ -1153,7 +1205,8 @@
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/Trey-Davies",
         "baseballNorthwest": "https://baseballnorthwest.com/profiles/cameron-trey-davies"
       },
-      "tiktok": "trey_davies"
+      "tiktok": "trey_davies",
+      "hometown": "Puyallup Wa"
     },
     "zachary-moser": {
       "name": "Zachary Moser",
@@ -1167,14 +1220,15 @@
       "heightWeight": "5’7”/170 lbs",
       "batThrow": "",
       "favoriteTeam": "Idk",
-      "postGameMeal": "Pizza",
+      "preGameMeal": "Pizza",
       "twitter": "",
       "instagram": "zach_moser7",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=1144361",
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/zach-moser",
         "baseballNorthwest": ""
-      }
+      },
+      "hometown": ""
     }
   }
 }

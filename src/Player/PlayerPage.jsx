@@ -22,7 +22,7 @@ export default function PlayerPage() {
         heightWeight: "",
         batThrow: "",
         favoriteTeam: "",
-        postGameMeal: "",
+        preGameMeal: "",
         twitter: "",
         instagram: "",
         tiktok: "",
@@ -40,7 +40,7 @@ export default function PlayerPage() {
     heightWeight,
     batThrow,
     favoriteTeam,
-    postGameMeal,
+    preGameMeal,
     twitter,
     instagram,
     tiktok,
@@ -154,7 +154,7 @@ export default function PlayerPage() {
               <Info label="Height/Weight" value={heightWeight || ""} />
               <Info label="Bat/Throw" value={batThrow || ""} />
               <Info label="Favorite Team" value={favoriteTeam || ""} />
-              <Info label="Post-Game Meal" value={postGameMeal || ""} />
+              <Info label="Pre-Game Meal/Snack" value={preGameMeal || ""} />
               <div>
                 <div className="text-lg text-gray-500 mb-1">Social Media</div>
                 <div className="flex gap-2">

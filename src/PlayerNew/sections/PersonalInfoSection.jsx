@@ -121,10 +121,10 @@ export default function PersonalInfoSection({ player, social }) {
             </div>
           ) : null}
 
-          {player?.favoriteMeal ? (
+          {player?.preGameMeal ? (
             <div>
-              <div className="text-slate-600 text-base mb-1 leading-tight">Favorite Meal</div>
-              <div className="font-semibold text-lg leading-snug">{player.favoriteMeal}</div>
+              <div className="text-slate-600 text-base mb-1 leading-tight">Pre-Game Meal/Snack</div>
+              <div className="font-semibold text-lg leading-snug">{player.preGameMeal}</div>
             </div>
           ) : null}
 

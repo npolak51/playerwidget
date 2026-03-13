@@ -95,7 +95,7 @@ for (let i = 1; i < lines.length; i++) {
     heightWeight: heightWeight,
     batThrow: '', // To be filled manually
     favoriteTeam: fields[teamIndex]?.trim() || '',
-    postGameMeal: fields[mealIndex]?.trim() || '',
+    preGameMeal: fields[mealIndex]?.trim() || '',
     twitter: cleanSocialHandle(fields[twitterIndex]),
     instagram: cleanSocialHandle(fields[instagramIndex])
   };

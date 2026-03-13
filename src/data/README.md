@@ -34,7 +34,7 @@ This directory contains the player data for all team members.
       "heightWeight": "6'0\"/180 lbs",
       "batThrow": "L/R | R/R | L/L | R/L",
       "favoriteTeam": "Team Name",
-      "postGameMeal": "Meal Preference",
+      "preGameMeal": "Pre-Game Meal/Snack",
       "twitter": "twitterhandle",
       "instagram": "instagramhandle"
     }
