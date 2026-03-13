@@ -12,7 +12,8 @@
     "normalize-stats-blanks": "node scripts/normalize-stats-blanks.js",
     "import-game-logs": "node scripts/import-game-logs-csv.js",
     "update-game-logs": "node scripts/update-game-logs-from-stats.js",
-    "import-scouting-links": "node scripts/import-scouting-links.js"
+    "import-scouting-links": "node scripts/import-scouting-links.js",
+    "import-survey": "node scripts/import-survey-csv.js"
   },
   "dependencies": {
     "lucide-react": "^0.555.0",
