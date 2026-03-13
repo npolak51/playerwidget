@@ -22,53 +22,6 @@
       },
       "hometown": "maple valley"
     },
-    "adam-jay": {
-      "name": "Adam Jay",
-      "number": "12",
-      "positions": "Pitcher/First Baseman",
-      "playerImg": "/players/adam-jay.jpg",
-      "headerImg": "/headers/adam-jay-header.jpg",
-      "logoImg": "",
-      "school": "",
-      "committed": "Lower Columbia",
-      "committedDivision": "NWAC",
-      "class": "2025",
-      "heightWeight": "5’10/190 lbs",
-      "batThrow": "L/L",
-      "favoriteTeam": "Chicago Cubs",
-      "preGameMeal": "Chipotle Bowl",
-      "twitter": "AdamJay1214",
-      "instagram": "iamadamjay",
-      "tiktok": "adamjay1214",
-      "scoutPages": {
-        "perfectGame": "https://www.perfectgame.org/players/playerprofile.aspx?ID=818378",
-        "pbr": "https://www.prepbaseballreport.com/profiles/WA/Adam-Jay-0637418952-2017853694",
-        "baseballNorthwest": "https://baseballnorthwest.com/profiles/ajay"
-      },
-      "hometown": ""
-    },
-    "andrew-dyk": {
-      "name": "Andrew Dyk",
-      "number": "",
-      "positions": "Catcher",
-      "playerImg": "/players/andrew-dyk.jpg",
-      "headerImg": "/headers/andrew-dyk-header.jpg",
-      "logoImg": "",
-      "school": "",
-      "class": "2025",
-      "heightWeight": "6’1/205 lbs",
-      "batThrow": "R/R",
-      "favoriteTeam": "Sonic’s",
-      "preGameMeal": "Jersey Mikes",
-      "twitter": "andrewdyk06",
-      "instagram": "andrew.r.dyk",
-      "scoutPages": {
-        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=1055711",
-        "pbr": "",
-        "baseballNorthwest": ""
-      },
-      "hometown": ""
-    },
     "anthony-wagner": {
       "name": "Anthony Wagner",
       "number": "",
@@ -164,50 +117,6 @@
       },
       "hometown": "Maple Valley"
     },
-    "bryce-bottemiller": {
-      "name": "Bryce Bottemiller",
-      "number": "",
-      "positions": "Pitcher",
-      "playerImg": "/players/bryce-bottemiller.jpg",
-      "headerImg": "/headers/bryce-bottemiller-header.jpg",
-      "logoImg": "",
-      "school": "",
-      "class": "2025",
-      "heightWeight": "6'0/185 lbs",
-      "batThrow": "R/R",
-      "favoriteTeam": "Mariners",
-      "preGameMeal": "Steak (medium rare)",
-      "twitter": "BryceBott15",
-      "instagram": "bryce_bott15",
-      "scoutPages": {
-        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=1077867",
-        "pbr": "https://www.prepbaseballreport.com/profiles/WA/Bryce-Bottemiller-3217698540-5706124398",
-        "baseballNorthwest": ""
-      },
-      "hometown": ""
-    },
-    "bryson-leach": {
-      "name": "Bryson Leach",
-      "number": "",
-      "positions": "Pitcher",
-      "playerImg": "/players/bryson-leach.jpg",
-      "headerImg": "/headers/bryson-leach-header.jpg",
-      "logoImg": "",
-      "school": "",
-      "class": "2025",
-      "heightWeight": "6’1/205 lbs",
-      "batThrow": "R/R",
-      "favoriteTeam": "Seahawks",
-      "preGameMeal": "Mcdonalds",
-      "twitter": "BrysonLeach20",
-      "instagram": "brysonleach20",
-      "scoutPages": {
-        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=818435",
-        "pbr": "https://www.prepbaseballreport.com/profiles/WA/Bryson-Leach-8416073259",
-        "baseballNorthwest": "https://baseballnorthwest.com/profiles/bleach"
-      },
-      "hometown": ""
-    },
     "cameron-martinez": {
       "name": "Cameron Martinez",
       "number": "",
@@ -296,28 +205,6 @@
       },
       "hometown": "Maple Valley, Wa"
     },
-    "colby-rice": {
-      "name": "Colby Rice",
-      "number": "",
-      "positions": "Pitcher",
-      "playerImg": "/players/colby-rice.jpg",
-      "headerImg": "/headers/colby-rice-header.jpg",
-      "logoImg": "",
-      "school": "",
-      "class": "2025",
-      "heightWeight": "6'1/200 lbs",
-      "batThrow": "R/R",
-      "favoriteTeam": "Pirates",
-      "preGameMeal": "4- corners teriyaki",
-      "twitter": "",
-      "instagram": "Colbyrice783",
-      "scoutPages": {
-        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=1141067",
-        "pbr": "https://www.prepbaseballreport.com/profiles/WA/colby-rice",
-        "baseballNorthwest": ""
-      },
-      "hometown": ""
-    },
     "colin-clem": {
       "name": "Colin Clem",
       "number": "",
@@ -340,28 +227,6 @@
       },
       "tiktok": "colin.clem03",
       "hometown": "Born in Anchorage Alaska, currently live in Maple valley WA"
-    },
-    "drew-yount": {
-      "name": "Drew Yount",
-      "number": "",
-      "positions": "Outfield",
-      "playerImg": "/players/drew-yount.jpg",
-      "headerImg": "/headers/drew-yount-header.jpg",
-      "logoImg": "",
-      "school": "",
-      "class": "2025",
-      "heightWeight": "5'8/155 lbs",
-      "batThrow": "R/R",
-      "favoriteTeam": "Seattle Mariners",
-      "preGameMeal": "Chipotle Burrito",
-      "twitter": "",
-      "instagram": "drew._.yount",
-      "scoutPages": {
-        "perfectGame": "",
-        "pbr": "",
-        "baseballNorthwest": ""
-      },
-      "hometown": ""
     },
     "dylan-marx": {
       "name": "Dylan Marx",
@@ -608,28 +473,6 @@
       "tiktok": "Jacobbakk4",
       "hometown": "Maple valley"
     },
-    "jacob-lee": {
-      "name": "Jacob Lee",
-      "number": "",
-      "positions": "Catcher/Outfield",
-      "playerImg": "/players/jacob-lee.jpg",
-      "headerImg": "/headers/jacob-lee-header.jpg",
-      "logoImg": "",
-      "school": "",
-      "class": "2025",
-      "heightWeight": "6’/185 lbs",
-      "batThrow": "",
-      "favoriteTeam": "Mariners",
-      "preGameMeal": "Emerald city smoothie",
-      "twitter": "JacobLee0623",
-      "instagram": "_jacoblee06",
-      "scoutPages": {
-        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=930791",
-        "pbr": "https://www.prepbaseballreport.com/profiles/WA/Jacob-Lee-2680497531",
-        "baseballNorthwest": "https://baseballnorthwest.com/profiles/jacob_lee2506"
-      },
-      "hometown": ""
-    },
     "jacob-nold": {
       "name": "Jacob Nold",
       "number": "",
@@ -766,50 +609,6 @@
         "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=920932",
         "pbr": "https://www.prepbaseballreport.com/profiles/WA/kyson-chamberlin",
         "baseballNorthwest": "https://baseballnorthwest.com/profiles/kyson-chamberlin"
-      },
-      "hometown": ""
-    },
-    "logan-lykken": {
-      "name": "Logan Lykken",
-      "number": "",
-      "positions": "Infield/Pitcher",
-      "playerImg": "/players/logan-lykken.jpg",
-      "headerImg": "/headers/logan-lykken-header.jpg",
-      "logoImg": "",
-      "school": "",
-      "class": "2025",
-      "heightWeight": "5'11/170 lbs",
-      "batThrow": "",
-      "favoriteTeam": "Seahawks/Mariners",
-      "preGameMeal": "Chipotle burrito",
-      "twitter": "loganlykken",
-      "instagram": "loganlykken",
-      "scoutPages": {
-        "perfectGame": "",
-        "pbr": "",
-        "baseballNorthwest": ""
-      },
-      "hometown": ""
-    },
-    "lucas-perez": {
-      "name": "Lucas Perez",
-      "number": "",
-      "positions": "Catcher",
-      "playerImg": "/players/lucas-perez.jpg",
-      "headerImg": "/headers/lucas-perez-header.jpg",
-      "logoImg": "",
-      "school": "",
-      "class": "2025",
-      "heightWeight": "6’1/195 lbs",
-      "batThrow": "",
-      "favoriteTeam": "Team USA Powerlifting",
-      "preGameMeal": "Wingstop",
-      "twitter": "LucasPerez1644",
-      "instagram": "lucas.perez1644",
-      "scoutPages": {
-        "perfectGame": "https://www.perfectgame.org/Players/Playerprofile.aspx?ID=984324",
-        "pbr": "",
-        "baseballNorthwest": ""
       },
       "hometown": ""
     },
@@ -1000,28 +799,6 @@
         "baseballNorthwest": ""
       },
       "hometown": "Maple Valley"
-    },
-    "parker-peschel": {
-      "name": "Parker Peschel",
-      "number": "",
-      "positions": "Infield/Pitcher",
-      "playerImg": "/players/parker-peschel.jpg",
-      "headerImg": "/headers/parker-peschel-header.jpg",
-      "logoImg": "",
-      "school": "",
-      "class": "2025",
-      "heightWeight": "6’0/175 lbs",
-      "batThrow": "",
-      "favoriteTeam": "Titans",
-      "preGameMeal": "Titans",
-      "twitter": "",
-      "instagram": "p_a_r_k_e_rp",
-      "scoutPages": {
-        "perfectGame": "",
-        "pbr": "https://www.prepbaseballreport.com/profiles/WA/Parker--Peschel-4289136750",
-        "baseballNorthwest": ""
-      },
-      "hometown": ""
     },
     "riley-smart": {
       "name": "Riley Smart",

@@ -5,7 +5,7 @@ import gameLogsData from "../data/gameLogs.json";
 import { allLeagueSelections } from "../Honors/honorsData";
 import { offensiveStatCategories, pitchingStatCategories } from "../Leaders/leadersData";
 import { useEmbedAutoHeight } from "./useEmbedAutoHeight";
-import { getPlayerNewMockData } from "./playerNewMockData";
+import { buildPlayerProfile } from "./buildPlayerProfile";
 import { MILESTONE_RULES } from "./milestoneRules";
 
 import ProfileHeaderSection from "./sections/ProfileHeaderSection";
@@ -649,12 +649,10 @@ export default function PlayerNewProfileWidget() {
   const selectedPlayer = playerId ? playersData.players?.[playerId] : null;
   const selectedStats = playerId ? statsData.players?.[playerId] : null;
 
-  const mock = useMemo(() => {
-    return getPlayerNewMockData(playerId, selectedPlayer);
-  }, [playerId, selectedPlayer]);
+  const playerProfile = useMemo(() => buildPlayerProfile(selectedPlayer), [selectedPlayer]);
 
   const achievements = useMemo(() => {
-    const playerName = selectedPlayer?.name || mock?.player?.name || "";
+    const playerName = selectedPlayer?.name || "";
     const key = normalizeNameForMatch(playerName);
     if (!key) return [];
 
@@ -677,7 +675,7 @@ export default function PlayerNewProfileWidget() {
     });
 
     return mapped;
-  }, [selectedPlayer?.name, mock?.player?.name]);
+  }, [selectedPlayer?.name]);
 
   const milestoneAchievements = useMemo(() => {
     const computed = buildMilestonesFromStats(selectedStats, playerId);
@@ -692,7 +690,7 @@ export default function PlayerNewProfileWidget() {
   }, [selectedStats, playerId]);
 
   const recordAchievements = useMemo(() => {
-    const playerName = selectedPlayer?.name || mock?.player?.name || "";
+    const playerName = selectedPlayer?.name || "";
     const key = normalizeNameForMatch(playerName);
     if (!key) return [];
 
@@ -724,7 +722,7 @@ export default function PlayerNewProfileWidget() {
 
     records.sort((a, b) => b.__sortKey - a.__sortKey);
     return records.map(({ __sortKey, ...r }) => r);
-  }, [selectedPlayer?.name, mock?.player?.name]);
+  }, [selectedPlayer?.name]);
 
   const combinedAchievements = useMemo(() => {
     const combined = [...(achievements || []), ...(milestoneAchievements || []), ...(recordAchievements || [])];
@@ -744,8 +742,8 @@ export default function PlayerNewProfileWidget() {
       const tb = Number(b?.threshold) || 0;
       return tb - ta;
     });
-    return merged.length ? merged : mock.milestones;
-  }, [selectedStats, playerId, mock.milestones]);
+    return merged.length ? merged : [];
+  }, [selectedStats, playerId]);
 
   const activeSeasonYear = useMemo(() => {
     const games = Array.isArray(gameLogsData?.games) ? gameLogsData.games : [];
@@ -1252,7 +1250,7 @@ export default function PlayerNewProfileWidget() {
     <div className="w-full bg-gradient-to-br from-slate-50 to-slate-100">
       <div className="max-w-7xl mx-auto px-4 py-6 sm:py-8 space-y-6">
         <ProfileHeaderSection
-          player={mock.player}
+          player={playerProfile}
           images={{ playerImg: selectedPlayer?.playerImg, headerImg: selectedPlayer?.headerImg }}
           committed={selectedPlayer?.committed}
           committedDivision={selectedPlayer?.committedDivision}
@@ -1272,7 +1270,7 @@ export default function PlayerNewProfileWidget() {
           <div className="lg:col-span-2 space-y-6">
             <div ref={personalInfoRef}>
               <PersonalInfoSection
-                player={mock.player}
+                player={playerProfile}
                 social={{
                   twitter: selectedPlayer?.twitter,
                   instagram: selectedPlayer?.instagram,
@@ -1303,8 +1301,8 @@ export default function PlayerNewProfileWidget() {
         <SeasonStatsSection
           expanded={expandedSections.seasonStats}
           onToggle={toggleSection}
-          seasonStats={derivedStats?.seasonHitting || mock.seasonStats}
-          pitchingStats={derivedStats?.seasonPitching || mock.pitchingStats}
+          seasonStats={derivedStats?.seasonHitting || null}
+          pitchingStats={derivedStats?.seasonPitching || null}
           seasonLabel={`Season Statistics (${activeSeasonYear})`}
         />
 
@@ -1314,11 +1312,11 @@ export default function PlayerNewProfileWidget() {
           careerStats={{
             battingRows: derivedStats?.careerBattingRows || null,
             pitchingRows: derivedStats?.careerPitchingRows || null,
-            legacy: mock.careerStats,
+            legacy: null,
           }}
         />
 
-        <ContactSection player={mock.player} />
+        <ContactSection player={playerProfile} />
       </div>
     </div>
   );
