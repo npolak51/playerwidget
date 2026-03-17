@@ -1044,6 +1044,14 @@ export default function PlayerNewProfileWidget() {
     const battingSeasonsPicked = varsityFirstCareerSeasons(selectedStats?.batting?.seasons || []);
     const pitchingSeasonsPicked = varsityFirstCareerSeasons(selectedStats?.pitching?.seasons || []);
 
+    const year = String(activeSeasonYear || "");
+    const seasonBat = year
+      ? (battingSeasonsPicked || []).find((s) => String(s?.year || "") === year) || null
+      : battingSeasonsPicked[0] || null;
+    const seasonPit = year
+      ? (pitchingSeasonsPicked || []).find((s) => String(s?.year || "") === year) || null
+      : pitchingSeasonsPicked[0] || null;
+
     const sortAllSeasonsForCareerTable = (seasons) => {
       const normalized = (seasons || []).map((s) => ({ ...s, team: normalizeTeam(s.team) }));
       normalized.sort((a, b) => {
@@ -1061,9 +1069,6 @@ export default function PlayerNewProfileWidget() {
 
     const battingSeasonsAll = sortAllSeasonsForCareerTable(selectedStats?.batting?.seasons || []);
     const pitchingSeasonsAll = sortAllSeasonsForCareerTable(selectedStats?.pitching?.seasons || []);
-
-    const seasonBat = battingSeasonsPicked[0] || null;
-    const seasonPit = pitchingSeasonsPicked[0] || null;
 
     const seasonHitting = seasonBat
       ? [
@@ -1183,7 +1188,7 @@ export default function PlayerNewProfileWidget() {
     ];
 
     return { seasonHitting, seasonPitching, careerBattingRows, careerPitchingRows };
-  }, [selectedStats]);
+  }, [selectedStats, activeSeasonYear]);
 
   // Keep the left "Select Player" card the same height as Personal Info (desktop only).
   useEffect(() => {
