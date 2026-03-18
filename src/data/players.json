@@ -2,7 +2,7 @@
   "players": {
     "aaron-abadilla": {
       "name": "Aaron Abadilla",
-      "number": "12",
+      "number": "3",
       "positions": "Utility",
       "playerImg": "/players/aaron-abadilla.jpg",
       "headerImg": "/headers/aaron-abadilla-header.jpg",
@@ -24,7 +24,7 @@
     },
     "anthony-wagner": {
       "name": "Anthony Wagner",
-      "number": "",
+      "number": "11",
       "positions": "Infield",
       "playerImg": "/players/anthony-wagner.jpg",
       "headerImg": "/headers/anthony-wagner-header.jpg",
@@ -46,7 +46,7 @@
     },
     "austen-abadilla": {
       "name": "Austen Abadilla",
-      "number": "",
+      "number": "9",
       "positions": "Outfield",
       "playerImg": "/players/austen-abadilla.jpg",
       "headerImg": "/headers/austen-abadilla-header.jpg",
@@ -69,7 +69,7 @@
     },
     "beckett-turnbow": {
       "name": "Beckett Turnbow",
-      "number": "",
+      "number": "2",
       "positions": "Shortstop/Pitcher",
       "playerImg": "/players/beckett-turnbow.jpg",
       "headerImg": "/headers/beckett-turnbow-header.jpg",
@@ -94,14 +94,14 @@
     },
     "brayden-fenton": {
       "name": "Brayden Fenton",
-      "number": "",
+      "number": "51",
       "positions": "Pitcher",
       "playerImg": "/players/brayden-fenton.jpg",
       "headerImg": "/headers/brayden-fenton-header.jpg",
       "logoImg": "",
       "school": "",
       "committed": "Wenatchee Valley",
-      "committedDivision": "NWAC",
+      "committedDivision": "JuCo",
       "committedLogo": "/logos/Wenatchee Valley.png",
       "class": "2026",
       "heightWeight": "6’5/180 lbs",
@@ -119,7 +119,7 @@
     },
     "chase-fritz": {
       "name": "Chase Fritz",
-      "number": "",
+      "number": "41",
       "positions": "Catcher",
       "playerImg": "/players/chase-fritz.jpg",
       "headerImg": "/headers/chase-fritz-header.jpg",
@@ -141,7 +141,7 @@
     },
     "chase-hollowell": {
       "name": "Chase Hollowell",
-      "number": "",
+      "number": "40",
       "positions": "Outfield/Pitcher",
       "playerImg": "/players/chase-hollowell.jpg",
       "headerImg": "/headers/chase-hollowell-header.jpg",
@@ -163,7 +163,7 @@
     },
     "colin-clem": {
       "name": "Colin Clem",
-      "number": "",
+      "number": "4",
       "positions": "Infield/Pitcher",
       "playerImg": "/players/colin-clem.jpg",
       "headerImg": "/headers/colin-clem-header.jpg",
@@ -186,7 +186,7 @@
     },
     "dylan-marx": {
       "name": "Dylan Marx",
-      "number": "",
+      "number": "34",
       "positions": "Outfield/Pitcher",
       "playerImg": "/players/dylan-marx.jpg",
       "headerImg": "/headers/dylan-marx-header.jpg",
@@ -209,7 +209,7 @@
     },
     "eli-grant": {
       "name": "Eli Grant",
-      "number": "",
+      "number": "20",
       "positions": "Infield/Pitcher",
       "playerImg": "/players/eli-grant.jpg",
       "headerImg": "/headers/eli-grant-header.jpg",
@@ -231,7 +231,7 @@
     },
     "grayson-turnbow": {
       "name": "Grayson Turnbow",
-      "number": "",
+      "number": "26",
       "positions": "Utility",
       "playerImg": "/players/grayson-turnbow.jpg",
       "headerImg": "/headers/grayson-turnbow-header.jpg",
@@ -253,7 +253,7 @@
     },
     "griffin-saldivar": {
       "name": "Griffin Saldivar",
-      "number": "",
+      "number": "6",
       "positions": "Utility",
       "playerImg": "/players/griffin-saldivar.jpg",
       "headerImg": "/headers/griffin-saldivar-header.jpg",
@@ -275,7 +275,7 @@
     },
     "hoss-seitz": {
       "name": "Hoss Seitz",
-      "number": "",
+      "number": "30",
       "positions": "Utility/Pitcher",
       "playerImg": "/players/hoss-seitz.jpg",
       "headerImg": "/headers/hoss-seitz-header.jpg",
@@ -297,7 +297,7 @@
     },
     "jace-fleming": {
       "name": "Jace Fleming",
-      "number": "",
+      "number": "44",
       "positions": "Catcher/Shortstop",
       "playerImg": "/players/jace-fleming.jpg",
       "headerImg": "/headers/jace-fleming-header.jpg",
@@ -320,7 +320,7 @@
     },
     "jackson-mcewen": {
       "name": "Jackson McEwen",
-      "number": "",
+      "number": "48",
       "positions": "Second Base/Pitcher",
       "playerImg": "/players/jackson-mcewen.jpg",
       "headerImg": "/headers/jackson-mcewen-header.jpg",
@@ -342,7 +342,7 @@
     },
     "jacob-bakken": {
       "name": "Jacob Bakken",
-      "number": "",
+      "number": "19",
       "positions": "Infield/Pitcher",
       "playerImg": "/players/jacob-bakken.jpg",
       "headerImg": "/headers/jacob-bakken-header.jpg",
@@ -365,14 +365,14 @@
     },
     "jacob-nold": {
       "name": "Jacob Nold",
-      "number": "",
+      "number": "17",
       "positions": "Outfield/Pitcher",
       "playerImg": "/players/jacob-nold.jpg",
       "headerImg": "/headers/jacob-nold-header.jpg",
       "logoImg": "",
       "school": "",
       "committed": "Centralia",
-      "committedDivision": "NWAC",
+      "committedDivision": "JuCo",
       "committedLogo": "/logos/Centralia.png",
       "class": "2026",
       "heightWeight": "5'11/178 lbs",
@@ -390,7 +390,7 @@
     },
     "jacob-remfert": {
       "name": "Jacob Remfert",
-      "number": "",
+      "number": "12",
       "positions": "Catcher/Infield/Outfield",
       "playerImg": "/players/jacob-remfert.jpg",
       "headerImg": "/headers/jacob-remfert-header.jpg",
@@ -412,7 +412,7 @@
     },
     "jasper-sarkany": {
       "name": "Jasper Sarkany",
-      "number": "",
+      "number": "21",
       "positions": "Pitcher",
       "playerImg": "/players/jasper-sarkany.jpg",
       "headerImg": "/headers/jasper-sarkany-header.jpg",
@@ -436,8 +436,8 @@
       "hometown": "Maple Valley, WA"
     },
     "jonah-mcghee": {
-      "name": "Jonah Mcghee",
-      "number": "",
+      "name": "Jonah McGhee",
+      "number": "46",
       "positions": "First Base/Outfield/Pitcher",
       "playerImg": "/players/jonah-mcghee.jpg",
       "headerImg": "/headers/jonah-mcghee-header.jpg",
@@ -446,10 +446,10 @@
       "class": "2028",
       "heightWeight": "510/185 lbs",
       "batThrow": "L/L",
-      "favoriteTeam": "Seattle Mariners/ Uw Huskies",
+      "favoriteTeam": "Seattle Mariners/UW Huskies",
       "preGameMeal": "Protein bar with vitamin water",
       "twitter": "",
-      "instagram": "jonah_mcghee44?igsh=d284eTBkMm1zZWZ5&utm_source=qr",
+      "instagram": "jonah_mcghee44",
       "scoutPages": {
         "perfectGame": "https://www.perfectgame.org/Players/PlayerProfile.aspx?ID=1228916",
         "pbr": "",
@@ -459,7 +459,7 @@
     },
     "kolton-ackley": {
       "name": "Kolton Ackley",
-      "number": "",
+      "number": "18",
       "positions": "Outfield",
       "playerImg": "/players/kolton-ackley.jpg",
       "headerImg": "/headers/kolton-ackley-header.jpg",
@@ -482,7 +482,7 @@
     },
     "kyson-chamberlin": {
       "name": "Kyson Chamberlin",
-      "number": "",
+      "number": "13",
       "positions": "First Base/Pitcher",
       "playerImg": "/players/kyson-chamberlin.jpg",
       "headerImg": "/headers/kyson-chamberlin-header.jpg",
@@ -504,7 +504,7 @@
     },
     "lucas-post": {
       "name": "Lucas Post",
-      "number": "",
+      "number": "16",
       "positions": "Infield",
       "playerImg": "/players/lucas-post.jpg",
       "headerImg": "/headers/lucas-post-header.jpg",
@@ -530,7 +530,7 @@
     },
     "mason-lee": {
       "name": "Mason Lee",
-      "number": "",
+      "number": "22",
       "positions": "Outfield",
       "playerImg": "/players/mason-lee.jpg",
       "headerImg": "/headers/mason-lee-header.jpg",
@@ -552,7 +552,7 @@
     },
     "max-butcher": {
       "name": "Max Butcher",
-      "number": "",
+      "number": "28",
       "positions": "Catcher/Infield/Outfield",
       "playerImg": "/players/max-butcher.jpg",
       "headerImg": "/headers/max-butcher-header.jpg",
@@ -574,7 +574,7 @@
     },
     "miller-sternberg": {
       "name": "Miller Sternberg",
-      "number": "",
+      "number": "43",
       "positions": "Outfield/Pitcher",
       "playerImg": "/players/miller-sternberg.jpg",
       "headerImg": "/headers/miller-sternberg-header.jpg",
@@ -591,13 +591,13 @@
       "scoutPages": {
         "perfectGame": "",
         "pbr": "",
-        "baseballNorthwest": ""
+        "baseballNorthwest": "https://baseballnorthwest.com/profiles/miller-sternberg"
       },
       "hometown": "Maple Valley, WA"
     },
     "neal-burtis": {
       "name": "Neal Burtis",
-      "number": "",
+      "number": "5",
       "positions": "Pitcher/Outfield",
       "playerImg": "/players/neal-burtis.jpg",
       "headerImg": "/headers/neal-burtis-header.jpg",
@@ -623,7 +623,7 @@
     },
     "noah-ruud": {
       "name": "Noah Ruud",
-      "number": "",
+      "number": "45",
       "positions": "Infield/Pitcher",
       "playerImg": "/players/noah-ruud.jpg",
       "headerImg": "/headers/noah-ruud-header.jpg",
@@ -645,14 +645,14 @@
     },
     "nolan-fahey": {
       "name": "Nolan Fahey",
-      "number": "",
+      "number": "32",
       "positions": "Utility/Pitcher",
       "playerImg": "/players/nolan-fahey.jpg",
       "headerImg": "/headers/nolan-fahey-header.jpg",
       "logoImg": "",
       "school": "",
       "committed": "Clark",
-      "committedDivision": "NWAC",
+      "committedDivision": "JuCo",
       "committedLogo": "/logos/Clark.png",
       "class": "2026",
       "heightWeight": "5”11/165 lbs",
@@ -670,7 +670,7 @@
     },
     "riley-smart": {
       "name": "Riley Smart",
-      "number": "",
+      "number": "10",
       "positions": "Pitcher",
       "playerImg": "/players/riley-smart.jpg",
       "headerImg": "/headers/riley-smart-header.jpg",
@@ -692,7 +692,7 @@
     },
     "rowan-douglas": {
       "name": "Rowan Douglas",
-      "number": "",
+      "number": "23",
       "positions": "Outfield",
       "playerImg": "/players/rowan-douglas.jpg",
       "headerImg": "/headers/rowan-douglas-header.jpg",
@@ -714,7 +714,7 @@
     },
     "rylee-sennert": {
       "name": "Rylee Sennert",
-      "number": "",
+      "number": "27",
       "positions": "Utility/Pitcher",
       "playerImg": "/players/rylee-sennert.jpg",
       "headerImg": "/headers/rylee-sennert-header.jpg",
@@ -736,7 +736,7 @@
     },
     "sean-evans": {
       "name": "Sean Evans",
-      "number": "",
+      "number": "1",
       "positions": "Outfield/Pitcher",
       "playerImg": "/players/sean-evans.jpg",
       "headerImg": "/headers/sean-evans-header.jpg",
@@ -758,7 +758,7 @@
     },
     "silas-woods": {
       "name": "Silas Woods",
-      "number": "",
+      "number": "31",
       "positions": "First Base/Outfield/Pitcher",
       "playerImg": "/players/silas-woods.jpg",
       "headerImg": "/headers/silas-woods-header.jpg",
@@ -781,7 +781,7 @@
     },
     "talon-coker": {
       "name": "Talon Coker",
-      "number": "",
+      "number": "7",
       "positions": "Pitcher",
       "playerImg": "/players/talon-coker.jpg",
       "headerImg": "/headers/talon-coker-header.jpg",
@@ -807,7 +807,7 @@
     },
     "timmy-mcewen": {
       "name": "Timmy Mcewen",
-      "number": "",
+      "number": "24",
       "positions": "Outfield",
       "playerImg": "/players/timmy-mcewen.jpg",
       "headerImg": "/headers/timmy-mcewen-header.jpg",
@@ -832,7 +832,7 @@
     },
     "trey-davies": {
       "name": "Trey Davies",
-      "number": "",
+      "number": "8",
       "positions": "Infield/Pitcher",
       "playerImg": "/players/trey-davies.jpg",
       "headerImg": "/headers/trey-davies-header.jpg",
