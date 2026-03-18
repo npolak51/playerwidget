@@ -224,6 +224,11 @@ export default function CareerStatsSection({ expanded, onToggle, careerStats }) 
   const hitting = legacy?.hitting || [];
   const pitching = legacy?.pitching || [];
 
+  const hasBatting = (Array.isArray(battingRows) && battingRows.length > 0) || (Array.isArray(hitting) && hitting.length > 0);
+  const hasPitching = (Array.isArray(pitchingRows) && pitchingRows.length > 0) || (Array.isArray(pitching) && pitching.length > 0);
+
+  if (!hasBatting && !hasPitching) return null;
+
   return (
     <CollapsibleSection
       id="careerStats"
@@ -232,19 +237,23 @@ export default function CareerStatsSection({ expanded, onToggle, careerStats }) 
       expanded={expanded}
       onToggle={onToggle}
     >
-      <div className="mb-6">
-        <h3 className="font-bold text-lg text-[#1d4281] mb-3 pb-2 border-b-2 border-[#ffc525]">
-          Career Hitting
-        </h3>
-        {battingRows ? <CareerBattingStatsJsonTable rows={battingRows} /> : <CareerHittingTable rows={hitting} />}
-      </div>
+      {hasBatting ? (
+        <div className={hasPitching ? "mb-6" : ""}>
+          <h3 className="font-bold text-lg text-[#1d4281] mb-3 pb-2 border-b-2 border-[#ffc525]">
+            Career Hitting
+          </h3>
+          {battingRows ? <CareerBattingStatsJsonTable rows={battingRows} /> : <CareerHittingTable rows={hitting} />}
+        </div>
+      ) : null}
 
-      <div>
-        <h3 className="font-bold text-lg text-[#1d4281] mb-3 pb-2 border-b-2 border-[#ffc525]">
-          Career Pitching
-        </h3>
-        {pitchingRows ? <CareerPitchingStatsJsonTable rows={pitchingRows} /> : <CareerPitchingTable rows={pitching} />}
-      </div>
+      {hasPitching ? (
+        <div>
+          <h3 className="font-bold text-lg text-[#1d4281] mb-3 pb-2 border-b-2 border-[#ffc525]">
+            Career Pitching
+          </h3>
+          {pitchingRows ? <CareerPitchingStatsJsonTable rows={pitchingRows} /> : <CareerPitchingTable rows={pitching} />}
+        </div>
+      ) : null}
     </CollapsibleSection>
   );
 }

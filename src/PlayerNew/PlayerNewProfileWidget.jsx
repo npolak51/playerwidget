@@ -16,8 +16,6 @@ import RecentPerformanceSection from "./sections/RecentPerformanceSection";
 import CareerMilestonesSection from "./sections/CareerMilestonesSection";
 import SeasonStatsSection from "./sections/SeasonStatsSection";
 import CareerStatsSection from "./sections/CareerStatsSection";
-import ContactSection from "./sections/ContactSection";
-
 function normalizeTeam(t) {
   const v = String(t ?? "").trim().toLowerCase();
   if (!v) return "";
@@ -1321,7 +1319,6 @@ export default function PlayerNewProfileWidget() {
           }}
         />
 
-        <ContactSection player={playerProfile} />
       </div>
     </div>
   );

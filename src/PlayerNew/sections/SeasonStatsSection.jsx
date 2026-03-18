@@ -23,6 +23,10 @@ export default function SeasonStatsSection({
 }) {
   const hitting = Array.isArray(seasonStats) ? seasonStats : [];
   const pitching = Array.isArray(pitchingStats) ? pitchingStats : [];
+  const hasHitting = hitting.length > 0;
+  const hasPitching = pitching.length > 0;
+
+  if (!hasHitting && !hasPitching) return null;
 
   return (
     <CollapsibleSection
@@ -32,28 +36,32 @@ export default function SeasonStatsSection({
       expanded={expanded}
       onToggle={onToggle}
     >
-      <div className="grid lg:grid-cols-2 gap-6">
-        <div>
-          <h3 className="font-bold text-lg text-[#1d4281] mb-3 pb-2 border-b-2 border-[#ffc525]">
-            Hitting
-          </h3>
-          <div className="space-y-2">
-            {hitting.map((stat, idx) => (
-              <StatRow key={`${stat.category}-${idx}`} stat={stat} index={idx} />
-            ))}
+      <div className={`grid gap-6 ${hasHitting && hasPitching ? "lg:grid-cols-2" : ""}`}>
+        {hasHitting ? (
+          <div>
+            <h3 className="font-bold text-lg text-[#1d4281] mb-3 pb-2 border-b-2 border-[#ffc525]">
+              Hitting
+            </h3>
+            <div className="space-y-2">
+              {hitting.map((stat, idx) => (
+                <StatRow key={`${stat.category}-${idx}`} stat={stat} index={idx} />
+              ))}
+            </div>
           </div>
-        </div>
+        ) : null}
 
-        <div>
-          <h3 className="font-bold text-lg text-[#1d4281] mb-3 pb-2 border-b-2 border-[#ffc525]">
-            Pitching
-          </h3>
-          <div className="space-y-2">
-            {pitching.map((stat, idx) => (
-              <StatRow key={`${stat.category}-${idx}`} stat={stat} index={idx} />
-            ))}
+        {hasPitching ? (
+          <div>
+            <h3 className="font-bold text-lg text-[#1d4281] mb-3 pb-2 border-b-2 border-[#ffc525]">
+              Pitching
+            </h3>
+            <div className="space-y-2">
+              {pitching.map((stat, idx) => (
+                <StatRow key={`${stat.category}-${idx}`} stat={stat} index={idx} />
+              ))}
+            </div>
           </div>
-        </div>
+        ) : null}
       </div>
     </CollapsibleSection>
   );
