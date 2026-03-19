@@ -11081,6 +11081,230 @@
           }
         }
       }
+    },
+    {
+      "gameId": "2026-03-18-2026-var-skyline-home-10-0",
+      "date": "2026-03-18",
+      "season": 2026,
+      "team": "Var.",
+      "opponent": "Skyline",
+      "location": "Home",
+      "ourScore": 10,
+      "oppScore": null,
+      "isOfficial": true,
+      "players": {
+        "sean-evans": {
+          "batting": {
+            "AB": 2,
+            "H": 1,
+            "R": 1,
+            "RBI": null,
+            "BB": null,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": 1,
+            "CS": null
+          }
+        },
+        "beckett-turnbow": {
+          "batting": {
+            "AB": 2,
+            "H": 1,
+            "R": null,
+            "RBI": 2,
+            "BB": null,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": 1,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "neal-burtis": {
+          "batting": {
+            "AB": 1,
+            "H": 1,
+            "R": 3,
+            "RBI": 1,
+            "BB": 1,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": 1,
+            "SB": 3,
+            "CS": null
+          }
+        },
+        "trey-davies": {
+          "batting": {
+            "AB": 1,
+            "H": 1,
+            "R": 2,
+            "RBI": 3,
+            "BB": 2,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": 4,
+            "CS": null
+          }
+        },
+        "lucas-post": {
+          "batting": {
+            "AB": 3,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "talon-coker": {
+          "pitching": {
+            "IP": "4.0",
+            "H": null,
+            "R": null,
+            "ER": null,
+            "BB": 1,
+            "K": 5,
+            "HBP": null,
+            "WP": null
+          }
+        },
+        "rowan-douglas": {
+          "batting": {
+            "AB": null,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": 1,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "timmy-mcewen": {
+          "batting": {
+            "AB": 2,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "grayson-turnbow": {
+          "batting": {
+            "AB": null,
+            "H": null,
+            "R": 2,
+            "RBI": 1,
+            "BB": 3,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": 4,
+            "CS": null
+          }
+        },
+        "max-butcher": {
+          "batting": {
+            "AB": 1,
+            "H": null,
+            "R": 1,
+            "RBI": null,
+            "BB": 1,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "jacob-remfert": {
+          "batting": {
+            "AB": 3,
+            "H": 1,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "aaron-abadilla": {
+          "batting": {
+            "AB": null,
+            "H": null,
+            "R": 1,
+            "RBI": null,
+            "BB": null,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "jasper-sarkany": {
+          "pitching": {
+            "IP": "1.0",
+            "H": null,
+            "R": null,
+            "ER": null,
+            "BB": 3,
+            "K": 3,
+            "HBP": null,
+            "WP": null
+          }
+        }
+      }
     }
   ]
 }
