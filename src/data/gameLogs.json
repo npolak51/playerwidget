@@ -11527,6 +11527,245 @@
           }
         }
       }
+    },
+    {
+      "gameId": "2026-03-25-2026-var-4-away-1-0",
+      "date": "2026-03-25",
+      "season": 2026,
+      "team": "Var.",
+      "opponent": "4",
+      "location": "Away",
+      "ourScore": 1,
+      "oppScore": null,
+      "isOfficial": true,
+      "players": {
+        "sean-evans": {
+          "batting": {
+            "AB": 3,
+            "H": 2,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          },
+          "pitching": {
+            "IP": "5.0",
+            "H": 3,
+            "R": null,
+            "ER": null,
+            "BB": 1,
+            "K": 6,
+            "HBP": 1,
+            "WP": null
+          }
+        },
+        "beckett-turnbow": {
+          "batting": {
+            "AB": 4,
+            "H": 1,
+            "R": 1,
+            "RBI": null,
+            "BB": null,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "neal-burtis": {
+          "batting": {
+            "AB": 2,
+            "H": null,
+            "R": 2,
+            "RBI": null,
+            "BB": null,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": 2,
+            "SB": 1,
+            "CS": null
+          }
+        },
+        "trey-davies": {
+          "batting": {
+            "AB": 3,
+            "H": 1,
+            "R": null,
+            "RBI": 2,
+            "BB": 1,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": 2,
+            "CS": null
+          }
+        },
+        "lucas-post": {
+          "batting": {
+            "AB": 3,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "talon-coker": {
+          "pitching": {
+            "IP": "2.0",
+            "H": 1,
+            "R": 1,
+            "ER": null,
+            "BB": 1,
+            "K": 3,
+            "HBP": 1,
+            "WP": null
+          }
+        },
+        "timmy-mcewen": {
+          "batting": {
+            "AB": 2,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "grayson-turnbow": {
+          "batting": {
+            "AB": 3,
+            "H": 1,
+            "R": null,
+            "RBI": 1,
+            "BB": null,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": 1,
+            "SB": 1,
+            "CS": null
+          }
+        },
+        "jacob-remfert": {
+          "batting": {
+            "AB": 2,
+            "H": 2,
+            "R": null,
+            "RBI": 1,
+            "BB": null,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": 1,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "aaron-abadilla": {
+          "batting": {
+            "AB": null,
+            "H": null,
+            "R": 1,
+            "RBI": null,
+            "BB": null,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": 1,
+            "CS": null
+          }
+        },
+        "nolan-fahey": {
+          "batting": {
+            "AB": 3,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": 2,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "mason-lee": {
+          "batting": {
+            "AB": null,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": 1,
+            "CS": null
+          }
+        },
+        "anthony-wagner": {
+          "batting": {
+            "AB": 1,
+            "H": 1,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        }
+      }
     }
   ]
 }
