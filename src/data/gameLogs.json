@@ -12215,6 +12215,279 @@
           }
         }
       }
+    },
+    {
+      "gameId": "2026-04-03-2026-var-kentlake-away-10-0",
+      "date": "2026-04-03",
+      "season": 2026,
+      "team": "Var.",
+      "opponent": "Kentlake",
+      "location": "Away",
+      "ourScore": 10,
+      "oppScore": null,
+      "isOfficial": true,
+      "players": {
+        "sean-evans": {
+          "batting": {
+            "AB": 3,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": 3,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": 1,
+            "SB": 1,
+            "CS": null
+          }
+        },
+        "beckett-turnbow": {
+          "batting": {
+            "AB": 3,
+            "H": 2,
+            "R": 2,
+            "RBI": 3,
+            "BB": 1,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": 1,
+            "SB": 1,
+            "CS": null
+          },
+          "pitching": {
+            "IP": "1.0",
+            "H": null,
+            "R": null,
+            "ER": null,
+            "BB": null,
+            "K": 3,
+            "HBP": null,
+            "WP": null
+          }
+        },
+        "neal-burtis": {
+          "batting": {
+            "AB": 3,
+            "H": 2,
+            "R": 2,
+            "RBI": 1,
+            "BB": 2,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": 2,
+            "CS": null
+          }
+        },
+        "trey-davies": {
+          "batting": {
+            "AB": 3,
+            "H": null,
+            "R": null,
+            "RBI": 1,
+            "BB": 2,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": 1,
+            "CS": null
+          }
+        },
+        "lucas-post": {
+          "batting": {
+            "AB": 4,
+            "H": 2,
+            "R": 2,
+            "RBI": 2,
+            "BB": 1,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "timmy-mcewen": {
+          "batting": {
+            "AB": 1,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "grayson-turnbow": {
+          "batting": {
+            "AB": 1,
+            "H": null,
+            "R": 1,
+            "RBI": 1,
+            "BB": 4,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": 1,
+            "CS": null
+          }
+        },
+        "max-butcher": {
+          "batting": {
+            "AB": null,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": 1,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "brayden-fenton": {
+          "pitching": {
+            "IP": "6.0",
+            "H": 2,
+            "R": null,
+            "ER": null,
+            "BB": 4,
+            "K": 5,
+            "HBP": null,
+            "WP": null
+          }
+        },
+        "jacob-remfert": {
+          "batting": {
+            "AB": 4,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": 4,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "aaron-abadilla": {
+          "batting": {
+            "AB": null,
+            "H": null,
+            "R": 1,
+            "RBI": null,
+            "BB": null,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "nolan-fahey": {
+          "batting": {
+            "AB": 1,
+            "H": null,
+            "R": null,
+            "RBI": 1,
+            "BB": null,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "jacob-nold": {
+          "batting": {
+            "AB": 1,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "kyson-chamberlin": {
+          "batting": {
+            "AB": 1,
+            "H": null,
+            "R": 1,
+            "RBI": null,
+            "BB": 3,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "anthony-wagner": {
+          "batting": {
+            "AB": 2,
+            "H": 1,
+            "R": 1,
+            "RBI": null,
+            "BB": 1,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": 2,
+            "SB": 1,
+            "CS": null
+          }
+        }
+      }
     }
   ]
 }
