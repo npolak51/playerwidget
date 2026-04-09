@@ -12494,10 +12494,10 @@
       "date": "2026-04-08",
       "season": 2026,
       "team": "Var.",
-      "opponent": "Mt. Rainier",
+      "opponent": "Mt. Rainier (2 Games)",
       "location": "Both",
       "ourScore": 10,
-      "oppScore": null,
+      "oppScore": 3,
       "isOfficial": true,
       "players": {
         "beckett-turnbow": {
