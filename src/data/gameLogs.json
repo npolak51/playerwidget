@@ -12490,13 +12490,13 @@
       }
     },
     {
-      "gameId": "2026-04-08-2026-var-10-varsity-0-0",
+      "gameId": "2026-04-08-2026-var-mt-rainier-both-10-0",
       "date": "2026-04-08",
       "season": 2026,
       "team": "Var.",
-      "opponent": "10",
-      "location": "Varsity",
-      "ourScore": null,
+      "opponent": "Mt. Rainier",
+      "location": "Both",
+      "ourScore": 10,
       "oppScore": null,
       "isOfficial": true,
       "players": {
