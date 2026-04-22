@@ -13459,6 +13459,209 @@
           }
         }
       }
+    },
+    {
+      "gameId": "2026-04-21-2026-var-kentridge-away-4-2",
+      "date": "2026-04-21",
+      "season": 2026,
+      "team": "Var.",
+      "opponent": "Kentridge",
+      "location": "Away",
+      "ourScore": 4,
+      "oppScore": 2,
+      "isOfficial": true,
+      "players": {
+        "sean-evans": {
+          "batting": {
+            "AB": 3,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "beckett-turnbow": {
+          "batting": {
+            "AB": 3,
+            "H": 1,
+            "R": 1,
+            "RBI": 1,
+            "BB": 1,
+            "SO": 2,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          },
+          "pitching": {
+            "IP": "0.2",
+            "H": null,
+            "R": null,
+            "ER": null,
+            "BB": 1,
+            "K": 2,
+            "HBP": null,
+            "WP": null
+          }
+        },
+        "neal-burtis": {
+          "batting": {
+            "AB": 4,
+            "H": 1,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": 2,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          },
+          "pitching": {
+            "IP": "6.1",
+            "H": 2,
+            "R": 2,
+            "ER": 2,
+            "BB": 5,
+            "K": 7,
+            "HBP": null,
+            "WP": null
+          }
+        },
+        "trey-davies": {
+          "batting": {
+            "AB": 3,
+            "H": null,
+            "R": 1,
+            "RBI": null,
+            "BB": 1,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": 1,
+            "CS": null
+          }
+        },
+        "lucas-post": {
+          "batting": {
+            "AB": 2,
+            "H": 1,
+            "R": null,
+            "RBI": 1,
+            "BB": 1,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": 1,
+            "HBP": null,
+            "SB": 1,
+            "CS": null
+          }
+        },
+        "timmy-mcewen": {
+          "batting": {
+            "AB": null,
+            "H": null,
+            "R": 1,
+            "RBI": null,
+            "BB": null,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "grayson-turnbow": {
+          "batting": {
+            "AB": 4,
+            "H": 1,
+            "R": 1,
+            "RBI": null,
+            "BB": null,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": 1,
+            "CS": null
+          }
+        },
+        "max-butcher": {
+          "batting": {
+            "AB": 2,
+            "H": 1,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "kyson-chamberlin": {
+          "batting": {
+            "AB": 2,
+            "H": 1,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "anthony-wagner": {
+          "batting": {
+            "AB": 2,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": 1,
+            "SO": 2,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        }
+      }
     }
   ]
 }
