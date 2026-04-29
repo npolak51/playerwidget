@@ -13867,6 +13867,192 @@
           }
         }
       }
+    },
+    {
+      "gameId": "2026-04-28-2026-var-stadium-home-5-1",
+      "date": "2026-04-28",
+      "season": 2026,
+      "team": "Var.",
+      "opponent": "Stadium",
+      "location": "Home",
+      "ourScore": 5,
+      "oppScore": 1,
+      "isOfficial": true,
+      "players": {
+        "sean-evans": {
+          "batting": {
+            "AB": 3,
+            "H": 1,
+            "R": null,
+            "RBI": 2,
+            "BB": null,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "beckett-turnbow": {
+          "batting": {
+            "AB": 2,
+            "H": 1,
+            "R": 1,
+            "RBI": null,
+            "BB": 1,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": 1,
+            "CS": null
+          },
+          "pitching": {
+            "IP": "1.0",
+            "H": 1,
+            "R": 1,
+            "ER": 1,
+            "BB": 3,
+            "K": 2,
+            "HBP": null,
+            "WP": null
+          }
+        },
+        "neal-burtis": {
+          "batting": {
+            "AB": 2,
+            "H": 1,
+            "R": 1,
+            "RBI": null,
+            "BB": 1,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": 1,
+            "SB": 2,
+            "CS": null
+          },
+          "pitching": {
+            "IP": "6.0",
+            "H": 1,
+            "R": null,
+            "ER": null,
+            "BB": 2,
+            "K": 14,
+            "HBP": null,
+            "WP": null
+          }
+        },
+        "trey-davies": {
+          "batting": {
+            "AB": 4,
+            "H": 2,
+            "R": 1,
+            "RBI": 1,
+            "BB": null,
+            "SO": 2,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "lucas-post": {
+          "batting": {
+            "AB": 3,
+            "H": 1,
+            "R": 1,
+            "RBI": 2,
+            "BB": null,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": 1,
+            "CS": null
+          }
+        },
+        "rowan-douglas": {
+          "batting": {
+            "AB": 3,
+            "H": 1,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": 1,
+            "CS": null
+          }
+        },
+        "grayson-turnbow": {
+          "batting": {
+            "AB": 4,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": 2,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "max-butcher": {
+          "batting": {
+            "AB": 2,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": 1,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "anthony-wagner": {
+          "batting": {
+            "AB": 1,
+            "H": null,
+            "R": 1,
+            "RBI": null,
+            "BB": 1,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": 1,
+            "SB": null,
+            "CS": null
+          }
+        }
+      }
     }
   ]
 }
