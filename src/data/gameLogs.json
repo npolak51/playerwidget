@@ -14053,6 +14053,211 @@
           }
         }
       }
+    },
+    {
+      "gameId": "2026-04-29-2026-var-stadium-away-9-3",
+      "date": "2026-04-29",
+      "season": 2026,
+      "team": "Var.",
+      "opponent": "Stadium",
+      "location": "Away",
+      "ourScore": 9,
+      "oppScore": 3,
+      "isOfficial": true,
+      "players": {
+        "sean-evans": {
+          "batting": {
+            "AB": 4,
+            "H": 1,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          },
+          "pitching": {
+            "IP": "6.0",
+            "H": 5,
+            "R": 3,
+            "ER": 3,
+            "BB": null,
+            "K": 9,
+            "HBP": 1,
+            "WP": null
+          }
+        },
+        "beckett-turnbow": {
+          "batting": {
+            "AB": 3,
+            "H": 1,
+            "R": 1,
+            "RBI": null,
+            "BB": 1,
+            "SO": 2,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": 1,
+            "CS": null
+          }
+        },
+        "neal-burtis": {
+          "batting": {
+            "AB": 4,
+            "H": 1,
+            "R": 1,
+            "RBI": null,
+            "BB": null,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "trey-davies": {
+          "batting": {
+            "AB": 4,
+            "H": 1,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "lucas-post": {
+          "batting": {
+            "AB": 3,
+            "H": 1,
+            "R": 1,
+            "RBI": null,
+            "BB": null,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": 1,
+            "SB": 1,
+            "CS": null
+          }
+        },
+        "rowan-douglas": {
+          "batting": {
+            "AB": 4,
+            "H": 1,
+            "R": 1,
+            "RBI": null,
+            "BB": null,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "grayson-turnbow": {
+          "batting": {
+            "AB": 3,
+            "H": 3,
+            "R": 2,
+            "RBI": 3,
+            "BB": 1,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": 1,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "jacob-remfert": {
+          "batting": {
+            "AB": 3,
+            "H": 1,
+            "R": null,
+            "RBI": 2,
+            "BB": null,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": 1,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "aaron-abadilla": {
+          "batting": {
+            "AB": null,
+            "H": null,
+            "R": 2,
+            "RBI": null,
+            "BB": null,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "jacob-nold": {
+          "batting": {
+            "AB": 3,
+            "H": 1,
+            "R": 1,
+            "RBI": 1,
+            "BB": 1,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": 2,
+            "CS": null
+          }
+        },
+        "kyson-chamberlin": {
+          "pitching": {
+            "IP": "1.0",
+            "H": null,
+            "R": null,
+            "ER": null,
+            "BB": null,
+            "K": 1,
+            "HBP": null,
+            "WP": null
+          }
+        }
+      }
     }
   ]
 }
