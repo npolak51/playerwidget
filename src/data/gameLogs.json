@@ -12783,8 +12783,8 @@
             "HBP": null,
             "SB": null,
             "CS": null
-            ,
-            "pitching": {
+          },
+          "pitching": {
             "IP": "2.0",
             "H": null,
             "R": null,
@@ -12793,9 +12793,9 @@
             "K": 4,
             "HBP": null,
             "WP": null
-            }
-          },
-          "lucas-post": {
+          }
+        },
+        "lucas-post": {
             "batting": {
               "AB": 2,
               "H": null,
@@ -12926,7 +12926,6 @@
             "WP": null
             }
           }
-        }
       }
     },
     {
@@ -15223,7 +15222,7 @@
             "HBP": null,
             "SB": null,
             "CS": null
-            ,
+          },
           "pitching": {
             "IP": "7.0",
             "H": null,
@@ -15233,7 +15232,6 @@
             "K": 10,
             "HBP": null,
             "WP": null
-          }
           }
         },
         "lucas-post": {
