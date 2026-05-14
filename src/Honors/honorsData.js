@@ -1582,3 +1582,17 @@ export const allLeagueSelections = [
     "url": ""
   }
 ];
+
+/**
+ * Explicit honors tied to players.json slug (not inferred from stats).
+ * Shows in Achievements & Honors on the player profile.
+ */
+export const playerNotableHonors = [
+  {
+    playerId: "neal-burtis",
+    year: 2026,
+    type: "award",
+    title: "No-Hitter vs Union",
+    description: "7.0 innings, 10 strikeouts • Home • May 12, 2026"
+  },
+];

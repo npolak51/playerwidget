@@ -15225,9 +15225,9 @@
           },
           "pitching": {
             "IP": "7.0",
-            "H": null,
-            "R": null,
-            "ER": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 10,
             "HBP": null,

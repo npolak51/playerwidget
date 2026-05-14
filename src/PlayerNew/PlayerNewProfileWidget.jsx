@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import playersData from "../data/players.json";
 import statsData from "../data/stats.json";
 import gameLogsData from "../data/gameLogs.json";
-import { allLeagueSelections } from "../Honors/honorsData";
+import { allLeagueSelections, playerNotableHonors } from "../Honors/honorsData";
 import { offensiveStatCategories, pitchingStatCategories } from "../Leaders/leadersData";
 import { useEmbedAutoHeight } from "./useEmbedAutoHeight";
 import { buildPlayerProfile } from "./buildPlayerProfile";
@@ -665,15 +665,22 @@ export default function PlayerNewProfileWidget() {
       description: `${row.position || ""}${row.class ? ` • ${row.class}` : ""}`.trim() || "All‑League selection",
     }));
 
-    mapped.sort((a, b) => {
+    const manual = (playerNotableHonors || [])
+      .filter((row) => row?.playerId === playerId)
+      .map(({ playerId: _pid, ...rest }) => rest);
+
+    const combined = [...mapped, ...manual];
+    combined.sort((a, b) => {
       const ya = Number(a.year) || 0;
       const yb = Number(b.year) || 0;
       if (yb !== ya) return yb - ya;
-      return allLeagueTeamRank(a.title) - allLeagueTeamRank(b.title);
+      const ra = typeof a.title === "string" ? allLeagueTeamRank(a.title) : 0;
+      const rb = typeof b.title === "string" ? allLeagueTeamRank(b.title) : 0;
+      return ra - rb;
     });
 
-    return mapped;
-  }, [selectedPlayer?.name]);
+    return combined;
+  }, [selectedPlayer?.name, playerId]);
 
   const milestoneAchievements = useMemo(() => {
     const computed = buildMilestonesFromStats(selectedStats, playerId);
