@@ -17,10 +17,10 @@
             "H": 4,
             "R": 1,
             "ER": 1,
-            "BB": null,
+            "BB": 0,
             "K": 10,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -56,11 +56,11 @@
             "IP": "1.0",
             "H": 1,
             "R": 1,
-            "ER": null,
+            "ER": 0,
             "BB": 1,
             "K": 3,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         }
       }
@@ -85,7 +85,7 @@
             "BB": 1,
             "K": 3,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         }
       }
@@ -152,12 +152,12 @@
           "pitching": {
             "IP": "7.0",
             "H": 4,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 9,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -181,8 +181,8 @@
             "ER": 1,
             "BB": 2,
             "K": 2,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -232,12 +232,12 @@
           "pitching": {
             "IP": "1.0",
             "H": 2,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 2,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -257,12 +257,12 @@
           "pitching": {
             "IP": "3.0",
             "H": 4,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 2,
             "K": 6,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         }
       }
@@ -287,7 +287,7 @@
             "BB": 1,
             "K": 4,
             "HBP": 3,
-            "WP": null
+            "WP": 0
           }
         }
       }
@@ -306,13 +306,13 @@
         "adam-jay": {
           "pitching": {
             "IP": "0.1",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -336,8 +336,8 @@
             "ER": 3,
             "BB": 4,
             "K": 6,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -373,13 +373,13 @@
         "adam-jay": {
           "pitching": {
             "IP": "0.2",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -400,11 +400,11 @@
             "IP": "3.0",
             "H": 3,
             "R": 2,
-            "ER": null,
+            "ER": 0,
             "BB": 1,
             "K": 3,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -440,25 +440,25 @@
         "bryson-leach": {
           "pitching": {
             "IP": "3.1",
-            "H": null,
-            "R": null,
-            "ER": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 6,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         },
         "sean-evans": {
           "pitching": {
             "IP": "1.0",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 2,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -494,13 +494,13 @@
         "sean-evans": {
           "pitching": {
             "IP": "1.0",
-            "H": null,
-            "R": null,
-            "ER": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -524,8 +524,8 @@
             "ER": 2,
             "BB": 2,
             "K": 4,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -562,24 +562,24 @@
           "pitching": {
             "IP": "3.0",
             "H": 3,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 4,
-            "HBP": null,
+            "HBP": 0,
             "WP": 1
           }
         },
         "sean-evans": {
           "pitching": {
             "IP": "2.2",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 5,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         }
       }
@@ -716,18 +716,18 @@
             "BB": 2,
             "K": 8,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         },
         "bryson-leach": {
           "pitching": {
             "IP": "2.0",
-            "H": null,
+            "H": 0,
             "R": 2,
             "ER": 2,
             "BB": 6,
             "K": 3,
-            "HBP": null,
+            "HBP": 0,
             "WP": 2
           }
         }
@@ -747,7 +747,7 @@
         "bryson-leach": {
           "pitching": {
             "IP": "3.0",
-            "H": null,
+            "H": 0,
             "R": 1,
             "ER": 1,
             "BB": 2,
@@ -806,13 +806,13 @@
         "sean-evans": {
           "pitching": {
             "IP": "2.0",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 4,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -837,19 +837,19 @@
             "BB": 1,
             "K": 6,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         },
         "sean-evans": {
           "pitching": {
             "IP": "0.1",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -886,12 +886,12 @@
           "pitching": {
             "IP": "3.0",
             "H": 3,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 5,
             "HBP": 2,
-            "WP": null
+            "WP": 0
           }
         },
         "sean-evans": {
@@ -902,8 +902,8 @@
             "ER": 1,
             "BB": 2,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -922,25 +922,25 @@
         "sean-evans": {
           "pitching": {
             "IP": "0.0",
-            "H": null,
-            "R": null,
-            "ER": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
             "BB": 2,
-            "K": null,
-            "HBP": null,
-            "WP": null
+            "K": 0,
+            "HBP": 0,
+            "WP": 0
           }
         },
         "bryson-leach": {
           "pitching": {
             "IP": "1.2",
-            "H": null,
-            "R": null,
-            "ER": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -964,7 +964,7 @@
             "ER": 1,
             "BB": 4,
             "K": 7,
-            "HBP": null,
+            "HBP": 0,
             "WP": 1
           }
         }
@@ -1023,7 +1023,7 @@
             "ER": 2,
             "BB": 5,
             "K": 5,
-            "HBP": null,
+            "HBP": 0,
             "WP": 2
           }
         }
@@ -1066,7 +1066,7 @@
             "BB": 6,
             "K": 3,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         }
       }
@@ -1120,8 +1120,8 @@
             "ER": 1,
             "BB": 1,
             "K": 2,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "beckett-turnbow": {
@@ -1158,24 +1158,24 @@
           "pitching": {
             "IP": "1.0",
             "H": 1,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 2,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "sean-evans": {
           "pitching": {
             "IP": "1.0",
-            "H": null,
-            "R": null,
-            "ER": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 3,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -1239,13 +1239,13 @@
           },
           "pitching": {
             "IP": "1.0",
-            "H": null,
-            "R": null,
-            "ER": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
             "BB": 2,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "beckett-turnbow": {
@@ -1270,19 +1270,19 @@
             "IP": "1.0",
             "H": 2,
             "R": 2,
-            "ER": null,
+            "ER": 0,
             "BB": 1,
             "K": 3,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         },
         "sean-evans": {
           "pitching": {
             "IP": "3.0",
             "H": 2,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 2,
             "K": 1,
             "HBP": 2,
@@ -1292,13 +1292,13 @@
         "neal-burtis": {
           "pitching": {
             "IP": "0.2",
-            "H": null,
+            "H": 0,
             "R": 2,
             "ER": 2,
             "BB": 3,
-            "K": null,
-            "HBP": null,
-            "WP": null
+            "K": 0,
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -1365,12 +1365,12 @@
           "pitching": {
             "IP": "7.0",
             "H": 2,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 2,
             "K": 9,
             "HBP": 2,
-            "WP": null
+            "WP": 0
           }
         },
         "bryson-leach": {
@@ -1424,12 +1424,12 @@
           "pitching": {
             "IP": "3.1",
             "H": 3,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 2,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -1470,8 +1470,8 @@
             "ER": 1,
             "BB": 2,
             "K": 5,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -1522,13 +1522,13 @@
           },
           "pitching": {
             "IP": "1.0",
-            "H": null,
-            "R": null,
-            "ER": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
             "BB": 2,
             "K": 2,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "bryson-leach": {
@@ -1571,8 +1571,8 @@
             "ER": 1,
             "BB": 2,
             "K": 4,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "sean-evans": {
@@ -1598,7 +1598,7 @@
             "ER": 2,
             "BB": 1,
             "K": 1,
-            "HBP": null,
+            "HBP": 0,
             "WP": 1
           }
         }
@@ -1667,12 +1667,12 @@
           },
           "pitching": {
             "IP": "2.0",
-            "H": null,
-            "R": null,
-            "ER": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
             "BB": 3,
             "K": 2,
-            "HBP": null,
+            "HBP": 0,
             "WP": 1
           }
         },
@@ -1712,12 +1712,12 @@
           "pitching": {
             "IP": "2.0",
             "H": 1,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 4,
             "K": 2,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "jacob-nold": {
@@ -1740,13 +1740,13 @@
         "colby-rice": {
           "pitching": {
             "IP": "0.1",
-            "H": null,
-            "R": null,
-            "ER": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
             "BB": 2,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -1781,12 +1781,12 @@
           "pitching": {
             "IP": "2.1",
             "H": 1,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 7,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "adam-jay": {
@@ -1842,12 +1842,12 @@
           "pitching": {
             "IP": "0.1",
             "H": 1,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "neal-burtis": {
@@ -1873,8 +1873,8 @@
             "ER": 2,
             "BB": 2,
             "K": 3,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "logan-lykken": {
@@ -1943,12 +1943,12 @@
           "pitching": {
             "IP": "3.0",
             "H": 2,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 2,
             "K": 6,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "neal-burtis": {
@@ -2004,12 +2004,12 @@
           "pitching": {
             "IP": "3.0",
             "H": 3,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 5,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "logan-lykken": {
@@ -2128,9 +2128,9 @@
           },
           "pitching": {
             "IP": "2.0",
-            "H": null,
+            "H": 0,
             "R": 1,
-            "ER": null,
+            "ER": 0,
             "BB": 1,
             "K": 4,
             "HBP": 1,
@@ -2145,8 +2145,8 @@
             "ER": 2,
             "BB": 1,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "jacob-nold": {
@@ -2217,22 +2217,22 @@
             "H": 2,
             "R": 1,
             "ER": 1,
-            "BB": null,
+            "BB": 0,
             "K": 7,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "bryson-leach": {
           "pitching": {
             "IP": "1.1",
-            "H": null,
-            "R": null,
-            "ER": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 3,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "trey-davies": {},
@@ -2357,7 +2357,7 @@
             "ER": 1,
             "BB": 1,
             "K": 3,
-            "HBP": null,
+            "HBP": 0,
             "WP": 1
           }
         },
@@ -2401,8 +2401,8 @@
             "ER": 1,
             "BB": 1,
             "K": 8,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -2454,12 +2454,12 @@
           "pitching": {
             "IP": "5.2",
             "H": 5,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 6,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "bryson-leach": {
@@ -2470,7 +2470,7 @@
             "ER": 1,
             "BB": 1,
             "K": 4,
-            "HBP": null,
+            "HBP": 0,
             "WP": 2
           }
         },
@@ -2557,13 +2557,13 @@
           },
           "pitching": {
             "IP": "0.1",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "adam-jay": {
@@ -2603,10 +2603,10 @@
             "IP": "1.0",
             "H": 5,
             "R": 6,
-            "ER": null,
+            "ER": 0,
             "BB": 1,
-            "K": null,
-            "HBP": null,
+            "K": 0,
+            "HBP": 0,
             "WP": 2
           }
         },
@@ -2614,12 +2614,12 @@
           "pitching": {
             "IP": "1.2",
             "H": 1,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 1,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         },
         "neal-burtis": {
@@ -2643,9 +2643,9 @@
             "H": 8,
             "R": 6,
             "ER": 4,
-            "BB": null,
+            "BB": 0,
             "K": 4,
-            "HBP": null,
+            "HBP": 0,
             "WP": 1
           }
         },
@@ -2770,8 +2770,8 @@
             "ER": 1,
             "BB": 4,
             "K": 6,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "neal-burtis": {
@@ -2917,13 +2917,13 @@
           },
           "pitching": {
             "IP": "0.1",
-            "H": null,
-            "R": null,
-            "ER": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
-            "K": null,
+            "K": 0,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         },
         "bryson-leach": {
@@ -2949,7 +2949,7 @@
             "ER": 1,
             "BB": 3,
             "K": 3,
-            "HBP": null,
+            "HBP": 0,
             "WP": 1
           }
         },
@@ -3053,11 +3053,11 @@
           "pitching": {
             "IP": "2.2",
             "H": 1,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 2,
             "K": 6,
-            "HBP": null,
+            "HBP": 0,
             "WP": 1
           }
         },
@@ -3079,7 +3079,7 @@
           },
           "pitching": {
             "IP": "4.1",
-            "H": null,
+            "H": 0,
             "R": 3,
             "ER": 2,
             "BB": 3,
@@ -3153,12 +3153,12 @@
           },
           "pitching": {
             "IP": "0.0",
-            "H": null,
+            "H": 0,
             "R": 4,
             "ER": 2,
             "BB": 4,
-            "K": null,
-            "HBP": null,
+            "K": 0,
+            "HBP": 0,
             "WP": 1
           }
         },
@@ -3250,13 +3250,13 @@
         "colby-rice": {
           "pitching": {
             "IP": "1.0",
-            "H": null,
-            "R": null,
-            "ER": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 3,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -3330,7 +3330,7 @@
             "BB": 5,
             "K": 8,
             "HBP": 2,
-            "WP": null
+            "WP": 0
           }
         },
         "bryson-leach": {
@@ -3352,12 +3352,12 @@
           "pitching": {
             "IP": "3.0",
             "H": 1,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 2,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "sean-evans": {
@@ -3550,7 +3550,7 @@
             "BB": 3,
             "K": 8,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         },
         "sean-evans": {
@@ -3607,13 +3607,13 @@
         "colby-rice": {
           "pitching": {
             "IP": "1.0",
-            "H": null,
-            "R": null,
-            "ER": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -3734,13 +3734,13 @@
         "bryson-leach": {
           "pitching": {
             "IP": "1.0",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -3813,7 +3813,7 @@
             "ER": 3,
             "BB": 3,
             "K": 5,
-            "HBP": null,
+            "HBP": 0,
             "WP": 2
           }
         },
@@ -3835,13 +3835,13 @@
           },
           "pitching": {
             "IP": "0.2",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 2,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "bryson-leach": {
@@ -3867,7 +3867,7 @@
             "ER": 2,
             "BB": 4,
             "K": 5,
-            "HBP": null,
+            "HBP": 0,
             "WP": 1
           }
         },
@@ -4009,7 +4009,7 @@
             "ER": 1,
             "BB": 2,
             "K": 3,
-            "HBP": null,
+            "HBP": 0,
             "WP": 2
           }
         },
@@ -4079,12 +4079,12 @@
           "pitching": {
             "IP": "1.0",
             "H": 2,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 2,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "sean-evans": {
@@ -4127,7 +4127,7 @@
             "ER": 3,
             "BB": 2,
             "K": 10,
-            "HBP": null,
+            "HBP": 0,
             "WP": 2
           }
         },
@@ -4218,7 +4218,7 @@
             "ER": 1,
             "BB": 2,
             "K": 12,
-            "HBP": null,
+            "HBP": 0,
             "WP": 1
           }
         },
@@ -4257,13 +4257,13 @@
           },
           "pitching": {
             "IP": "0.1",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "jacob-nold": {},
@@ -4449,12 +4449,12 @@
           "pitching": {
             "IP": "6.2",
             "H": 1,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 2,
             "K": 10,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "sean-evans": {
@@ -4475,13 +4475,13 @@
           },
           "pitching": {
             "IP": "0.1",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "lucas-post": {
@@ -4682,13 +4682,13 @@
         "colby-rice": {
           "pitching": {
             "IP": "0.1",
-            "H": null,
+            "H": 0,
             "R": 3,
             "ER": 3,
             "BB": 3,
-            "K": null,
+            "K": 0,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         }
       }
@@ -4818,12 +4818,12 @@
           "pitching": {
             "IP": "3.0",
             "H": 1,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "jacob-lee": {
@@ -4930,8 +4930,8 @@
             "ER": 3,
             "BB": 1,
             "K": 5,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "sean-evans": {
@@ -4987,12 +4987,12 @@
           "pitching": {
             "IP": "1.2",
             "H": 1,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 2,
             "HBP": 2,
-            "WP": null
+            "WP": 0
           }
         },
         "nolan-fahey": {
@@ -5128,13 +5128,13 @@
           },
           "pitching": {
             "IP": "3.0",
-            "H": null,
-            "R": null,
-            "ER": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 6,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "timmy-mcewen": {},
@@ -5156,13 +5156,13 @@
           },
           "pitching": {
             "IP": "2.0",
-            "H": null,
-            "R": null,
-            "ER": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
             "BB": 2,
             "K": 3,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "talon-coker": {
@@ -5188,20 +5188,20 @@
             "ER": 3,
             "BB": 1,
             "K": 2,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "brayden-fenton": {
           "pitching": {
             "IP": "1.0",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 2,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "trey-davies": {
@@ -5355,12 +5355,12 @@
           "pitching": {
             "IP": "3.0",
             "H": 2,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 4,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "adam-jay": {
@@ -5525,7 +5525,7 @@
             "BB": 1,
             "K": 1,
             "HBP": 2,
-            "WP": null
+            "WP": 0
           }
         },
         "beckett-turnbow": {
@@ -5552,7 +5552,7 @@
             "BB": 1,
             "K": 1,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         },
         "logan-lykken": {
@@ -5578,7 +5578,7 @@
             "ER": 1,
             "BB": 2,
             "K": 3,
-            "HBP": null,
+            "HBP": 0,
             "WP": 1
           }
         },
@@ -5822,10 +5822,10 @@
             "H": 4,
             "R": 1,
             "ER": 1,
-            "BB": null,
+            "BB": 0,
             "K": 3,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         },
         "brayden-fenton": {
@@ -5836,8 +5836,8 @@
             "ER": 2,
             "BB": 2,
             "K": 2,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "parker-peschel": {
@@ -5845,10 +5845,10 @@
             "IP": "1.0",
             "H": 3,
             "R": 4,
-            "ER": null,
+            "ER": 0,
             "BB": 1,
-            "K": null,
-            "HBP": null,
+            "K": 0,
+            "HBP": 0,
             "WP": 1
           }
         }
@@ -5918,24 +5918,24 @@
           "pitching": {
             "IP": "2.2",
             "H": 1,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 3,
             "K": 5,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "bryson-leach": {
           "pitching": {
             "IP": "2.1",
-            "H": null,
-            "R": null,
-            "ER": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
             "BB": 2,
             "K": 1,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         },
         "jacob-lee": {
@@ -6082,8 +6082,8 @@
             "ER": 1,
             "BB": 1,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -6151,13 +6151,13 @@
           },
           "pitching": {
             "IP": "1.0",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 1,
             "HBP": 2,
-            "WP": null
+            "WP": 0
           }
         },
         "adam-jay": {
@@ -6281,12 +6281,12 @@
           "pitching": {
             "IP": "2.0",
             "H": 1,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 2,
             "K": 3,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "talon-coker": {
@@ -6310,7 +6310,7 @@
             "H": 1,
             "R": 1,
             "ER": 1,
-            "BB": null,
+            "BB": 0,
             "K": 2,
             "HBP": 1,
             "WP": 1
@@ -6450,23 +6450,23 @@
           "pitching": {
             "IP": "5.0",
             "H": 1,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 4,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "sean-evans": {
           "pitching": {
             "IP": "2.0",
             "H": 1,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 2,
-            "HBP": null,
+            "HBP": 0,
             "WP": 1
           }
         },
@@ -6603,13 +6603,13 @@
           },
           "pitching": {
             "IP": "1.1",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 2,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "logan-lykken": {
@@ -6653,7 +6653,7 @@
             "BB": 4,
             "K": 4,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         },
         "bryson-leach": {
@@ -6677,9 +6677,9 @@
             "H": 6,
             "R": 4,
             "ER": 2,
-            "BB": null,
+            "BB": 0,
             "K": 3,
-            "HBP": null,
+            "HBP": 0,
             "WP": 2
           }
         },
@@ -6820,13 +6820,13 @@
           },
           "pitching": {
             "IP": "0.1",
-            "H": null,
+            "H": 0,
             "R": 2,
             "ER": 2,
             "BB": 4,
-            "K": null,
+            "K": 0,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         },
         "rowan-douglas": {
@@ -7136,35 +7136,35 @@
           "pitching": {
             "IP": "5.0",
             "H": 2,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 4,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "colby-rice": {
           "pitching": {
             "IP": "1.0",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
-            "K": null,
-            "HBP": null,
-            "WP": null
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
+            "K": 0,
+            "HBP": 0,
+            "WP": 0
           }
         },
         "sean-evans": {
           "pitching": {
             "IP": "1.0",
             "H": 1,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 3,
-            "HBP": null,
+            "HBP": 0,
             "WP": 1
           }
         }
@@ -7250,13 +7250,13 @@
           },
           "pitching": {
             "IP": "1.1",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 2,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "logan-lykken": {
@@ -7433,9 +7433,9 @@
             "H": 4,
             "R": 2,
             "ER": 2,
-            "BB": null,
+            "BB": 0,
             "K": 6,
-            "HBP": null,
+            "HBP": 0,
             "WP": 1
           }
         },
@@ -7448,7 +7448,7 @@
             "BB": 4,
             "K": 4,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         }
       }
@@ -7656,35 +7656,35 @@
           "pitching": {
             "IP": "4.0",
             "H": 1,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 2,
             "K": 2,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         },
         "adam-jay": {
           "pitching": {
             "IP": "1.1",
             "H": 2,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 2,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "talon-coker": {
           "pitching": {
             "IP": "1.2",
             "H": 1,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 2,
-            "HBP": null,
+            "HBP": 0,
             "WP": 1
           }
         }
@@ -7893,7 +7893,7 @@
             "ER": 2,
             "BB": 3,
             "K": 1,
-            "HBP": null,
+            "HBP": 0,
             "WP": 2
           }
         }
@@ -8117,20 +8117,20 @@
             "ER": 2,
             "BB": 6,
             "K": 4,
-            "HBP": null,
+            "HBP": 0,
             "WP": 1
           }
         },
         "talon-coker": {
           "pitching": {
             "IP": "0.2",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -8284,24 +8284,24 @@
           "pitching": {
             "IP": "6.0",
             "H": 2,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 2,
             "K": 6,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         },
         "bryson-leach": {
           "pitching": {
             "IP": "1.0",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 2,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "neal-burtis": {
@@ -8494,7 +8494,7 @@
             "ER": 3,
             "BB": 4,
             "K": 8,
-            "HBP": null,
+            "HBP": 0,
             "WP": 1
           }
         },
@@ -8521,7 +8521,7 @@
             "ER": 1,
             "BB": 2,
             "K": 3,
-            "HBP": null,
+            "HBP": 0,
             "WP": 1
           }
         },
@@ -8765,7 +8765,7 @@
             "ER": 1,
             "BB": 3,
             "K": 10,
-            "HBP": null,
+            "HBP": 0,
             "WP": 1
           }
         },
@@ -8992,10 +8992,10 @@
             "IP": "3.0",
             "H": 3,
             "R": 1,
-            "ER": null,
+            "ER": 0,
             "BB": 1,
             "K": 3,
-            "HBP": null,
+            "HBP": 0,
             "WP": 1
           }
         },
@@ -9005,22 +9005,22 @@
             "H": 6,
             "R": 4,
             "ER": 4,
-            "BB": null,
+            "BB": 0,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "beckett-turnbow": {
           "pitching": {
             "IP": "1.1",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -9059,8 +9059,8 @@
             "ER": 4,
             "BB": 4,
             "K": 3,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "grayson-turnbow": {
@@ -9203,12 +9203,12 @@
           "pitching": {
             "IP": "3.0",
             "H": 2,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 2,
             "K": 3,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "talon-coker": {
@@ -9217,21 +9217,21 @@
             "H": 3,
             "R": 1,
             "ER": 1,
-            "BB": null,
+            "BB": 0,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "beckett-turnbow": {
           "pitching": {
             "IP": "0.2",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 1,
-            "HBP": null,
+            "HBP": 0,
             "WP": 1
           }
         }
@@ -9387,11 +9387,11 @@
             "IP": "6.0",
             "H": 1,
             "R": 1,
-            "ER": null,
+            "ER": 0,
             "BB": 1,
             "K": 12,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         },
         "sean-evans": {
@@ -9400,8 +9400,8 @@
             "H": 5,
             "R": 4,
             "ER": 4,
-            "BB": null,
-            "K": null,
+            "BB": 0,
+            "K": 0,
             "HBP": 1,
             "WP": 1
           }
@@ -9409,13 +9409,13 @@
         "beckett-turnbow": {
           "pitching": {
             "IP": "0.2",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 2,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "anthony-wagner": {
@@ -9644,31 +9644,31 @@
             "BB": 1,
             "K": 1,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         },
         "bryson-leach": {
           "pitching": {
             "IP": "3.0",
-            "H": null,
-            "R": null,
-            "ER": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 4,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "colby-rice": {
           "pitching": {
             "IP": "1.0",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 2,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -9860,8 +9860,8 @@
             "ER": 1,
             "BB": 2,
             "K": 5,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "lucas-perez": {
@@ -9952,13 +9952,13 @@
         "talon-coker": {
           "pitching": {
             "IP": "1.0",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
-            "K": null,
-            "HBP": null,
-            "WP": null
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
+            "K": 0,
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -9995,10 +9995,10 @@
             "H": 4,
             "R": 2,
             "ER": 2,
-            "BB": null,
+            "BB": 0,
             "K": 4,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         },
         "grayson-turnbow": {
@@ -10289,11 +10289,11 @@
             "IP": "7.0",
             "H": 2,
             "R": 1,
-            "ER": null,
+            "ER": 0,
             "BB": 2,
             "K": 6,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "andrew-dyk": {
@@ -10539,19 +10539,19 @@
             "BB": 1,
             "K": 2,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         },
         "talon-coker": {
           "pitching": {
             "IP": "4.0",
             "H": 1,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 2,
             "K": 3,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -10602,8 +10602,8 @@
             "ER": 1,
             "BB": 5,
             "K": 5,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "beckett-turnbow": {
@@ -10728,13 +10728,13 @@
         "brayden-fenton": {
           "pitching": {
             "IP": "1.1",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 3,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "jacob-remfert": {
@@ -10796,16 +10796,16 @@
             "ER": 2,
             "BB": 3,
             "K": 1,
-            "HBP": null,
+            "HBP": 0,
             "WP": 4
           }
         },
         "jasper-sarkany": {
           "pitching": {
             "IP": "1.1",
-            "H": null,
+            "H": 0,
             "R": 1,
-            "ER": null,
+            "ER": 0,
             "BB": 1,
             "K": 2,
             "HBP": 1,
@@ -10896,11 +10896,11 @@
             "IP": "4.0",
             "H": 1,
             "R": 1,
-            "ER": null,
+            "ER": 0,
             "BB": 1,
             "K": 6,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "trey-davies": {
@@ -11010,11 +11010,11 @@
             "IP": "3.0",
             "H": 3,
             "R": 1,
-            "ER": null,
-            "BB": null,
+            "ER": 0,
+            "BB": 0,
             "K": 3,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "aaron-abadilla": {
@@ -11036,13 +11036,13 @@
         },
         "jasper-sarkany": {
           "pitching": {
-            "IP": null,
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
-            "K": null,
-            "HBP": null,
+            "IP": "0.0",
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
+            "K": 0,
+            "HBP": 0,
             "WP": 1
           }
         },
@@ -11181,13 +11181,13 @@
         "talon-coker": {
           "pitching": {
             "IP": "4.0",
-            "H": null,
-            "R": null,
-            "ER": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 5,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "rowan-douglas": {
@@ -11295,13 +11295,13 @@
         "jasper-sarkany": {
           "pitching": {
             "IP": "1.0",
-            "H": null,
-            "R": null,
-            "ER": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
             "BB": 3,
             "K": 3,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -11371,11 +11371,11 @@
             "IP": "4.0",
             "H": 3,
             "R": 1,
-            "ER": null,
+            "ER": 0,
             "BB": 3,
             "K": 7,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "trey-davies": {
@@ -11486,10 +11486,10 @@
             "H": 3,
             "R": 2,
             "ER": 1,
-            "BB": null,
+            "BB": 0,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "jacob-remfert": {
@@ -11558,12 +11558,12 @@
           "pitching": {
             "IP": "5.0",
             "H": 3,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 6,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         },
         "beckett-turnbow": {
@@ -11639,11 +11639,11 @@
             "IP": "2.0",
             "H": 1,
             "R": 1,
-            "ER": null,
+            "ER": 0,
             "BB": 1,
             "K": 3,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         },
         "timmy-mcewen": {
@@ -11831,12 +11831,12 @@
           "pitching": {
             "IP": "5.0",
             "H": 5,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 5,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "trey-davies": {
@@ -12045,8 +12045,8 @@
             "ER": 2,
             "BB": 1,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "beckett-turnbow": {
@@ -12121,12 +12121,12 @@
           "pitching": {
             "IP": "6.0",
             "H": 3,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 5,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "grayson-turnbow": {
@@ -12262,13 +12262,13 @@
           },
           "pitching": {
             "IP": "1.0",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 3,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "neal-burtis": {
@@ -12377,12 +12377,12 @@
           "pitching": {
             "IP": "6.0",
             "H": 2,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 4,
             "K": 5,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "jacob-remfert": {
@@ -12519,12 +12519,12 @@
           "pitching": {
             "IP": "5.0",
             "H": 4,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 7,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "grayson-turnbow": {
@@ -12576,132 +12576,132 @@
             "HBP": null,
             "SB": null,
             "CS": null
-          },
-          "lucas-post": {
-            "batting": {
-              "AB": 4,
-              "H": 1,
-              "R": null,
-              "RBI": 1,
-              "BB": null,
-              "SO": null,
-              "2B": 1,
-              "3B": null,
-              "HR": null,
-              "SF": null,
-              "HBP": null,
-              "SB": null,
-              "CS": null
-            }
-          },
-          "anthony-wagner": {
-            "batting": {
-              "AB": 4,
-              "H": 2,
-              "R": 1,
-              "RBI": null,
-              "BB": null,
-              "SO": 1,
-              "2B": null,
-              "3B": null,
-              "HR": null,
-              "SF": null,
-              "HBP": null,
-              "SB": null,
-              "CS": null
-            }
-          },
-          "timmy-mcewen": {
-            "batting": {
-              "AB": 3,
-              "H": null,
-              "R": null,
-              "RBI": null,
-              "BB": null,
-              "SO": 1,
-              "2B": null,
-              "3B": null,
-              "HR": null,
-              "SF": null,
-              "HBP": null,
-              "SB": null,
-              "CS": null
-            }
-          },
-          "kyson-chamberlin": {
-            "batting": {
-              "AB": 1,
-              "H": null,
-              "R": 1,
-              "RBI": null,
-              "BB": 2,
-              "SO": 1,
-              "2B": null,
-              "3B": null,
-              "HR": null,
-              "SF": null,
-              "HBP": null,
-              "SB": null,
-              "CS": null
-            }
-          },
-          "max-butcher": {
-            "batting": {
-              "AB": 3,
-              "H": 1,
-              "R": null,
-              "RBI": null,
-              "BB": null,
-              "SO": null,
-              "2B": null,
-              "3B": null,
-              "HR": null,
-              "SF": null,
-              "HBP": null,
-              "SB": null,
-              "CS": null
-            }
-          },
-          "mason-lee": {
-            "batting": {
-              "AB": null,
-              "H": null,
-              "R": null,
-              "RBI": null,
-              "BB": null,
-              "SO": null,
-              "2B": null,
-              "3B": null,
-              "HR": null,
-              "SF": null,
-              "HBP": null,
-              "SB": null,
-              "CS": null
-            }
-          },
-          "brayden-fenton": {
-            "pitching": {
-              "IP": "1.0",
-              "H": 1,
-              "R": null,
-              "ER": null,
-              "BB": null,
-              "K": 1,
-              "HBP": null,
-              "WP": null
-            }
-          },
-          "nolan-fahey": {
-            "pitching": {
-              "IP": "1.0",
-              "H": null,
-              "R": null,
-              "ER": null,
-              "BB": null,
-              "K": 3,
-              "HBP": 1,
-              "WP": null
-            }
+          }
+        },
+        "lucas-post": {
+          "batting": {
+            "AB": 4,
+            "H": 1,
+            "R": null,
+            "RBI": 1,
+            "BB": null,
+            "SO": null,
+            "2B": 1,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "anthony-wagner": {
+          "batting": {
+            "AB": 4,
+            "H": 2,
+            "R": 1,
+            "RBI": null,
+            "BB": null,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "timmy-mcewen": {
+          "batting": {
+            "AB": 3,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "kyson-chamberlin": {
+          "batting": {
+            "AB": 1,
+            "H": null,
+            "R": 1,
+            "RBI": null,
+            "BB": 2,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "max-butcher": {
+          "batting": {
+            "AB": 3,
+            "H": 1,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "mason-lee": {
+          "batting": {
+            "AB": null,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "brayden-fenton": {
+          "pitching": {
+            "IP": "1.0",
+            "H": 1,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
+            "K": 1,
+            "HBP": 0,
+            "WP": 0
+          }
+        },
+        "nolan-fahey": {
+          "pitching": {
+            "IP": "1.0",
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
+            "K": 3,
+            "HBP": 1,
+            "WP": 0
           }
         }
       }
@@ -12786,13 +12786,13 @@
           },
           "pitching": {
             "IP": "2.0",
-            "H": null,
-            "R": null,
-            "ER": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 4,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "lucas-post": {
@@ -12922,8 +12922,8 @@
             "ER": 1,
             "BB": 2,
             "K": 7,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -13028,12 +13028,12 @@
           "pitching": {
             "IP": "5.0",
             "H": 3,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 7,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "rowan-douglas": {
@@ -13191,8 +13191,8 @@
             "ER": 2,
             "BB": 2,
             "K": 10,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "beckett-turnbow": {
@@ -13213,13 +13213,13 @@
           },
           "pitching": {
             "IP": "0.1",
-            "H": null,
-            "R": null,
-            "ER": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "neal-burtis": {
@@ -13406,13 +13406,13 @@
           },
           "pitching": {
             "IP": "2.0",
-            "H": null,
-            "R": null,
-            "ER": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 4,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "trey-davies": {
@@ -13521,12 +13521,12 @@
           "pitching": {
             "IP": "2.0",
             "H": 2,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 2,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         },
         "nolan-fahey": {
@@ -13568,9 +13568,9 @@
             "R": 1,
             "ER": 1,
             "BB": 1,
-            "K": null,
-            "HBP": null,
-            "WP": null
+            "K": 0,
+            "HBP": 0,
+            "WP": 0
           }
         },
         "jasper-sarkany": {
@@ -13672,13 +13672,13 @@
           },
           "pitching": {
             "IP": "0.2",
-            "H": null,
-            "R": null,
-            "ER": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 2,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "neal-burtis": {
@@ -13704,8 +13704,8 @@
             "ER": 2,
             "BB": 5,
             "K": 7,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "trey-davies": {
@@ -13860,11 +13860,11 @@
             "IP": "2.0",
             "H": 1,
             "R": 1,
-            "ER": null,
+            "ER": 0,
             "BB": 2,
             "K": 3,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         },
         "beckett-turnbow": {
@@ -13939,12 +13939,12 @@
           "pitching": {
             "IP": "5.0",
             "H": 1,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 1,
             "K": 8,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "rowan-douglas": {
@@ -14085,8 +14085,8 @@
             "ER": 1,
             "BB": 3,
             "K": 2,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "neal-burtis": {
@@ -14108,12 +14108,12 @@
           "pitching": {
             "IP": "6.0",
             "H": 1,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 2,
             "K": 14,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "trey-davies": {
@@ -14252,10 +14252,10 @@
             "H": 5,
             "R": 3,
             "ER": 3,
-            "BB": null,
+            "BB": 0,
             "K": 9,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         },
         "beckett-turnbow": {
@@ -14414,13 +14414,13 @@
         "kyson-chamberlin": {
           "pitching": {
             "IP": "1.0",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 1,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }
@@ -14489,12 +14489,12 @@
           "pitching": {
             "IP": "3.0",
             "H": 2,
-            "R": null,
-            "ER": null,
+            "R": 0,
+            "ER": 0,
             "BB": 2,
             "K": 9,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "trey-davies": {
@@ -14636,13 +14636,13 @@
         "nolan-fahey": {
           "pitching": {
             "IP": "2.0",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
             "K": 5,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "jacob-nold": {
@@ -14834,9 +14834,9 @@
             "H": 4,
             "R": 3,
             "ER": 1,
-            "BB": null,
+            "BB": 0,
             "K": 7,
-            "HBP": null,
+            "HBP": 0,
             "WP": 1
           }
         },
@@ -14899,8 +14899,8 @@
             "ER": 1,
             "BB": 1,
             "K": 2,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "mason-lee": {
@@ -14981,183 +14981,183 @@
             "SF": null,
             "HBP": null,
             "SB": null,
-            "CS": null,
-            "pitching": {
-              "IP": "1.0",
-              "H": null,
-              "R": null,
-              "ER": null,
-              "BB": null,
-              "K": 3,
-              "HBP": null,
-              "WP": null
-            }
-          }
-        },
-        "neal-burtis": {
-          "batting": {
-            "AB": 3,
-            "H": 2,
-            "R": 2,
-            "RBI": null,
-            "BB": null,
-            "SO": null,
-            "2B": 1,
-            "3B": null,
-            "HR": null,
-            "SF": null,
-            "HBP": null,
-            "SB": null,
             "CS": null
-          }
-        },
-        "lucas-post": {
-          "batting": {
-            "AB": 2,
-            "H": null,
-            "R": null,
-            "RBI": null,
-            "BB": null,
-            "SO": null,
-            "2B": null,
-            "3B": null,
-            "HR": null,
-            "SF": null,
-            "HBP": null,
-            "SB": null,
-            "CS": null
-          }
-        },
-        "grayson-turnbow": {
-          "batting": {
-            "AB": 3,
-            "H": 1,
-            "R": null,
-            "RBI": 1,
-            "BB": null,
-            "SO": 1,
-            "2B": null,
-            "3B": null,
-            "HR": null,
-            "SF": null,
-            "HBP": null,
-            "SB": null,
-            "CS": 1
-          }
-        },
-        "talon-coker": {
+          },
           "pitching": {
-            "IP": "6.0",
-            "H": 2,
-            "R": 1,
-            "ER": 1,
-            "BB": 4,
-            "K": 5,
-            "HBP": null,
-            "WP": null
+            "IP": "1.0",
+            "H": 0,
+            "R": 0,
+            "ER": 0,
+            "BB": 0,
+            "K": 3,
+            "HBP": 0,
+            "WP": 0
           }
-        },
-        "mason-lee": {
-          "batting": {
-            "AB": null,
-            "H": null,
-            "R": null,
-            "RBI": null,
-            "BB": null,
-            "SO": null,
-            "2B": null,
-            "3B": null,
-            "HR": null,
-            "SF": null,
-            "HBP": null,
-            "SB": null,
-            "CS": 1
-          }
-        },
-        "anthony-wagner": {
-          "batting": {
-            "AB": 2,
-            "H": 1,
-            "R": null,
-            "RBI": null,
-            "BB": 1,
-            "SO": 1,
-            "2B": null,
-            "3B": null,
-            "HR": null,
-            "SF": null,
-            "HBP": null,
-            "SB": null,
-            "CS": null
-          }
-        },
-        "trey-davies": {
-          "batting": {
-            "AB": 3,
-            "H": null,
-            "R": null,
-            "RBI": null,
-            "BB": null,
-            "SO": 3,
-            "2B": null,
-            "3B": null,
-            "HR": null,
-            "SF": null,
-            "HBP": null,
-            "SB": null,
-            "CS": null
-          }
-        },
-        "jacob-remfert": {
-          "batting": {
-            "AB": 1,
-            "H": null,
-            "R": null,
-            "RBI": null,
-            "BB": null,
-            "SO": null,
-            "2B": null,
-            "3B": null,
-            "HR": null,
-            "SF": null,
-            "HBP": null,
-            "SB": null,
-            "CS": null
-          }
-        },
-        "max-butcher": {
-          "batting": {
-            "AB": 1,
-            "H": null,
-            "R": null,
-            "RBI": null,
-            "BB": 1,
-            "SO": 1,
-            "2B": null,
-            "3B": null,
-            "HR": null,
-            "SF": null,
-            "HBP": null,
-            "SB": null,
-            "CS": null
-          }
-        },
-        "rowan-douglas": {
-          "batting": {
-            "AB": 1,
-            "H": null,
-            "R": null,
-            "RBI": null,
-            "BB": 1,
-            "SO": null,
-            "2B": null,
-            "3B": null,
-            "HR": null,
-            "SF": null,
-            "HBP": null,
-            "SB": null,
-            "CS": null
-          }
+        }
+      },
+      "neal-burtis": {
+        "batting": {
+          "AB": 3,
+          "H": 2,
+          "R": 2,
+          "RBI": null,
+          "BB": null,
+          "SO": null,
+          "2B": 1,
+          "3B": null,
+          "HR": null,
+          "SF": null,
+          "HBP": null,
+          "SB": null,
+          "CS": null
+        }
+      },
+      "lucas-post": {
+        "batting": {
+          "AB": 2,
+          "H": null,
+          "R": null,
+          "RBI": null,
+          "BB": null,
+          "SO": null,
+          "2B": null,
+          "3B": null,
+          "HR": null,
+          "SF": null,
+          "HBP": null,
+          "SB": null,
+          "CS": null
+        }
+      },
+      "grayson-turnbow": {
+        "batting": {
+          "AB": 3,
+          "H": 1,
+          "R": null,
+          "RBI": 1,
+          "BB": null,
+          "SO": 1,
+          "2B": null,
+          "3B": null,
+          "HR": null,
+          "SF": null,
+          "HBP": null,
+          "SB": null,
+          "CS": 1
+        }
+      },
+      "talon-coker": {
+        "pitching": {
+          "IP": "6.0",
+          "H": 2,
+          "R": 1,
+          "ER": 1,
+          "BB": 4,
+          "K": 5,
+          "HBP": null,
+          "WP": null
+        }
+      },
+      "mason-lee": {
+        "batting": {
+          "AB": null,
+          "H": null,
+          "R": null,
+          "RBI": null,
+          "BB": null,
+          "SO": null,
+          "2B": null,
+          "3B": null,
+          "HR": null,
+          "SF": null,
+          "HBP": null,
+          "SB": null,
+          "CS": 1
+        }
+      },
+      "anthony-wagner": {
+        "batting": {
+          "AB": 2,
+          "H": 1,
+          "R": null,
+          "RBI": null,
+          "BB": 1,
+          "SO": 1,
+          "2B": null,
+          "3B": null,
+          "HR": null,
+          "SF": null,
+          "HBP": null,
+          "SB": null,
+          "CS": null
+        }
+      },
+      "trey-davies": {
+        "batting": {
+          "AB": 3,
+          "H": null,
+          "R": null,
+          "RBI": null,
+          "BB": null,
+          "SO": 3,
+          "2B": null,
+          "3B": null,
+          "HR": null,
+          "SF": null,
+          "HBP": null,
+          "SB": null,
+          "CS": null
+        }
+      },
+      "jacob-remfert": {
+        "batting": {
+          "AB": 1,
+          "H": null,
+          "R": null,
+          "RBI": null,
+          "BB": null,
+          "SO": null,
+          "2B": null,
+          "3B": null,
+          "HR": null,
+          "SF": null,
+          "HBP": null,
+          "SB": null,
+          "CS": null
+        }
+      },
+      "max-butcher": {
+        "batting": {
+          "AB": 1,
+          "H": null,
+          "R": null,
+          "RBI": null,
+          "BB": 1,
+          "SO": 1,
+          "2B": null,
+          "3B": null,
+          "HR": null,
+          "SF": null,
+          "HBP": null,
+          "SB": null,
+          "CS": null
+        }
+      },
+      "rowan-douglas": {
+        "batting": {
+          "AB": 1,
+          "H": null,
+          "R": null,
+          "RBI": null,
+          "BB": 1,
+          "SO": null,
+          "2B": null,
+          "3B": null,
+          "HR": null,
+          "SF": null,
+          "HBP": null,
+          "SB": null,
+          "CS": null
         }
       }
     },
@@ -15229,8 +15229,8 @@
             "ER": 0,
             "BB": 1,
             "K": 10,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "lucas-post": {
@@ -15541,8 +15541,8 @@
             "ER": 0,
             "BB": 0,
             "K": 3,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         },
         "talon-coker": {
@@ -15554,7 +15554,7 @@
             "BB": 3,
             "K": 4,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         }
       }
@@ -15766,7 +15766,7 @@
             "BB": 1,
             "K": 1,
             "HBP": 1,
-            "WP": null
+            "WP": 0
           }
         },
         "kyson-chamberlin": {
@@ -15789,8 +15789,8 @@
             "ER": 1,
             "BB": 2,
             "K": 3,
-            "HBP": null,
-            "WP": null
+            "HBP": 0,
+            "WP": 0
           }
         }
       }

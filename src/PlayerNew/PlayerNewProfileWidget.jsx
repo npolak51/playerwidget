@@ -161,6 +161,23 @@ function outsToIpString(outs) {
   return `${inn}.${rem}`;
 }
 
+/**
+ * True if the pitching line has no scored runs against for milestone purposes.
+ * Many game logs omit R/ER entirely; simultaneous null still counts here so later
+ * games with explicit 0/0 do not falsely become a new "career-high scoreless".
+ */
+function isPitchingAppearanceScorelessForMilestone(p) {
+  const rNum = p.R === null || p.R === undefined ? null : Number(p.R);
+  const erNum = p.ER === null || p.ER === undefined ? null : Number(p.ER);
+  if (Number.isFinite(rNum) && rNum > 0) return false;
+  if (Number.isFinite(erNum) && erNum > 0) return false;
+  if (rNum === 0 && erNum === 0) return true;
+  if (rNum === null && erNum === null) return true;
+  if (rNum === 0 && erNum === null) return true;
+  if (erNum === 0 && rNum === null) return true;
+  return false;
+}
+
 function sumNumeric(a, b) {
   const na = Number(a);
   const nb = Number(b);
@@ -488,9 +505,7 @@ function buildGameMilestonesForPlayer(playerId) {
         });
       }
 
-      const pitR = p.R === null || p.R === undefined ? null : Number(p.R);
-      const pitER = p.ER === null || p.ER === undefined ? null : Number(p.ER);
-      const scoreless = outs > 0 && pitR === 0 && pitER === 0;
+      const scoreless = outs > 0 && isPitchingAppearanceScorelessForMilestone(p);
 
       if (scoreless && outs > best.scorelessOuts) {
         best.scorelessOuts = outs;
@@ -506,6 +521,9 @@ function buildGameMilestonesForPlayer(playerId) {
           threshold: outs,
         });
       }
+
+      const pitR = p.R === null || p.R === undefined ? null : Number(p.R);
+      const pitER = p.ER === null || p.ER === undefined ? null : Number(p.ER);
 
       // First Perfect Game / No-Hitter / Shutout (7+ IP)
       const minOuts = 21;
