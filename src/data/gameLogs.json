@@ -15570,70 +15570,43 @@
       "oppScore": 10,
       "isOfficial": true,
       "players": {
-        "sean-evans": {
+        "neal-burtis": {
           "batting": {
-            "AB": 6,
+            "AB": 3,
+            "H": 1,
+            "R": 1,
+            "RBI": null,
+            "BB": 1,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": 2,
+            "CS": null
+          }
+        },
+        "grayson-turnbow": {
+          "batting": {
+            "AB": 1,
             "H": null,
             "R": null,
             "RBI": null,
-            "BB": null,
-            "SO": 3,
+            "BB": 3,
+            "SO": null,
             "2B": null,
             "3B": null,
             "HR": null,
             "SF": null,
             "HBP": null,
             "SB": null,
-            "CS": null
-          }
-        },
-        "beckett-turnbow": {
-          "batting": {
-            "AB": 3,
-            "H": null,
-            "R": null,
-            "RBI": 1,
-            "BB": 3,
-            "SO": 1,
-            "2B": null,
-            "3B": null,
-            "HR": null,
-            "SF": null,
-            "HBP": null,
-            "SB": 2,
-            "CS": null
-          },
-          "pitching": {
-            "IP": "1.0",
-            "H": null,
-            "R": null,
-            "ER": null,
-            "BB": null,
-            "K": 3,
-            "HBP": null,
-            "WP": null
-          }
-        },
-        "neal-burtis": {
-          "batting": {
-            "AB": 5,
-            "H": 1,
-            "R": 1,
-            "RBI": null,
-            "BB": 2,
-            "SO": 1,
-            "2B": null,
-            "3B": null,
-            "HR": null,
-            "SF": null,
-            "HBP": null,
-            "SB": 2,
-            "CS": null
+            "CS": 1
           }
         },
         "trey-davies": {
           "batting": {
-            "AB": 4,
+            "AB": 2,
             "H": null,
             "R": null,
             "RBI": null,
@@ -15643,19 +15616,36 @@
             "3B": null,
             "HR": null,
             "SF": null,
-            "HBP": 2,
+            "HBP": 1,
             "SB": 2,
             "CS": null
           }
         },
-        "lucas-post": {
+        "beckett-turnbow": {
           "batting": {
-            "AB": 5,
-            "H": 1,
+            "AB": 2,
+            "H": null,
             "R": null,
-            "RBI": null,
-            "BB": null,
-            "SO": 2,
+            "RBI": 1,
+            "BB": 1,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": 1,
+            "CS": null
+          }
+        },
+        "anthony-wagner": {
+          "batting": {
+            "AB": 2,
+            "H": null,
+            "R": null,
+            "RBI": 1,
+            "BB": 1,
+            "SO": 1,
             "2B": null,
             "3B": null,
             "HR": null,
@@ -15665,25 +15655,81 @@
             "CS": null
           }
         },
-        "talon-coker": {
-          "pitching": {
-            "IP": "6.0",
-            "H": 3,
+        "sean-evans": {
+          "batting": {
+            "AB": 3,
+            "H": null,
             "R": null,
-            "ER": null,
-            "BB": 3,
-            "K": 4,
-            "HBP": 1,
-            "WP": null
+            "RBI": null,
+            "BB": null,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
           }
         },
-        "rowan-douglas": {
+        "lucas-post": {
+          "batting": {
+            "AB": 3,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "max-butcher": {
           "batting": {
             "AB": 2,
             "H": null,
             "R": null,
             "RBI": null,
             "BB": null,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "jacob-remfert": {
+          "batting": {
+            "AB": null,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": 1,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "jacob-nold": {
+          "batting": {
+            "AB": 1,
+            "H": null,
+            "R": 1,
+            "RBI": null,
+            "BB": 1,
             "SO": 1,
             "2B": null,
             "3B": null,
@@ -15711,40 +15757,6 @@
             "CS": null
           }
         },
-        "grayson-turnbow": {
-          "batting": {
-            "AB": 3,
-            "H": null,
-            "R": 1,
-            "RBI": null,
-            "BB": 4,
-            "SO": null,
-            "2B": null,
-            "3B": null,
-            "HR": null,
-            "SF": null,
-            "HBP": null,
-            "SB": null,
-            "CS": null
-          }
-        },
-        "max-butcher": {
-          "batting": {
-            "AB": 4,
-            "H": null,
-            "R": null,
-            "RBI": null,
-            "BB": null,
-            "SO": 2,
-            "2B": null,
-            "3B": null,
-            "HR": null,
-            "SF": null,
-            "HBP": null,
-            "SB": null,
-            "CS": null
-          }
-        },
         "brayden-fenton": {
           "pitching": {
             "IP": "3.0",
@@ -15757,21 +15769,16 @@
             "WP": null
           }
         },
-        "jacob-remfert": {
-          "batting": {
-            "AB": null,
-            "H": null,
-            "R": null,
-            "RBI": null,
-            "BB": 1,
-            "SO": null,
-            "2B": null,
-            "3B": null,
-            "HR": null,
-            "SF": null,
-            "HBP": null,
-            "SB": null,
-            "CS": null
+        "kyson-chamberlin": {
+          "pitching": {
+            "IP": "0.2",
+            "H": 1,
+            "R": 5,
+            "ER": 5,
+            "BB": 4,
+            "K": 0,
+            "HBP": 1,
+            "WP": 1
           }
         },
         "nolan-fahey": {
@@ -15784,52 +15791,6 @@
             "K": 3,
             "HBP": null,
             "WP": null
-          }
-        },
-        "jacob-nold": {
-          "batting": {
-            "AB": 1,
-            "H": null,
-            "R": 1,
-            "RBI": null,
-            "BB": 1,
-            "SO": 1,
-            "2B": null,
-            "3B": null,
-            "HR": null,
-            "SF": null,
-            "HBP": null,
-            "SB": null,
-            "CS": null
-          }
-        },
-        "kyson-chamberlin": {
-          "pitching": {
-            "IP": "0.2",
-            "H": 1,
-            "R": 5,
-            "ER": 5,
-            "BB": 4,
-            "K": null,
-            "HBP": 1,
-            "WP": 1
-          }
-        },
-        "anthony-wagner": {
-          "batting": {
-            "AB": 6,
-            "H": 2,
-            "R": null,
-            "RBI": 1,
-            "BB": null,
-            "SO": 1,
-            "2B": null,
-            "3B": null,
-            "HR": null,
-            "SF": null,
-            "HBP": null,
-            "SB": null,
-            "CS": null
           }
         }
       }
