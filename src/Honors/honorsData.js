@@ -1,5 +1,10 @@
 export const mvps = [
   {
+    "year": 2026,
+    "name": "Neal Burtis",
+    "url": ""
+  },
+  {
     "year": 2023,
     "name": "Carson Ohland",
     "url": ""
@@ -37,6 +42,54 @@ export const mvps = [
 ];
 
 export const allLeagueSelections = [
+  {
+    "year": 2026,
+    "name": "Neal Burtis",
+    "team": "1st Team",
+    "position": "P, 1B, OF",
+    "class": "Sr.",
+    "url": ""
+  },
+  {
+    "year": 2026,
+    "name": "Beckett Turn",
+    "team": "1st Team",
+    "position": "SS, P",
+    "class": "Sr.",
+    "url": ""
+  },
+  {
+    "year": 2026,
+    "name": "Grayson Turnbow",
+    "team": "1st Team",
+    "position": "OF, INF",
+    "class": "Jr.",
+    "url": ""
+  },
+  {
+    "year": 2026,
+    "name": "Talon Coker",
+    "team": "2nd Team",
+    "position": "P",
+    "class": "Jr.",
+    "url": ""
+  },
+  {
+    "year": 2026,
+    "name": "Sean Evans",
+    "team": "2nd Team",
+    "position": "OF, P",
+    "class": "Sr.",
+    "url": ""
+  },
+  {
+    "year": 2026,
+    "name": "Anthony Wagner",
+    "team": "2nd Team",
+    "position": "DH, 3B",
+    "class": "Sr.",
+    "url": ""
+  },
   {
     "year": 2025,
     "name": "Adam Jay",
