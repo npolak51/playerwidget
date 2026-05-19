@@ -52,7 +52,7 @@ export const allLeagueSelections = [
   },
   {
     "year": 2026,
-    "name": "Beckett Turn",
+    "name": "Beckett Turnbow",
     "team": "1st Team",
     "position": "SS, P",
     "class": "Sr.",
