@@ -1,5 +1,16 @@
 export const seasons = [
   {
+    "year": 2026,
+    "leagueRecord": "13-1",
+    "leagueFinish": "1st",
+    "overallRecord": "21-3",
+    "playoffResults": "State: 1st Round",
+    "isLeagueChampion": true,
+    "isStateAppearance": true,
+    "isFinalFour": false,
+    "isDistrictChamp": false
+  },
+  {
     "year": 2025,
     "leagueRecord": "11-3",
     "leagueFinish": "2nd",
