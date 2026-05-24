@@ -15794,6 +15794,226 @@
           }
         }
       }
+    },
+    {
+      "gameId": "2026-05-23-2026-var-lake-washington-home-0-1",
+      "date": "2026-05-23",
+      "season": 2026,
+      "team": "Var.",
+      "opponent": "Lake Washington",
+      "location": "Home",
+      "ourScore": null,
+      "oppScore": 1,
+      "isOfficial": true,
+      "players": {
+        "sean-evans": {
+          "batting": {
+            "AB": 2,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "beckett-turnbow": {
+          "batting": {
+            "AB": 3,
+            "H": 1,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          },
+          "pitching": {
+            "IP": "2.0",
+            "H": null,
+            "R": null,
+            "ER": null,
+            "BB": 1,
+            "K": 2,
+            "HBP": null,
+            "WP": null
+          }
+        },
+        "neal-burtis": {
+          "batting": {
+            "AB": 3,
+            "H": 1,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": 1,
+            "CS": null
+          },
+          "pitching": {
+            "IP": "5.0",
+            "H": 7,
+            "R": 1,
+            "ER": null,
+            "BB": 2,
+            "K": 4,
+            "HBP": 1,
+            "WP": null
+          }
+        },
+        "trey-davies": {
+          "batting": {
+            "AB": 2,
+            "H": 1,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": 1,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "lucas-post": {
+          "batting": {
+            "AB": 2,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "rowan-douglas": {
+          "batting": {
+            "AB": 2,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "grayson-turnbow": {
+          "batting": {
+            "AB": 3,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": 3,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "jacob-remfert": {
+          "batting": {
+            "AB": 1,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "kyson-chamberlin": {
+          "batting": {
+            "AB": 1,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "colin-clem": {
+          "batting": {
+            "AB": 1,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": null,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        },
+        "anthony-wagner": {
+          "batting": {
+            "AB": 3,
+            "H": null,
+            "R": null,
+            "RBI": null,
+            "BB": null,
+            "SO": 1,
+            "2B": null,
+            "3B": null,
+            "HR": null,
+            "SF": null,
+            "HBP": null,
+            "SB": null,
+            "CS": null
+          }
+        }
+      }
     }
   ]
 }
