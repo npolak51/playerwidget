@@ -12,9 +12,8 @@ export const teamRecords = [
   {
     "category": "team",
     "statName": "Winning Percentage",
-    "recordValue": "0.933 (14-1)",
-    "year": 2021,
-    "additionalInfo": "Shortened season, 15 games"
+    "recordValue": "0.893 (25-3)",
+    "year": 2023
   },
   {
     "category": "team",
@@ -87,11 +86,11 @@ export const teamRecords = [
   {
     "category": "offense",
     "statName": "Stolen Bases",
-    "recordValue": "107",
-    "year": 2023,
+    "recordValue": "118",
+    "year": 2026,
     "previousRecord": {
-      "value": "89",
-      "year": 1979
+      "value": "107",
+      "year": 2023
     }
   },
   {
@@ -109,13 +108,12 @@ export const teamRecords = [
   {
     "category": "pitching",
     "statName": "Earned Run Average",
-    "recordValue": "1.78",
-    "year": 2021,
+    "recordValue": "1.25",
+    "year": 2026,
     "previousRecord": {
-      "value": "2.65",
-      "year": 2018
-    },
-    "additionalInfo": "Shortened season, 15 games"
+      "value": "1.78",
+      "year": 2021
+    }
   },
   {
     "category": "pitching",
@@ -130,40 +128,33 @@ export const teamRecords = [
   {
     "category": "pitching",
     "statName": "Fewest Walks",
-    "recordValue": "43",
-    "year": 2021,
+    "recordValue": "71",
+    "year": 2026,
+    "year2": 2014,
     "previousRecord": {
-      "value": "71",
-      "year": 2014
-    },
-    "additionalInfo": "Shortened season, 15 games"
-  },
-  {
-    "category": "pitching",
-    "statName": "Batting Average Against",
-    "recordValue": "0.187",
-    "year": 2022,
-    "previousRecord": {
-      "value": "0.192",
-      "year": 2021
+      "value": "74",
+      "year": 2022
     }
   },
   {
     "category": "pitching",
-    "statName": "Runners Stranded",
-    "recordValue": "210",
-    "year": 2016,
+    "statName": "Batting Average Against",
+    "recordValue": "0.168",
+    "year": 2026,
     "previousRecord": {
-      "value": "191",
-      "year": 2015
+      "value": "0.187",
+      "year": 2022
     }
   },
   {
     "category": "defense",
     "statName": "Fewest Errors",
-    "recordValue": "19",
-    "year": 2021,
-    "additionalInfo": "Shortened season, 15 games"
+    "recordValue": "21",
+    "year": 2022,
+    "previousRecord": {
+      "value": "22",
+      "year": 2018
+    }
   },
   {
     "category": "defense",
@@ -173,16 +164,6 @@ export const teamRecords = [
     "previousRecord": {
       "value": "0.968",
       "year": 2018
-    }
-  },
-  {
-    "category": "defense",
-    "statName": "Double Plays",
-    "recordValue": "57",
-    "year": 2019,
-    "previousRecord": {
-      "value": "55",
-      "year": 2015
     }
   }
 ];
