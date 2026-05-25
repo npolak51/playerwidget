@@ -66,8 +66,11 @@ function isLeaderActive(leader) {
   if (!player) return false;
 
   const classYear = Number(player?.class) || 0;
-  const currentYear = new Date().getFullYear();
-  return classYear >= currentYear;
+  if (!classYear) return false;
+
+  // Still active until June 10 of class year (inactive starting that date, local midnight).
+  const endActiveExclusive = new Date(classYear, 5, 10);
+  return Date.now() < endActiveExclusive.getTime();
 }
 
 function RankBadge({ rank }) {
@@ -233,7 +236,7 @@ export default function AllTimeLeadersWidgetBase({ title, categories }) {
       <div className="px-4 sm:px-6 py-4 bg-white space-y-1">
         <div className="text-center text-gray-500 text-sm">* Denotes pre-BBCOR bat era</div>
         <div className="text-center text-gray-500 text-sm">
-          <span className="inline-block px-2 py-0.5 bg-emerald-500/20 text-emerald-700 text-xs font-medium rounded-full align-middle">Active</span> = Still active in program
+          <span className="inline-block px-2 py-0.5 bg-emerald-500/20 text-emerald-700 text-xs font-medium rounded-full align-middle">Active</span> = Still active until June&nbsp;10 of class year
         </div>
       </div>
     </div>

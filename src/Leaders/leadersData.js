@@ -1447,7 +1447,7 @@ export const pitchingStatCategories = [
         "rank": 7,
         "name": "Neal Burtis",
         "year": 2026,
-        "value": "0.930",
+        "value": "0.93",
         "games": "(47.1 IP)"
       },
       {

@@ -131,8 +131,10 @@ function isRecordHolderActive(leader) {
   if (!player) return false;
 
   const classYear = Number(player?.class) || 0;
-  const currentYear = new Date().getFullYear();
-  return classYear >= currentYear;
+  if (!classYear) return false;
+
+  const endActiveExclusive = new Date(classYear, 5, 10);
+  return Date.now() < endActiveExclusive.getTime();
 }
 
 function allLeagueTeamRank(team) {
