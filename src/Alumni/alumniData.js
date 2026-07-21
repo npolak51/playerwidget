@@ -276,7 +276,7 @@ export const alumniPlayers = [
     "isActive": true,
     "division": "D-I",
     "colleges": [
-      "Yakima Valley"
+      "Yakima Valley",
       "Saint Louis"
     ],
     "drafted": false,
