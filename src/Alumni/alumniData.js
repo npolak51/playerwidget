@@ -64,7 +64,7 @@ export const alumniPlayers = [
     "playerName": "Timmy McEwen",
     "sport": "Baseball",
     "isActive": true,
-    "division": "NAIA",
+    "division": "D-II",
     "colleges": [
       "Northwest Nazarene"
     ],
@@ -231,7 +231,8 @@ export const alumniPlayers = [
     "isActive": true,
     "division": "NWAC",
     "colleges": [
-      "Clark"
+      "Clark",
+      "Warner Pacific"
     ],
     "drafted": false,
     "draftTeam": "",
