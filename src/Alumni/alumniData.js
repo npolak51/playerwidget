@@ -1,5 +1,140 @@
 export const alumniPlayers = [
   {
+    "gradYear": 2026,
+    "playerName": "Neal Burtis",
+    "sport": "Baseball",
+    "isActive": true,
+    "division": "D-I",
+    "colleges": [
+      "Oregon State"
+    ],
+    "drafted": false,
+    "draftTeam": "",
+    "draftYear": null,
+    "draftRound": null,
+    "draftPick": null
+  },
+  {
+    "gradYear": 2026,
+    "playerName": "Sean Evans",
+    "sport": "Baseball",
+    "isActive": true,
+    "division": "NAIA",
+    "colleges": [
+      "Arizona Christian"
+    ],
+    "drafted": false,
+    "draftTeam": "",
+    "draftYear": null,
+    "draftRound": null,
+    "draftPick": null
+  },
+  {
+    "gradYear": 2026,
+    "playerName": "Nolan Fahey",
+    "sport": "Baseball",
+    "isActive": true,
+    "division": "NWAC",
+    "colleges": [
+      "Clark"
+    ],
+    "drafted": false,
+    "draftTeam": "",
+    "draftYear": null,
+    "draftRound": null,
+    "draftPick": null
+  },
+  {
+    "gradYear": 2026,
+    "playerName": "Brayden Fenton",
+    "sport": "Baseball",
+    "isActive": true,
+    "division": "NWAC",
+    "colleges": [
+      "Wenatchee Valley"
+    ],
+    "drafted": false,
+    "draftTeam": "",
+    "draftYear": null,
+    "draftRound": null,
+    "draftPick": null
+  },
+  {
+    "gradYear": 2026,
+    "playerName": "Timmy McEwen",
+    "sport": "Baseball",
+    "isActive": true,
+    "division": "NAIA",
+    "colleges": [
+      "Northwest Nazarene"
+    ],
+    "drafted": false,
+    "draftTeam": "",
+    "draftYear": null,
+    "draftRound": null,
+    "draftPick": null
+  },
+  {
+    "gradYear": 2026,
+    "playerName": "Jacob Nold",
+    "sport": "Baseball",
+    "isActive": true,
+    "division": "NWAC",
+    "colleges": [
+      "Centralia"
+    ],
+    "drafted": false,
+    "draftTeam": "",
+    "draftYear": null,
+    "draftRound": null,
+    "draftPick": null
+  },
+  {
+    "gradYear": 2026,
+    "playerName": "Lucas Post",
+    "sport": "Baseball",
+    "isActive": true,
+    "division": "D-II",
+    "colleges": [
+      "Montana State Billings"
+    ],
+    "drafted": false,
+    "draftTeam": "",
+    "draftYear": null,
+    "draftRound": null,
+    "draftPick": null
+  },
+  {
+    "gradYear": 2026,
+    "playerName": "Jacob Remfert",
+    "sport": "Baseball",
+    "isActive": true,
+    "division": "NWAC",
+    "colleges": [
+      "Centralia"
+    ],
+    "drafted": false,
+    "draftTeam": "",
+    "draftYear": null,
+    "draftRound": null,
+    "draftPick": null
+  },
+  {
+    "gradYear": 2026,
+    "playerName": "Beckett Turnbow",
+    "sport": "Baseball",
+    "isActive": true,
+    "division": "D-I",
+    "colleges": [
+      "New Mexico State"
+    ],
+    "drafted": false,
+    "draftTeam": "",
+    "draftYear": null,
+    "draftRound": null,
+    "draftPick": null
+  },
+  {
     "gradYear": 2025,
     "playerName": "Adam Jay",
     "sport": "Baseball",
@@ -139,9 +274,10 @@ export const alumniPlayers = [
     "playerName": "Jackson Walker",
     "sport": "Baseball",
     "isActive": true,
-    "division": "NWAC",
+    "division": "D-I",
     "colleges": [
       "Yakima Valley"
+      "Saint Louis"
     ],
     "drafted": false,
     "draftTeam": "",
